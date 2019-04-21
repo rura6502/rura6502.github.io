@@ -1,1 +1,57 @@
-theme: jekyll-theme-dinky
+title: rura6502  dev
+description: My trash can
+author: rura6502
+github: https://github.com/rura6502
+about: Korean, Busan, Programmer, Java, Spring, Geek, Nerd
+disqus_shortname: stackproblem
+google_analytics: UA-XXXXXXXX-Y
+avatar_url: /static/img/avatar.jpg
+
+enableTags: true
+tagarray: []
+
+collections:
+  project:
+    output: true
+    permalink: /project/:path/
+
+#social: 
+#    - icon: fa-facebook
+#      link: "#"
+#    - icon: fa-twitter
+#      link: "#"
+#    - icon: fa-linkedin
+#      link: "#"
+#    - icon: fa-stack-exchange
+#      link: "#"
+#    - icon: fa-github
+#      link: "https://github.com/agusmakmun"
+
+#share:
+#  twitter_username: github.io
+#  fb_appid: 1749788565247320
+
+urls:
+    - text: About Me
+      url: /about/
+    - text: My Projects
+      url: /projects/
+    - text: XML Feed
+      url: /feed.xml
+
+url: "https://rura6502.github.io"
+baseurl: ""
+paginate: 20
+per_page: 20
+paginate_path: "/page/:num/"
+markdown: kramdown
+gems:
+  - jekyll-paginate
+  - jekyll-gist
+
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  ignore:
+    envs: ['development']
