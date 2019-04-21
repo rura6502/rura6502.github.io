@@ -14,12 +14,12 @@ hr {
   border-bottom: 1px solid #fff;
 }
 span.time, span.categories {
-  color: #ADADAD;
+  color: rgb(53, 53, 53);
   margin-bottom: 5px;
-  font-size: 11px;
+  /* font-size: 11px; */
 }
 h1, h2, h3 {
-  color: #696969;
+  /* color: #696969; */
   font-weight: normal;
 }
 h1 {

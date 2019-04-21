@@ -1,7 +1,15 @@
-#js-search {
+#js-search .icon.input {
   width:100%;
 }
 
 footer {
   text-align: end;
+}
+
+.categories .icon {
+  margin:0;
+  font-size:16px
+}
+span.time, span.categories {
+  font-size:16px
 }

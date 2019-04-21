@@ -39,7 +39,7 @@ layout: compress
     {% endif %}
 
     {% if page.date %}
-      <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
+      <meta content="{{ page.date | date: '%Y.%m.%d' }}" property="article:published_time">
       <meta content="{{ site.url }}/about/" property="article:author">
     {% endif %}
 
@@ -121,7 +121,9 @@ layout: compress
       <div class="col-sm-3">
         <div class="fixed-condition">
           <a href="/"><img class="profile-avatar" src="{{ site.avatar_url }}" height="75px" width="75px" /></a>
-          <h1 class="author-name">{{ site.author }}</h1>
+          <h1 class="author-name">
+            {{ site.author }}<i class="red asterisk loading icon"></i><i class="green thumbs up outline loading icon"></i><i class="blue child loading icon"></i>
+          </h1>
           {% if site.about %}
             <div class="profile-about">
               {{ site.about }}
@@ -134,9 +136,13 @@ layout: compress
               {% endfor %}
             </ul>
           </div>
-          <div class="search ui icon input" id="js-search">
-            <input type="text" placeholder="(sitemap)~$ type to search" class="search__input form-control" id="js-search__input">
-            <i class="search icon"></i>
+          <div class="search" id="js-search">
+              <div class="ui icon input">
+                  <input type="text" placeholder="Search..." class="search__input form-control" id="js-search__input">
+                  <i class="search icon"></i>
+                </div>
+            <!-- <input type="text" placeholder="(sitemap)~$ type to search" class="search__input form-control" id="js-search__input"> -->
+            <!-- <i class="search icon"></i> -->
             <ul class="search__results" id="js-search__results"></ul>
           </div>
           <hr />
@@ -151,6 +157,7 @@ layout: compress
         <!-- end /.fixed-condition -->
       </div>
       <div class="col-sm-8 col-offset-1 main-layout">
+          <div class="ui divider"></div>
         {{ content }}
         <footer>
           &copy; {{ site.author }}
