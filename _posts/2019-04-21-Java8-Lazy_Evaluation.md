@@ -15,8 +15,7 @@ categories: [java]
 public class TestClass {
 
 }
-
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3MjU4Nzg5NV19
+eyJoaXN0b3J5IjpbLTE5OTE5NjUxMjldfQ==
 -->
