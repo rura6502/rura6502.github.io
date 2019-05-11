@@ -44,16 +44,16 @@ public class Basic extends Thread {
 }
 
 // 결과
-T0
-T2
-T1
-T3
-T5
-T4
-T6
-T8
-T7
-T9
+T0, T0, true
+T1, T1, true
+T2, T2, true
+T5, T5, true
+T8, T8, true
+T6, T6, true
+T7, T7, true
+T4, T4, true
+T3, T3, true
+T9, T9, true
 ```
 
 #1 : 개별 쓰레드가 각자의 영역에서 사용할 변수 i를 선언
@@ -134,7 +134,7 @@ Thread[Thread-2,5,main] @ 9
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDY4NDI1NjAsMTQxODY3Mzk5NiwtMT
-Q1MjUwODA1MSwyNjQxNzg0ODEsLTE5NjY5MjI3MjMsLTEyNTIz
-NjAwMDEsLTIwODg3NjU3MywtMjAyMDg2NjUxMV19
+eyJoaXN0b3J5IjpbMTI0NTc0NzU1MywxNDE4NjczOTk2LC0xND
+UyNTA4MDUxLDI2NDE3ODQ4MSwtMTk2NjkyMjcyMywtMTI1MjM2
+MDAwMSwtMjA4ODc2NTczLC0yMDIwODY2NTExXX0=
 -->
