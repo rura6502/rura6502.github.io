@@ -28,6 +28,13 @@ Autumn - Jul to Oct
 Winter - Nov to Dec
 
 ### 2019. summer
+
+#### Java Thread
+#### Spring boot c
+#### Machine Learning Basic
+#### Kaggle Start
+#### Python basic grammer
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTA0NDI2MzBdfQ==
+eyJoaXN0b3J5IjpbMTY2Nzk4MjM2N119
 -->
