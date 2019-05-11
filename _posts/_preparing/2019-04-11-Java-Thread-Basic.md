@@ -12,11 +12,11 @@ categories: [java]
 
 쓰레드 : 프로세스 내에서 실행되는 흐름의 기본 단위. 한 프로세스는 적어도 하나 이상의 쓰레드(메인 쓰레드)를 가짐. 한 프로세스 내부에서 실행되는 스레드간에는 공유 영역을 통하여 변수 등을 공유할 수 있음.
 
-예ㄹ
+> 예시 1. 은행은 금융업무를 하는 프로세스. 창구(에 앉아 이
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1NDI2MjE2N119
+eyJoaXN0b3J5IjpbLTE3MTI4MDM1MTJdfQ==
 -->
