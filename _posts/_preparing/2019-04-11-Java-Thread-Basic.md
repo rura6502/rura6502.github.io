@@ -25,7 +25,7 @@ categories: [java]
 public class Basic extends Thread {
   String i = null;  // #1 : 개별 쓰레드가 각자의 영역에서 사용할 변수 선언
   public void run() {  // #2 : 쓰레드를 사용하여 개별로 실행될 영역 구현
-    i = Thread.currentThread().getName();
+    i = Thread.currentThread().getName();  // 추후 테스트를 위한 코드
     String currentThreadName = Thread.currentThread().getName();
     System.out.println(i
                        + ", " + Thread.currentThread().getName()
@@ -71,17 +71,25 @@ T9, T9, true
 
 ```java
 public class Basic extends Thread {
-  static int i = 0; // #1
+  static String i = null;  // #1 : 공유 영역으로 사용하기 위하여 static 키워드 사용
   public void run() {
-    System.out.println(Thread.currentThread() + " @ " + i);
+    // 모든 쓰레드가 같은 공용 변수에 접근하여 값을 변경
+    Basic.i = Thread.currentThread().getName();
+    String currentThreadName = Thread.currentThread().getName();  // 이 변수는 개별
+    System.out.println(i
+                       + ", " + Thread.currentThread().getName()
+                       + ", " + currentThreadName.equals(i));  
   }
-  public Basic setI(int i) {  // #2
-    Basic.i = i;
+  public Basic setThreadName(String name) {
+    // #3 : 테스트를 위하여 이름 지정 메소드 구현 
+    super.setName(name);
     return this;
   }
   public static void main(String[] args) {
-    for (int i=0; i<10; i++)
-      new Basic().setI(i).start();
+    // Basic basic = new Basic();
+    for (int i = 0; i < 10; i++) {
+      new Basic().setThreadName("T" + i).start();  // #4 : 총 9개의 쓰레드를 생성하여 실행
+    }
   }
 }
 
@@ -125,7 +133,8 @@ Thread[Thread-2,5,main] @ 9
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3MzI1NzM0MCwxNDE4NjczOTk2LC0xND
-UyNTA4MDUxLDI2NDE3ODQ4MSwtMTk2NjkyMjcyMywtMTI1MjM2
-MDAwMSwtMjA4ODc2NTczLC0yMDIwODY2NTExXX0=
+eyJoaXN0b3J5IjpbMTUxNTE2MjU5NSwxMDczMjU3MzQwLDE0MT
+g2NzM5OTYsLTE0NTI1MDgwNTEsMjY0MTc4NDgxLC0xOTY2OTIy
+NzIzLC0xMjUyMzYwMDAxLC0yMDg4NzY1NzMsLTIwMjA4NjY1MT
+FdfQ==
 -->
