@@ -52,7 +52,15 @@ Thread[Thread-7,5,main] @ 7
 
 쓰레드를 쓰지 않은 채로 구현한다면 0~9까지 차례대로 나와야 하지만 쓰레드를 사용하였으므로 ```System.out.println(이하 출력메소드)``` 메소드는 Thread-1~9 까지의 별개의 쓰레드로 실행되었다. 그리고 쓰레드는 한 프로세스 내부에서 개별로 실행되므로 출력메소드를 먼저 처리하는 쓰레드가 먼저 출력해버려서 위와 같은 결과가 출력되었다.
 
-하지만 코드에서 i값 할당과 동시에 쓰레드를 생성하였으며 각각의 쓰레드는 자기만의 i를 다른 쓰레드에 침범?당하지 않고 정상적으로 출력하였다. 만약 Thread1이 Thread9에게 i값을  침참고해야 될 점은 쓰레드의 생성은 분명히 순차적으로 1부터 9까지 되었고 이는 우리가 할당한 i 값을 보면 알 수 있다. 그러므로 Thread-1의 i 값은 1
+하지만 코드에서 i값 할당과 동시에 쓰레드를 생성하였으며 각각의 쓰레드는 자기만의 i를 다른 쓰레드에 침범?당하지 않고 정상적으로 출력하였다. 만약 Thread1이 Thread9에게 i값을 간섭당하였다면 아래와 같이 출력되었을 것이다.
+
+```java
+Thread[Thread-1,5,main] @ 9
+Thread[Thread-9,5,main] @ 9
+```
+
+왜냐하면 쓰레는 1부터 9까지 순서데로 
+
 
 for문이 9번 반복되면서 Thread1~9까지의 9개의 쓰레드를 i값을 주고 만들었다. 하지만 쓰레드는 프로세스 내부에서 개별로 실행되므로 ```System.out.println```은 (아래에서 기술할 공유영역에서의 변수에는 문제가 발생한다)
 
@@ -100,7 +108,7 @@ Thread[Thread-2,5,main] @ 9
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjE1MjM3NzQ0LDI2NDE3ODQ4MSwtMTk2Nj
+eyJoaXN0b3J5IjpbODYyOTg4MTUxLDI2NDE3ODQ4MSwtMTk2Nj
 kyMjcyMywtMTI1MjM2MDAwMSwtMjA4ODc2NTczLC0yMDIwODY2
 NTExXX0=
 -->
