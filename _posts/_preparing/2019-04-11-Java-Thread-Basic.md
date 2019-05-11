@@ -52,17 +52,14 @@ Thread[Thread-7,5,main] @ 7
 
 쓰레드를 쓰지 않은 채로 구현한다면 0~9까지 차례대로 나와야 하지만 쓰레드를 사용하였으므로 ```System.out.println(이하 출력메소드)``` 메소드는 Thread-1~9 까지의 별개의 쓰레드로 실행되었다. 그리고 쓰레드는 한 프로세스 내부에서 개별로 실행되므로 출력메소드를 먼저 처리하는 쓰레드가 먼저 출력해버려서 위와 같은 결과가 출력되었다.
 
-하지만 코드에서 i값 할당과 동시에 쓰레드를 생성하였으며 각각의 쓰레드는 자기만의 i를 다른 쓰레드에 침범?당하지 않고 정상적으로 출력하였다. 만약 Thread1이 Thread9에게 i값을 간섭당하였다면 아래와 같이 출력되었을 것이다.
+하지만 코드에서 i값 할당과 동시에 쓰레드를 생성하였으며 각각의 쓰레드는 자기만의 변수 i를 가지고 있으므로 다른 쓰레드에 침범?당하지 않고 정상적으로 출력하였다. 만약 Thread1이 Thread9에게 i값을 간섭당하였다면 아래와 같이 출력되었을 것이다.
 
 ```java
 Thread[Thread-1,5,main] @ 9
 Thread[Thread-9,5,main] @ 9
 ```
 
-왜냐하면 쓰레는 1부터 9까지 순서데로 
-
-
-for문이 9번 반복되면서 Thread1~9까지의 9개의 쓰레드를 i값을 주고 만들었다. 하지만 쓰레드는 프로세스 내부에서 개별로 실행되므로 ```System.out.println```은 (아래에서 기술할 공유영역에서의 변수에는 문제가 발생한다)
+하지만 i가 여러 쓰레드가 공유하는 영역의 변수일 경우 문제가 발생한다.
 
 > 예시. 창구가 여러개인 은행에서 나는 옆 창구의 고객이 말, 행동등이 느리거나 시간이 오래걸리는 업무를 기다릴 필요가 없다. 내 창구의 은행직원은 내 업무만 처리하면 되고, 나는 내 업무만 끝나면 옆창구에 사람이 앉아있던 업무가 오래걸리던 상관없이 그냥 끝내고 나가면 된다.
 
@@ -104,11 +101,10 @@ Thread[Thread-2,5,main] @ 9
 #1 : 모든 쓰레드가 공유할 수 있는 공유 변수를 설정하였다.
 #2 : i를 설정할 수 있는 별도의 메소드를 만들었다.
 
-첫번째 코드에서는 쓰레드가 생성된 순서(쓰레드 이름의 숫자)에 따라 개별로 할당받은 i 는 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODYyOTg4MTUxLDI2NDE3ODQ4MSwtMTk2Nj
-kyMjcyMywtMTI1MjM2MDAwMSwtMjA4ODc2NTczLC0yMDIwODY2
-NTExXX0=
+eyJoaXN0b3J5IjpbMjgyOTAwOTgsMjY0MTc4NDgxLC0xOTY2OT
+IyNzIzLC0xMjUyMzYwMDAxLC0yMDg4NzY1NzMsLTIwMjA4NjY1
+MTFdfQ==
 -->
