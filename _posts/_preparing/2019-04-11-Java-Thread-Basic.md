@@ -23,31 +23,37 @@ categories: [java]
 
 ```java
 public class Basic extends Thread {
-  int i
-  Basic(int i) {
-    this.i = i;
-  }
+  String i = "NULL";
   public void run() {
-    // 현재 문장을 실행하는 쓰레드의 정보를 출력한다.
-    System.out.println(Thread.currentThread() + " @ " + i);
+      i = Thread.currentThread().getName();
+      String current = Thread.currentThread().getName();
+      System.out.println(current
+                          + " @ " + i
+                          + ", " + current.equals(i));
+  }
+  public Basic setThreadName(String name) { //
+    super.setName(name);
+    return this;
   }
   public static void main(String[] args) {
-    for (int i = 0; i < 10; i++)
-      new Basic(i).start(); // 쓰레드를 시작한다.
+    // Basic basic = new Basic();
+    for (int i = 0; i < 10; i++) {
+      new Basic().setThreadName("T" + i).start();
+    }
   }
 }
 
 // 결과
-Thread[Thread-0,5,main] @ 0
-Thread[Thread-6,5,main] @ 6
-Thread[Thread-1,5,main] @ 1
-Thread[Thread-8,5,main] @ 8
-Thread[Thread-9,5,main] @ 9
-Thread[Thread-2,5,main] @ 2
-Thread[Thread-3,5,main] @ 3
-Thread[Thread-4,5,main] @ 4
-Thread[Thread-5,5,main] @ 5
-Thread[Thread-7,5,main] @ 7
+T0 @ T0, true
+T3 @ T3, true
+T1 @ T1, true
+T2 @ T2, true
+T7 @ T7, true
+T6 @ T6, true
+T4 @ T4, true
+T5 @ T5, true
+T8 @ T8, true
+T9 @ T9, true
 ```
 
 쓰레드를 쓰지 않은 채로 구현한다면 0~9까지 차례대로 나와야 하지만 쓰레드를 사용하였으므로 ```System.out.println(이하 출력메소드)``` 메소드는 Thread-1~9 까지의 별개의 쓰레드로 실행되었다. 그리고 쓰레드는 한 프로세스 내부에서 개별로 실행되므로 출력메소드를 먼저 처리하는 쓰레드가 먼저 출력해버려서 위와 같은 결과가 출력되었다.
@@ -125,7 +131,7 @@ Thread[Thread-2,5,main] @ 9
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxODY3Mzk5NiwtMTQ1MjUwODA1MSwyNj
-QxNzg0ODEsLTE5NjY5MjI3MjMsLTEyNTIzNjAwMDEsLTIwODg3
-NjU3MywtMjAyMDg2NjUxMV19
+eyJoaXN0b3J5IjpbLTY3Njc5OTkzMiwxNDE4NjczOTk2LC0xND
+UyNTA4MDUxLDI2NDE3ODQ4MSwtMTk2NjkyMjcyMywtMTI1MjM2
+MDAwMSwtMjA4ODc2NTczLC0yMDIwODY2NTExXX0=
 -->
