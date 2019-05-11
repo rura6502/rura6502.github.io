@@ -51,7 +51,8 @@ Thread[Thread-7,5,main] @ 7
 ```
 
 쓰레드를 쓰지 않은 채로 구현한다면 0~9까지 차례대로 나와야 하지만 쓰레드를 사용하였으므로 ```System.out.println(이하 출력메소드)``` 메소드는 Thread-1~9 까지의 별개의 쓰레드로 실행되었다. 그리고 쓰레드는 한 프로세스 내부에서 개별로 실행되므로 출력메소드를 먼저 처리하는 쓰레드가 먼저 출력해버려서 위와 같은 결과가 출력되었다.
-되는)이 먼저 나와서 순차적으로 되지 않았다. 하지만 쓰레드의 번호와 변수 i의 값은 똑같같다. 쓰레드가 수행하는 출력 메소드는 개별 속도에 따라 천차만별로 끝났지만 쓰레드가 생성하면서 할당받은 값은 각각 개별로 할당받아 다른 쓰레드에 영향을 받지 않고 정상적으로 출력되었다. 
+
+하지만 여기서 참고해야 될 점은 쓰레드의 생성은 분명히 순차적으로 1부터 9까지 되었고 이는 우리가 할당한 i 값을 보면 알 수 있다. 만약 쓰레드의 이름이 순차적으로
 
 for문이 9번 반복되면서 Thread1~9까지의 9개의 쓰레드를 i값을 주고 만들었다. 하지만 쓰레드는 프로세스 내부에서 개별로 실행되므로 ```System.out.println```은 (아래에서 기술할 공유영역에서의 변수에는 문제가 발생한다)
 
@@ -99,7 +100,7 @@ Thread[Thread-2,5,main] @ 9
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5MjYyNDYyNywyNjQxNzg0ODEsLTE5Nj
+eyJoaXN0b3J5IjpbMTQ3NTMyNDAxMCwyNjQxNzg0ODEsLTE5Nj
 Y5MjI3MjMsLTEyNTIzNjAwMDEsLTIwODg3NjU3MywtMjAyMDg2
 NjUxMV19
 -->
