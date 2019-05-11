@@ -19,8 +19,9 @@ categories: [java]
 
 ## Java Thread
 
-
+자바의 쓰레드는 Thread
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODg3NjU3MywtMjAyMDg2NjUxMV19
+eyJoaXN0b3J5IjpbLTEyNTIzNjAwMDEsLTIwODg3NjU3MywtMj
+AyMDg2NjUxMV19
 -->
