@@ -180,8 +180,8 @@ T1, T1, true
 
 #### 메모리 사용의 문제
 
-쓰레드는 프로세스 내부에 실행되어 프로세스가 실행되는 만큼의 오버헤드(부하)를 컴퓨팅 리소스에 주지
+쓰레드는 프로세스 내부에 실행되어 프로세스가 실행되는 만큼의 오버헤드(부하)를 컴퓨팅 리소스에 주진 않지만 그렇다고 무작정 생성할 경우 운영중인 시스템에서 심각한 컴퓨팅 리소스 오버 상태를 야기할 수 있다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2MTY2MzU2MiwxNjgyMjM2NTI1LC0xOD
+eyJoaXN0b3J5IjpbMTIyMDA3MDA4MywxNjgyMjM2NTI1LC0xOD
 UxMDgxODkwXX0=
 -->
