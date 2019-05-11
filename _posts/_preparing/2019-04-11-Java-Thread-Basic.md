@@ -82,17 +82,8 @@ public class Basic extends Thread {
                        + ", " + Thread.currentThread().getName()
                        + ", " + currentThreadName.equals(i));  
   }
-  public Basic setThreadName(String name) {
-    // #3 : 테스트를 위하여 이름 지정 메소드 구현 
-    super.setName(name);
-    return this;
-  }
-  public static void main(String[] args) {
-    // Basic basic = new Basic();
-    for (int i = 0; i < 10; i++) {
-      new Basic().setThreadName("T" + i).start();  // #4 : 총 9개의 쓰레드를 생성하여 실행
-    }
-  }
+  public Basic setThreadName(String name) {...} // 생략
+  public static void main(String[] args) {...} // 생략
 }
 
 // 결과
@@ -135,8 +126,8 @@ Thread[Thread-2,5,main] @ 9
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzOTczOTE3NCwxMDczMjU3MzQwLDE0MT
-g2NzM5OTYsLTE0NTI1MDgwNTEsMjY0MTc4NDgxLC0xOTY2OTIy
-NzIzLC0xMjUyMzYwMDAxLC0yMDg4NzY1NzMsLTIwMjA4NjY1MT
-FdfQ==
+eyJoaXN0b3J5IjpbLTIwNDc2ODkzODksMTA3MzI1NzM0MCwxND
+E4NjczOTk2LC0xNDUyNTA4MDUxLDI2NDE3ODQ4MSwtMTk2Njky
+MjcyMywtMTI1MjM2MDAwMSwtMjA4ODc2NTczLC0yMDIwODY2NT
+ExXX0=
 -->
