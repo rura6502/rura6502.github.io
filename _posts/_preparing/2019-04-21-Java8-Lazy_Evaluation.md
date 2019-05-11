@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Java8 Lazy Evaluation
-date:   today
+date:   2019-05-11 00:00:00 +0900
 categories: [java]
 ---
 

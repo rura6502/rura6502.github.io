@@ -1,11 +1,12 @@
 ---
 layout: post
 title:  Java Thread Basic
-date:   today
+date:  2019-05-11 17:50:00 +0900
 categories: [java]
 ---
 
-# 쓰레드(Thread) 란?
+## 쓰레드(Thread)란
+
 하나의 프로세스 내부에서 각각의 독립된 흐름.
 
 프로세스 : 프로그램을 실행시키기 위하여 CPU의 시간, 메모리의 공간등 ***컴퓨팅 리소스를 할당받아 수행되는 작업의 단위***. 각각의 프로세스는 독자적인 메모리 공간을 사용하여 ***서로간의 공간에 접근할 수 없음***(다른 프로세스의 변수에 접근할 수 없다). 프로세스간 통신을 위해선 별도의 통신방식(socket, IPC, http)이 필요.
@@ -140,7 +141,6 @@ public class Basic extends Thread {
         // TODO Auto-generated catch block
         e.printStackTrace();
       }
-      
       String currentThreadName = Thread.currentThread().getName();
       System.out.println(i
                                       + ", " + Thread.currentThread().getName()
