@@ -24,9 +24,10 @@ gradle, maven, semanticUI
 
 spring - Jan to March
 summer - Apr to Jun
+Autumnal - Jul to
 
 
 ### 2019. summer
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzNjE0OTk3N119
+eyJoaXN0b3J5IjpbLTY3OTAzNDQwMV19
 -->
