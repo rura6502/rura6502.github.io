@@ -28,6 +28,7 @@ public class Basic extends Thread {
   this.i = i;
  }
  public void run() {
+  // 현재 문장을 실행하는 쓰레드의 정보를 출력한다.
   System.out.println(Thread.currentThread() + " @ " + i);
  }
  public static void main(String[] args) {
@@ -35,20 +36,23 @@ public class Basic extends Thread {
    new Basic(i).start();
  }
 }
-```
-```
+
+// 결과
 Thread[Thread-0,5,main] @ 0
 Thread[Thread-6,5,main] @ 6
 Thread[Thread-1,5,main] @ 1
 Thread[Thread-8,5,main] @ 8
-
 Thread[Thread-9,5,main] @ 9
 Thread[Thread-2,5,main] @ 2
 Thread[Thread-3,5,main] @ 3
 Thread[Thread-4,5,main] @ 4
 Thread[Thread-5,5,main] @ 5
 Thread[Thread-7,5,main] @ 7
+```
+
+Thread를 쓰지 않은 채로 구현한다면 0~9까지 차례대로 나와야 하지만 쓰레드를 사용하여 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4MzMxMDU5MSwtMTI1MjM2MDAwMSwtMj
+eyJoaXN0b3J5IjpbMTM2OTU0NDM2MywtMTI1MjM2MDAwMSwtMj
 A4ODc2NTczLC0yMDIwODY2NTExXX0=
 -->
