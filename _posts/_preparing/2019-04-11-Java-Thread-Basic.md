@@ -23,22 +23,19 @@ categories: [java]
 
 ```java
 public class Basic extends Thread {
-  String i = "NULL";  // #1
+  String i = null;
   public void run() {
-      i = Thread.currentThread().getName();
-      String current = Thread.currentThread().getName();
-      System.out.println(current
-                          + " @ " + i
-                          + ", " + current.equals(i));  // #2
+    i = 
+    System.out.println(current);  // #1
   }
-  public Basic setThreadName(String name) {  // #3
+  public Basic setThreadName(String name) {  // #2
     super.setName(name);
     return this;
   }
   public static void main(String[] args) {
     // Basic basic = new Basic();
     for (int i = 0; i < 10; i++) {
-      new Basic().setThreadName("T" + i).start();  // #4
+      new Basic().setThreadName("T" + i).start();  // #3
     }
   }
 }
@@ -56,7 +53,8 @@ T8 @ T8, true
 T9 @ T9, true
 ```
 
-#1 : 개별 객체가 사용하느
+#1 : 개별 쓰레드가 각자의 영역에서 사용할 변수 i를 선언하였다.
+#2 : 
 쓰레드를 쓰지 않은 채로 구현한다면 0~9까지 차례대로 나와야 하지만 쓰레드를 사용하였으므로 ```System.out.println(이하 출력메소드)``` 메소드는 Thread-1~9 까지의 별개의 쓰레드로 실행되었다. 그리고 쓰레드는 한 프로세스 내부에서 개별로 실행되므로 출력메소드를 먼저 처리하는 쓰레드가 먼저 출력해버려서 위와 같은 결과가 출력되었다.
 
 하지만 코드에서 i값 할당과 동시에 쓰레드를 생성하였으며 각각의 쓰레드는 자기만의 변수 i를 가지고 있으므로 다른 쓰레드에 침범?당하지 않고 정상적으로 출력하였다. 만약 Thread1이 Thread9에게 i값을 간섭당하였다면 아래와 같이 출력되었을 것이다.
@@ -132,7 +130,7 @@ Thread[Thread-2,5,main] @ 9
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTIwMzQ3MDA4LDE0MTg2NzM5OTYsLTE0NT
-I1MDgwNTEsMjY0MTc4NDgxLC0xOTY2OTIyNzIzLC0xMjUyMzYw
-MDAxLC0yMDg4NzY1NzMsLTIwMjA4NjY1MTFdfQ==
+eyJoaXN0b3J5IjpbLTIwOTU2NjIxOTUsMTQxODY3Mzk5NiwtMT
+Q1MjUwODA1MSwyNjQxNzg0ODEsLTE5NjY5MjI3MjMsLTEyNTIz
+NjAwMDEsLTIwODg3NjU3MywtMjAyMDg2NjUxMV19
 -->
