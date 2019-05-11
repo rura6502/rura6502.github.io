@@ -121,13 +121,11 @@ Thread[Thread-2,5,main] @ 9
 > 1. [실제현금   70, 공용장부   80] : 직원2는 자기가 확인한 공용장부의 총 현금이 100이였고 자기가 20을 내어줬으므로 공용장부에 80으로 업데이트 한다.
 > * 실제 현금은 70이나 공용장부에 80이라고 적혀버리는 문제가 발생하였다.
 
-이런 예상치 못한 결과를 막기위해서 몇가지 방법을 사용할 수 있다.
+이런 예상치 못한 결과를 막기위해서 쓰레드간 공용으로 사용하는 변수를 ```synchronized``` 키워드를 사용하여 일종의 '잠금' 형식으로 사용할 수 있다.
 
-1. 공용변수를 변경하는 쓰레드 작업을 피한다.
-    공용 변수를 변경하지 않고 개별로 끝나도 되는 작업(DB 저장, 로그, 출력 등)을 쓰레드로 처리한다. 하지만 공용 변수를 꼭 써야되는 상황이 있다.
-1. 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTgxNjIzMTYsLTE0NTI1MDgwNTEsMjY0MT
-c4NDgxLC0xOTY2OTIyNzIzLC0xMjUyMzYwMDAxLC0yMDg4NzY1
-NzMsLTIwMjA4NjY1MTFdfQ==
+eyJoaXN0b3J5IjpbMTQxODY3Mzk5NiwtMTQ1MjUwODA1MSwyNj
+QxNzg0ODEsLTE5NjY5MjI3MjMsLTEyNTIzNjAwMDEsLTIwODg3
+NjU3MywtMjAyMDg2NjUxMV19
 -->
