@@ -19,9 +19,39 @@ categories: [java]
 
 ## Java Thread
 
-자바의 쓰레드는 ```java.lang.Thread```를 상속받아서 쓰레드로 실행할 부분을 ```run()``` 메소드에 적어서 오버라이드하면 
+자바의 쓰레드는 ```java.lang.Thread```를 상속받아서 쓰레드로 실행할 부분을 ```run()``` 메소드에 적어서 오버라이드한다. ```java.lang.Runnable``` 클래스를 구현해도된다.
+
+```java
+package  io.github.rura6502.thread;
+
+  
+
+/**
+
+* Basic
+
+*/
+
+public  class  Basic  extends  Thread {
+
+int  i;
+
+Basic(int  i) {
+
+this.i  = i;
+}
+public  void  run() {
+System.out.println(Thread.currentThread() +  " @ "  + i);
+}
+public  static  void  main(String[] args) {
+// new Basic();
+for (int  i=0; i<10; i++)
+new  Basic(i).start();
+}
+}
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTA2MDY1NzUyLC0xMjUyMzYwMDAxLC0yMD
-g4NzY1NzMsLTIwMjA4NjY1MTFdfQ==
+eyJoaXN0b3J5IjpbLTUwNjI5MDgyNSwtMTI1MjM2MDAwMSwtMj
+A4ODc2NTczLC0yMDIwODY2NTExXX0=
 -->
