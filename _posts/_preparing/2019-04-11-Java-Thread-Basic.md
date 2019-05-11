@@ -23,18 +23,21 @@ categories: [java]
 
 ```java
 public class Basic extends Thread {
- int i
- Basic(int i) {
-  this.i = i;
- }
- public void run() {
-  // 현재 문장을 실행하는 쓰레드의 정보를 출력한다.
-  System.out.println(Thread.currentThread() + " @ " + i);
- }
- public static void main(String[] args) {
-  for (int i = 0; i < 10; i++)
-   new Basic(i).start(); //쓰레드를 시작한다.
- }
+  int i
+
+  Basic(int i) {
+    this.i = i;
+  }
+
+  public void run() {
+    // 현재 문장을 실행하는 쓰레드의 정보를 출력한다.
+    System.out.println(Thread.currentThread() + " @ " + i);
+  }
+
+  public static void main(String[] args) {
+    for (int i = 0; i < 10; i++)
+      new Basic(i).start(); // 쓰레드를 시작한다.
+  }
 }
 
 // 결과
@@ -60,9 +63,27 @@ Thread[Thread-7,5,main] @ 7
 
 같은 프로세스의 쓰레드 간에는 일정 공유영역을 이용할 수 있지만 이런 기능으로 여러가지 문제가 발생할 수 있다. 특정 쓰레드가 공유 영역의 변수 a를 변경하였을 때 다른 쓰레드는 변경 전의 a의 값을 이미 이용하고 잘못된 연산 값을 덮어쓸 수 있다.
 
-```ㅓㅁㅍ
+```java
+public class Basic extends Thread {
+  static int i = 0; // #1
+  public void run() {
+    System.out.println(Thread.currentThread() + " @ " + i);
+  }
+  public Basic setI(int i) {  // #2
+    Basic.i = i;
+    return this;
+  }
+  public static void main(String[] args) {
+    for (int i=0; i<10; i++)
+      new Basic().setI(i).start();
+  }
+}
+```
+
+# 1qjsdptj 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2NTIwMjc2NiwyNjQxNzg0ODEsLTE5Nj
+eyJoaXN0b3J5IjpbMTM2MjYwMjM5OSwyNjQxNzg0ODEsLTE5Nj
 Y5MjI3MjMsLTEyNTIzNjAwMDEsLTIwODg3NjU3MywtMjAyMDg2
 NjUxMV19
 -->
