@@ -101,10 +101,10 @@ Thread[Thread-2,5,main] @ 9
 #1 : 모든 쓰레드가 공유할 수 있는 공유 변수를 설정하였다.
 #2 : i를 설정할 수 있는 별도의 메소드를 만들었다.
 
-
+첫번째 결과와는 다르게 공유 영역에 있는 i는 생성한 모든 쓰레드가 간섭하여 각자 입력받은 i의 갚을 덮어씀으로써 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjgyOTAwOTgsMjY0MTc4NDgxLC0xOTY2OT
-IyNzIzLC0xMjUyMzYwMDAxLC0yMDg4NzY1NzMsLTIwMjA4NjY1
-MTFdfQ==
+eyJoaXN0b3J5IjpbLTE1ODE0MDQ0MDUsMjY0MTc4NDgxLC0xOT
+Y2OTIyNzIzLC0xMjUyMzYwMDAxLC0yMDg4NzY1NzMsLTIwMjA4
+NjY1MTFdfQ==
 -->
