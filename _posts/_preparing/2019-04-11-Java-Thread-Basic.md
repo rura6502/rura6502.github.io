@@ -59,7 +59,10 @@ Thread[Thread-7,5,main] @ 7
 #### 공유 영역(변수) 사용의 문제
 
 같은 프로세스의 쓰레드 간에는 일정 공유영역을 이용할 수 있지만 이런 기능으로 여러가지 문제가 발생할 수 있다. 특정 쓰레드가 공유 영역의 변수 a를 변경하였을 때 다른 쓰레드는 변경 전의 a의 값을 이미 이용하고 잘못된 연산 값을 덮어쓸 수 있다.
+
+```ㅓㅁㅍ
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjY0MTc4NDgxLC0xOTY2OTIyNzIzLC0xMj
-UyMzYwMDAxLC0yMDg4NzY1NzMsLTIwMjA4NjY1MTFdfQ==
+eyJoaXN0b3J5IjpbMTI2NTIwMjc2NiwyNjQxNzg0ODEsLTE5Nj
+Y5MjI3MjMsLTEyNTIzNjAwMDEsLTIwODg3NjU3MywtMjAyMDg2
+NjUxMV19
 -->
