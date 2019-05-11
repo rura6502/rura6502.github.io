@@ -130,33 +130,40 @@ T9, T8, false
 
 ```java
 public class Basic extends Thread {
-  static String i = null;  // #1 : 공유 영역으로 사용하기 위하여 static 키워드 사용
+  static String i = null;
   public void run() {
-    // 모든 쓰레드가 같은 공용 변수에 접근하여 값을 변경
-    Basic.i = Thread.currentThread().getName();
-    // 간섭을 극대화 하기 위하여 0.1 초 동안 sleeop
-    try {
-      TimeUnit.MILLISECONDS.sleep(100);
-    } catch (InterruptedException e) {
-      // TODO Auto-generated catch block
-      e.printStackTrace();
-    }
-    // 이 변수는 쓰레드 개별공간의 변수
-    String currentThreadName = Thread.currentThread().getName();  
-    // 위에서 변경한 공용 공간의 변수와 개별 공간의 변수를 출력, 비교
-    System.out.println(i
-                       + ", " + Thread.currentThread().getName()
-                       + ", " + currentThreadName.equals(i));  
+    synchronized (Basic.class) {  // 
+      i = Thread.currentThread().getName();
+      try {
+        TimeUnit.MILLISECONDS.sleep(100);
+      } catch (InterruptedException e) {
+        // TODO Auto-generated catch block
+        e.printStackTrace();
+      }
+      
+      String currentThreadName = Thread.currentThread().getName();
+      System.out.println(i
+                                      + ", " + Thread.currentThread().getName()
+                                      + ", " + currentThreadName.equals(i));
   }
   public Basic setThreadName(String name) {...} // 생략
   public static void main(String[] args) {...} // 생략
 }
 
 // 결과
-
+T0, T0, true
+T2, T2, true
+T8, T8, true
+T7, T7, true
+T9, T9, true
+T5, T5, true
+T4, T4, true
+T3, T3, true
+T6, T6, true
+T1, T1, true
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1NDk1NjQwMCwtMzA1NTU3NTI1LDEwNz
+eyJoaXN0b3J5IjpbLTEyMTQwNjM4NSwtMzA1NTU3NTI1LDEwNz
 MyNTczNDAsMTQxODY3Mzk5NiwtMTQ1MjUwODA1MSwyNjQxNzg0
 ODEsLTE5NjY5MjI3MjMsLTEyNTIzNjAwMDEsLTIwODg3NjU3My
 wtMjAyMDg2NjUxMV19
