@@ -123,11 +123,11 @@ Thread[Thread-2,5,main] @ 9
 
 이런 예상치 못한 결과를 막기위해서 몇가지 방법을 사용할 수 있다.
 
-1. 공용변수를 사용하지 않는다.
-    공용 변수를 사용하지 않고 개별로 끝나도 되는 작업(DB 저장, 로그, 출력 등)을 쓰레드로 처리한다. 하지만 공용 변수를 꼭 써야된
+1. 공용변수를 변경하는 쓰레드 작업을 피한다.
+    공용 변수를 변경하지 않고 개별로 끝나도 되는 작업(DB 저장, 로그, 출력 등)을 쓰레드로 처리한다. 하지만 공용 변수를 꼭 써야되는 상황이 있다.
 1. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2NDUyNzg1OCwtMTQ1MjUwODA1MSwyNj
-QxNzg0ODEsLTE5NjY5MjI3MjMsLTEyNTIzNjAwMDEsLTIwODg3
-NjU3MywtMjAyMDg2NjUxMV19
+eyJoaXN0b3J5IjpbNTgxNjIzMTYsLTE0NTI1MDgwNTEsMjY0MT
+c4NDgxLC0xOTY2OTIyNzIzLC0xMjUyMzYwMDAxLC0yMDg4NzY1
+NzMsLTIwMjA4NjY1MTFdfQ==
 -->
