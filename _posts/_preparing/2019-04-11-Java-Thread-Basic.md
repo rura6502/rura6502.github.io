@@ -19,9 +19,9 @@ categories: [java]
 
 ## Java Thread
 
-자바의 쓰레드는 
+자바의 쓰레드는 ```java.lang.Thread```를 상속받아서 쓰레드로 실행할 부분을 ```run()``` 메소드에 적어서 오버라이드하면 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzNjgxODY2NSwtMTI1MjM2MDAwMSwtMj
-A4ODc2NTczLC0yMDIwODY2NTExXX0=
+eyJoaXN0b3J5IjpbOTA2MDY1NzUyLC0xMjUyMzYwMDAxLC0yMD
+g4NzY1NzMsLTIwMjA4NjY1MTFdfQ==
 -->
