@@ -39,7 +39,7 @@ public class Basic extends Thread {
   public static void main(String[] args) {
     // Basic basic = new Basic();
     for (int i = 0; i < 10; i++) {
-      new Basic().setThreadName("T" + i).start();  // #4 : 쓰
+      new Basic().setThreadName("T" + i).start();  // #4 : 총 9개의 쓰레드를 생성하여 실행
     }
   }
 }
@@ -58,11 +58,6 @@ T9, T9, true
 ```
 
 쓰레드를 쓰지 않은 채로 구현한다면 T0~9까지 차례대로 나와야 하지만 쓰레드를 사용하였으므로 ```System.out.println(이하 출력메소드)``` 메소드는 T0~9 까지의 별개의 쓰레드로 실행되었다. 그리고 쓰레드는 한 프로세스 내부에서 개별로 실행되므로 출력메소드를 먼저 처리하는 쓰레드가 먼저 출력해버려서 위와 같은 결과가 출력되었다.
-
-```java
-Thread[Thread-1,5,main] @ 9
-Thread[Thread-9,5,main] @ 9
-```
 
 하지만 i가 여러 쓰레드가 공유하는 영역의 변수일 경우 문제가 발생한다.
 
@@ -130,7 +125,7 @@ Thread[Thread-2,5,main] @ 9
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTIzMTY2NzMsMTQxODY3Mzk5NiwtMT
-Q1MjUwODA1MSwyNjQxNzg0ODEsLTE5NjY5MjI3MjMsLTEyNTIz
-NjAwMDEsLTIwODg3NjU3MywtMjAyMDg2NjUxMV19
+eyJoaXN0b3J5IjpbMTA3MzI1NzM0MCwxNDE4NjczOTk2LC0xND
+UyNTA4MDUxLDI2NDE3ODQ4MSwtMTk2NjkyMjcyMywtMTI1MjM2
+MDAwMSwtMjA4ODc2NTczLC0yMDIwODY2NTExXX0=
 -->
