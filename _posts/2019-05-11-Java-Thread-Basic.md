@@ -2,7 +2,7 @@
 layout: post
 title:  Java Thread Basic
 date:  2019-05-11 17:50:00 +0900
-categories: [java]
+categories: [Java, Thread]
 ---
 
 ## 쓰레드(Thread)란
@@ -178,5 +178,5 @@ T1, T1, true
 
 > 여기서 사용한 ```synchronized``` 키워드 사용 방법은 쓰레드가 공유 변수에 접근하면서 생길 수 있는 문제점과 그 문제점을 방지하기 위해 간략하게 든 예시
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTEwODE4OTBdfQ==
+eyJoaXN0b3J5IjpbMTY4MjIzNjUyNSwtMTg1MTA4MTg5MF19
 -->
