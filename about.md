@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: About Me
 permalink: /about/
 comments: true
 ---
@@ -19,3 +19,12 @@ Kubernets, Apahce Hadoop Echosystem, Data Science, CD/CI, jenkins
 ### more
 
 gradle, maven, semanticUI
+
+## Anual Sutdy Goal
+
+spring - Jan 
+
+### 2019. summer
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTczMDYzNzE2XX0=
+-->
