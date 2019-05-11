@@ -24,16 +24,13 @@ categories: [java]
 ```java
 public class Basic extends Thread {
   int i
-
   Basic(int i) {
     this.i = i;
   }
-
   public void run() {
     // 현재 문장을 실행하는 쓰레드의 정보를 출력한다.
     System.out.println(Thread.currentThread() + " @ " + i);
   }
-
   public static void main(String[] args) {
     for (int i = 0; i < 10; i++)
       new Basic(i).start(); // 쓰레드를 시작한다.
@@ -80,10 +77,10 @@ public class Basic extends Thread {
 }
 ```
 
-# 1qjsdptj 
+#1 에서 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2MjYwMjM5OSwyNjQxNzg0ODEsLTE5Nj
+eyJoaXN0b3J5IjpbMTg4NjU1NTY0OSwyNjQxNzg0ODEsLTE5Nj
 Y5MjI3MjMsLTEyNTIzNjAwMDEsLTIwODg3NjU3MywtMjAyMDg2
 NjUxMV19
 -->
