@@ -50,7 +50,7 @@ Thread[Thread-5,5,main] @ 5
 Thread[Thread-7,5,main] @ 7
 ```
 
-쓰레드를 쓰지 않은 채로 구현한다면 0~9까지 차례대로 나와야 하지만 쓰레드를 사용하여 각각의 개별 쓰레드로 실행되어 먼저 처리되는 것(먼저 ```System.out.println```이 수행되는)이 먼저 나와서 순차적으로 되지 않았다. 하지만 쓰레드의 번호와 변수 i의 값은 똑같ㄴ다.
+쓰레드를 쓰지 않은 채로 구현한다면 0~9까지 차례대로 나와야 하지만 쓰레드를 사용하여 각각의 개별 쓰레드로 실행되어 먼저 처리되는 것(먼저 ```System.out.println```이 수행되는)이 먼저 나와서 순차적으로 되지 않았다. 하지만 쓰레드의 번호와 변수 i의 값은 똑같같다. 쓰레드가 수행하는 출력 메소드는 개별 속도에 따라 천차만별로 끝났지만 쓰레드가 생성된 순서(쓰레드의 이름 순서)와 생성됨과 동시에 개별로 쓰레드에 할당받은 i의 값은 같다.
 
 > 예시. 창구가 여러개인 은행에서 나는 옆 창구의 고객이 말, 행동등이 느리거나 시간이 오래걸리는 업무를 기다릴 필요가 없다. 내 창구의 은행직원은 내 업무만 처리하면 되고, 나는 내 업무만 끝나면 옆창구에 사람이 앉아있던 업무가 오래걸리던 상관없이 그냥 끝내고 나가면 된다.
 
@@ -94,7 +94,7 @@ Thread[Thread-2,5,main] @ 9
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3MDA1NjE3OCwyNjQxNzg0ODEsLTE5Nj
-Y5MjI3MjMsLTEyNTIzNjAwMDEsLTIwODg3NjU3MywtMjAyMDg2
-NjUxMV19
+eyJoaXN0b3J5IjpbMzUxMjAwMTQ5LDI2NDE3ODQ4MSwtMTk2Nj
+kyMjcyMywtMTI1MjM2MDAwMSwtMjA4ODc2NTczLC0yMDIwODY2
+NTExXX0=
 -->
