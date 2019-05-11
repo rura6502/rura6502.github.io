@@ -162,9 +162,11 @@ T3, T3, true
 T6, T6, true
 T1, T1, true
 ```
+
+```synchronized``` 블록을 사용하여 쓰레드가 공유 변수에 접근하여 변경하고 출력하기까지의 과정에 lock(자물쇄)를 걸어서
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTQwNjM4NSwtMzA1NTU3NTI1LDEwNz
-MyNTczNDAsMTQxODY3Mzk5NiwtMTQ1MjUwODA1MSwyNjQxNzg0
-ODEsLTE5NjY5MjI3MjMsLTEyNTIzNjAwMDEsLTIwODg3NjU3My
-wtMjAyMDg2NjUxMV19
+eyJoaXN0b3J5IjpbLTk1NjUxNzgxMCwtMTIxNDA2Mzg1LC0zMD
+U1NTc1MjUsMTA3MzI1NzM0MCwxNDE4NjczOTk2LC0xNDUyNTA4
+MDUxLDI2NDE3ODQ4MSwtMTk2NjkyMjcyMywtMTI1MjM2MDAwMS
+wtMjA4ODc2NTczLC0yMDIwODY2NTExXX0=
 -->
