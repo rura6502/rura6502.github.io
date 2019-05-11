@@ -104,10 +104,11 @@ Thread[Thread-2,5,main] @ 9
 첫번째 결과와는 다르게 공유 영역에 있는 i는 생성한 모든 쓰레드가 간섭하여 각자 입력받은 i의 갚을 덮어씀으로써 예상치 못한 결과가 발생하였다.
 
 > 예시. 은행에서는 항상 은행의 현금이 총 얼마 있는지 공용장부에 실시간으로 기재해야 한다. 현재 현금이 100 만큼 있으며 공용 장부에도 100 이라고 적혀있다. 공용 장부는 각각 창구의 개별 컴퓨터에서 창구 직원이 업데이트할 수 있다.
-> [실제현금 100, 장부
+> 1. [실제현금 100, 공용장부 100] : 고객 A가 직원1에게 현금 10을 요청한다.
+> 1. [실제현금 100, 공용장부 100] : 직원1은 현
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5MzE2ODE0OCwyNjQxNzg0ODEsLTE5Nj
+eyJoaXN0b3J5IjpbLTgwNDQ1NzUxNSwyNjQxNzg0ODEsLTE5Nj
 Y5MjI3MjMsLTEyNTIzNjAwMDEsLTIwODg3NjU3MywtMjAyMDg2
 NjUxMV19
 -->
