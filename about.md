@@ -22,9 +22,9 @@ gradle, maven, semanticUI
 
 ## Anual Sutdy Goal
 
-spring - Jan 
+spring - Jan to 
 
 ### 2019. summer
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczMDYzNzE2XX0=
+eyJoaXN0b3J5IjpbLTM4NzMzODg1XX0=
 -->
