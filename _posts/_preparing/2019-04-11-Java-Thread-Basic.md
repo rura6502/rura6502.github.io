@@ -174,12 +174,11 @@ T1, T1, true
 > 1. [실제현금 90, 공용장부 90] : 직원1은 공용 장부를 제자리에 가져다 놓는다.
 > 1. [실제현금 70, 공용장부 70] : 직원2는 공용장부를 가져와서 고객2에게 20을 주고 공용장부에 마지막 금액에서 -20을 한 금액인 70을 적는다.
 
-  해당 코드를 실행해보면 알겠지만 이전의 예제와는 다르게 출력에 딜레이가 생김. ```synchronized``` 블록은 특정 쓰레드가 해당 구역을 실행 중이면 다른 쓰레드는 사용하고 있는 쓰레드가 블록을 다 실행할 때 까지 기다렸다가 종료되고 나면 실행하기 때문임. 이러한 방식은 실제 환경에서 로직의 딜레이를ㅂ
+  해당 코드를 실행해보면 알겠지만 이전의 예제와는 다르게 출력에 딜레이가 생김. ```synchronized``` 블록은 특정 쓰레드가 해당 구역을 실행 중이면 다른 쓰레드는 사용하고 있는 쓰레드가 블록을 다 실행할 때 까지 기다렸다가 종료되고 나면 실행하기 때문임. 이러한 방식은 실제 환경에서 로직의 딜레이를 발생시킬 수 있으므로 신중히 고려하여 사용하여야 함.
 
-
-여기서 사용한 ```synchronized``` 키워드 사용 방법은 쓰레드가 공유 변수에 접근하면서 생길 수 있는 문제점과 그 문제점을 방지하기 위해 간략하게 든 예시. 실
+> 여기서 사용한 ```synchronized``` 키워드 사용 방법은 쓰레드가 공유 변수에 접근하면서 생길 수 있는 문제점과 그 문제점을 방지하기 위해 간략하게 든 예시
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDIwNDE2MjUsLTEyMTQwNjM4NSwtMz
+eyJoaXN0b3J5IjpbLTE4NTEwODE4OTAsLTEyMTQwNjM4NSwtMz
 A1NTU3NTI1LDEwNzMyNTczNDAsMTQxODY3Mzk5NiwtMTQ1MjUw
 ODA1MSwyNjQxNzg0ODEsLTE5NjY5MjI3MjMsLTEyNTIzNjAwMD
 EsLTIwODg3NjU3MywtMjAyMDg2NjUxMV19
