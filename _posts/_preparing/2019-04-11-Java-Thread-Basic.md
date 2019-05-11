@@ -101,10 +101,12 @@ Thread[Thread-2,5,main] @ 9
 #1 : 모든 쓰레드가 공유할 수 있는 공유 변수를 설정하였다.
 #2 : i를 설정할 수 있는 별도의 메소드를 만들었다.
 
-첫번째 결과와는 다르게 공유 영역에 있는 i는 생성한 모든 쓰레드가 간섭하여 각자 입력받은 i의 갚을 덮어씀으로써 
+첫번째 결과와는 다르게 공유 영역에 있는 i는 생성한 모든 쓰레드가 간섭하여 각자 입력받은 i의 갚을 덮어씀으로써 예상치 못한 결과가 발생하였다.
+
+> 예시. 은행에서는 항상 은행의 현금이 총 얼마 있는지 공용장부에 실시간으로 기재해야 한다. 현재 공용 장부에 현금이 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODE0MDQ0MDUsMjY0MTc4NDgxLC0xOT
-Y2OTIyNzIzLC0xMjUyMzYwMDAxLC0yMDg4NzY1NzMsLTIwMjA4
-NjY1MTFdfQ==
+eyJoaXN0b3J5IjpbLTc2Nzk0NTgwNSwyNjQxNzg0ODEsLTE5Nj
+Y5MjI3MjMsLTEyNTIzNjAwMDEsLTIwODg3NjU3MywtMjAyMDg2
+NjUxMV19
 -->
