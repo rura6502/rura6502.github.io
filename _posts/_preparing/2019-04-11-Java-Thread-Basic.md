@@ -75,6 +75,13 @@ public class Basic extends Thread {
   public void run() {
     // 모든 쓰레드가 같은 공용 변수에 접근하여 값을 변경
     Basic.i = Thread.currentThread().getName();
+    // 간섭을 극대화 하기 위하여 0.1 초 동안 sleeop
+    try {
+      TimeUnit.MILLISECONDS.sleep(100);
+    } catch (InterruptedException e) {
+      // TODO Auto-generated catch block
+      e.printStackTrace();
+    }
     // 이 변수는 쓰레드 개별공간의 변수
     String currentThreadName = Thread.currentThread().getName();  
     // 위에서 변경한 공용 공간의 변수와 개별 공간의 변수를 출력, 비교
@@ -87,20 +94,17 @@ public class Basic extends Thread {
 }
 
 // 결과
-Thread[Thread-0,5,main] @ 5
-Thread[Thread-5,5,main] @ 8
-Thread[Thread-1,5,main] @ 7
-Thread[Thread-4,5,main] @ 9
-Thread[Thread-6,5,main] @ 9
-Thread[Thread-7,5,main] @ 9
-Thread[Thread-9,5,main] @ 9
-Thread[Thread-8,5,main] @ 9
-Thread[Thread-3,5,main] @ 9
-Thread[Thread-2,5,main] @ 9
+T9, T9, true
+T9, T2, false
+T9, T6, false
+T9, T3, false
+T9, T4, false
+T9, T7, false
+T9, T1, false
+T9, T0, false
+T9, T5, false
+T9, T8, false
 ```
-
-#1 : 모든 쓰레드가 공유할 수 있는 공유 변수를 설정하였다.
-#2 : i를 설정할 수 있는 별도의 메소드를 만들었다.
 
 첫번째 결과와는 다르게 공유 영역에 있는 i는 생성한 모든 쓰레드가 간섭하여 각자 입력받은 i의 갚을 덮어씀으로써 예상치 못한 결과가 발생하였다. 이렇게 쓰레드간 공유가능한 변수에 여러 쓰레드가 접근하며 각자가 인지한 값과 계산한 값을 업데이트 함으로써 예상치 못한 결과를 얻을 수 있다.
 
@@ -126,8 +130,8 @@ Thread[Thread-2,5,main] @ 9
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDc2ODkzODksMTA3MzI1NzM0MCwxND
-E4NjczOTk2LC0xNDUyNTA4MDUxLDI2NDE3ODQ4MSwtMTk2Njky
-MjcyMywtMTI1MjM2MDAwMSwtMjA4ODc2NTczLC0yMDIwODY2NT
-ExXX0=
+eyJoaXN0b3J5IjpbLTMwNTU1NzUyNSwxMDczMjU3MzQwLDE0MT
+g2NzM5OTYsLTE0NTI1MDgwNTEsMjY0MTc4NDgxLC0xOTY2OTIy
+NzIzLC0xMjUyMzYwMDAxLC0yMDg4NzY1NzMsLTIwMjA4NjY1MT
+FdfQ==
 -->
