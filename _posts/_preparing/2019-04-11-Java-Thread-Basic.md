@@ -75,12 +75,26 @@ public class Basic extends Thread {
       new Basic().setI(i).start();
   }
 }
+
+// 결과
+Thread[Thread-0,5,main] @ 5
+Thread[Thread-5,5,main] @ 8
+Thread[Thread-1,5,main] @ 7
+Thread[Thread-4,5,main] @ 9
+Thread[Thread-6,5,main] @ 9
+Thread[Thread-7,5,main] @ 9
+Thread[Thread-9,5,main] @ 9
+Thread[Thread-8,5,main] @ 9
+Thread[Thread-3,5,main] @ 9
+Thread[Thread-2,5,main] @ 9
 ```
 
-#1 에서 
+#1 : 모든 쓰레드가 공유할 수 있는 공유 변수를 설정하였다.
+#2 : i를 설정할 수 있는 별도의 메소드를 만들었다.
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4NjU1NTY0OSwyNjQxNzg0ODEsLTE5Nj
-Y5MjI3MjMsLTEyNTIzNjAwMDEsLTIwODg3NjU3MywtMjAyMDg2
-NjUxMV19
+eyJoaXN0b3J5IjpbNjQ1MzEwMDUzLDI2NDE3ODQ4MSwtMTk2Nj
+kyMjcyMywtMTI1MjM2MDAwMSwtMjA4ODc2NTczLC0yMDIwODY2
+NTExXX0=
 -->
