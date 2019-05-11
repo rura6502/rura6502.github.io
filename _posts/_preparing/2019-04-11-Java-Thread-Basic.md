@@ -119,9 +119,9 @@ Thread[Thread-2,5,main] @ 9
 > 1. [실제현금   90, 공용장부   90] : 직원1은 자기가 확인한 공용장부의 총 현금이 100이였고 자기가 10을 내어줬으므로 공용장부를 90으로 업데이트한다.
 > 1. [실제현금   70, 공용장부   90] : 직원2는 현금 20을 고객B에게 준다.
 > 1. [실제현금   70, 공용장부   80] : 직원2는 자기가 확인한 공용장부의 총 현금이 100이였고 자기가 20을 내어줬으므로 공용장부에 80으로 업데이트 한다.
-
+> 실ㅈ
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTI1MDgwNTEsMjY0MTc4NDgxLC0xOT
-Y2OTIyNzIzLC0xMjUyMzYwMDAxLC0yMDg4NzY1NzMsLTIwMjA4
-NjY1MTFdfQ==
+eyJoaXN0b3J5IjpbLTk4NzE5MzE3NywtMTQ1MjUwODA1MSwyNj
+QxNzg0ODEsLTE5NjY5MjI3MjMsLTEyNTIzNjAwMDEsLTIwODg3
+NjU3MywtMjAyMDg2NjUxMV19
 -->
