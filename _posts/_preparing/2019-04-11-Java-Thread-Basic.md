@@ -50,10 +50,10 @@ Thread[Thread-5,5,main] @ 5
 Thread[Thread-7,5,main] @ 7
 ```
 
-Thread를 쓰지 않은 채로 구현한다면 0~9까지 차례대로 나와야 하지만 쓰레드를 사용하여 각각의 개별 쓰레드로 실행되어 먼저 처리되는 것(먼저 ```System.out.println```이 수행되는)순서
+Thread를 쓰지 않은 채로 구현한다면 0~9까지 차례대로 나와야 하지만 쓰레드를 사용하여 각각의 개별 쓰레드로 실행되어 먼저 처리되는 것(먼저 ```System.out.println```이 수행되는)이 먼저 나와서 순차적으로 되지 않았다.
 
-
+> 예시 1. 창구가 여러개인 은행에서 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzk5OTMxNjcsLTEyNTIzNjAwMDEsLTIwOD
-g3NjU3MywtMjAyMDg2NjUxMV19
+eyJoaXN0b3J5IjpbLTgzMjA3MzQ0OSwtMTI1MjM2MDAwMSwtMj
+A4ODc2NTczLC0yMDIwODY2NTExXX0=
 -->
