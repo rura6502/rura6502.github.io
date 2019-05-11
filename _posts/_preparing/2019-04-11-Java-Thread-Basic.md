@@ -128,10 +128,36 @@ T9, T8, false
 
 이런 예상치 못한 결과를 막기위해서 쓰레드간 공용으로 사용하는 변수를 ```synchronized``` 키워드를 사용하여 일종의 '잠금' 형식으로 사용할 수 있다.
 
+```java
+public class Basic extends Thread {
+  static String i = null;  // #1 : 공유 영역으로 사용하기 위하여 static 키워드 사용
+  public void run() {
+    // 모든 쓰레드가 같은 공용 변수에 접근하여 값을 변경
+    Basic.i = Thread.currentThread().getName();
+    // 간섭을 극대화 하기 위하여 0.1 초 동안 sleeop
+    try {
+      TimeUnit.MILLISECONDS.sleep(100);
+    } catch (InterruptedException e) {
+      // TODO Auto-generated catch block
+      e.printStackTrace();
+    }
+    // 이 변수는 쓰레드 개별공간의 변수
+    String currentThreadName = Thread.currentThread().getName();  
+    // 위에서 변경한 공용 공간의 변수와 개별 공간의 변수를 출력, 비교
+    System.out.println(i
+                       + ", " + Thread.currentThread().getName()
+                       + ", " + currentThreadName.equals(i));  
+  }
+  public Basic setThreadName(String name) {...} // 생략
+  public static void main(String[] args) {...} // 생략
+}
 
+// 결과
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwNTU1NzUyNSwxMDczMjU3MzQwLDE0MT
-g2NzM5OTYsLTE0NTI1MDgwNTEsMjY0MTc4NDgxLC0xOTY2OTIy
-NzIzLC0xMjUyMzYwMDAxLC0yMDg4NzY1NzMsLTIwMjA4NjY1MT
-FdfQ==
+eyJoaXN0b3J5IjpbMjA1NDk1NjQwMCwtMzA1NTU3NTI1LDEwNz
+MyNTczNDAsMTQxODY3Mzk5NiwtMTQ1MjUwODA1MSwyNjQxNzg0
+ODEsLTE5NjY5MjI3MjMsLTEyNTIzNjAwMDEsLTIwODg3NjU3My
+wtMjAyMDg2NjUxMV19
 -->
