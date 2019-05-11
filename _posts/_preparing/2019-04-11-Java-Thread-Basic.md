@@ -6,7 +6,7 @@ categories: [java]
 ---
 
 # Thread 란?
-
+프로그램을 실행
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3NDIwNTc1XX0=
+eyJoaXN0b3J5IjpbMTA5NjE2MTI3Ml19
 -->
