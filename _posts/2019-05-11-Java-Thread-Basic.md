@@ -184,8 +184,8 @@ T1, T1, true
 
 > 고객이 늘어나는 만큼 추후를 생각하지 않고 은행 창구를 늘리고 직원을 새로 고용하면 은행은 결국 파한할 것이다.
 
-이를 방지하기 위하여 요청을 적절히 처리할 수 있는 적당한 양의 쓰레드를 미리 만들어 놓고 이를 관리할 수 있는 
+이를 방지하기 위한 방법은 ㅇ을 적절히 처리할 수 있는 적당한 양의 쓰레드를 미리 만들어 놓고 이를 관리하면서 필요할 경우 사용하고 모두 사용 중일 경우 대기시킨 다음 끝난 쓰레드를 다시 준비시켜 동작시키는 방식을 pool 방식이라
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3OTIwMjQ5NSwxMjIwMDcwMDgzLDE2OD
-IyMzY1MjUsLTE4NTEwODE4OTBdfQ==
+eyJoaXN0b3J5IjpbODI1NTQwODQxLDEyMjAwNzAwODMsMTY4Mj
+IzNjUyNSwtMTg1MTA4MTg5MF19
 -->
