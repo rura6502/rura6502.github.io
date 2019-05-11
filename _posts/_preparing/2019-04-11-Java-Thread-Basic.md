@@ -26,9 +26,12 @@ public class Basic extends Thread {
   String i = null;  // #1
   public void run() {  // #2
     i = Thread.currentThread().getName();
-    System.out.println(i);
+    String currentThreadName = Thread.currentThread().getName();
+    System.out.println(i
+                       + ", " + Thread.currentThread().getName()
+                       + ", " + currentThreadName.equals(i));  
   }
-  public Basic setThreadName(String name) {  // #3
+  public Basic setThreadName(String name) {  // #3  
     super.setName(name);
     return this;
   }
@@ -131,7 +134,7 @@ Thread[Thread-2,5,main] @ 9
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQ5NTIxNjQyLDE0MTg2NzM5OTYsLTE0NT
-I1MDgwNTEsMjY0MTc4NDgxLC0xOTY2OTIyNzIzLC0xMjUyMzYw
-MDAxLC0yMDg4NzY1NzMsLTIwMjA4NjY1MTFdfQ==
+eyJoaXN0b3J5IjpbLTE4MDY4NDI1NjAsMTQxODY3Mzk5NiwtMT
+Q1MjUwODA1MSwyNjQxNzg0ODEsLTE5NjY5MjI3MjMsLTEyNTIz
+NjAwMDEsLTIwODg3NjU3MywtMjAyMDg2NjUxMV19
 -->
