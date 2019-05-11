@@ -75,7 +75,9 @@ public class Basic extends Thread {
   public void run() {
     // 모든 쓰레드가 같은 공용 변수에 접근하여 값을 변경
     Basic.i = Thread.currentThread().getName();
-    String currentThreadName = Thread.currentThread().getName();  // 이 변수는 개별
+    // 이 변수는 쓰레드 개별공간의 변수
+    String currentThreadName = Thread.currentThread().getName();  
+    // 위에서 변경한 공용 공간의 변수와 개별 공간의 변수를 출력, 비교
     System.out.println(i
                        + ", " + Thread.currentThread().getName()
                        + ", " + currentThreadName.equals(i));  
@@ -133,7 +135,7 @@ Thread[Thread-2,5,main] @ 9
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxNTE2MjU5NSwxMDczMjU3MzQwLDE0MT
+eyJoaXN0b3J5IjpbMTIzOTczOTE3NCwxMDczMjU3MzQwLDE0MT
 g2NzM5OTYsLTE0NTI1MDgwNTEsMjY0MTc4NDgxLC0xOTY2OTIy
 NzIzLC0xMjUyMzYwMDAxLC0yMDg4NzY1NzMsLTIwMjA4NjY1MT
 FdfQ==
