@@ -23,22 +23,23 @@ categories: [java]
 
 ```java
 public class Basic extends Thread {
-  String i = null;  // #1
-  public void run() {  // #2
+  String i = null;  // #1 : 개별 쓰레드가 각자의 영역에서 사용할 변수 선언
+  public void run() {  // #2 : 쓰레드를 사용하여 개별로 실행될 영역 구현
     i = Thread.currentThread().getName();
     String currentThreadName = Thread.currentThread().getName();
     System.out.println(i
                        + ", " + Thread.currentThread().getName()
                        + ", " + currentThreadName.equals(i));  
   }
-  public Basic setThreadName(String name) {  // #3  
+  public Basic setThreadName(String name) {
+    // #3 : 테스트를 위하여 이름 지정 메소드 구현 
     super.setName(name);
     return this;
   }
   public static void main(String[] args) {
     // Basic basic = new Basic();
     for (int i = 0; i < 10; i++) {
-      new Basic().setThreadName("T" + i).start();  // #4
+      new Basic().setThreadName("T" + i).start();  // #4 : 쓰
     }
   }
 }
@@ -55,11 +56,6 @@ T4, T4, true
 T3, T3, true
 T9, T9, true
 ```
-
-#1 : 개별 쓰레드가 각자의 영역에서 사용할 변수 i를 선언
-#2 : 쓰레드로 구동할 문장을 구현
-#3 : 테스트를 위하여 쓰레드 이름을 별도로 지정할 수 있는 메소드를 구현하였다.
-#4 : 9번 쓰레드 객체를 생성하여 실행
 
 쓰레드를 쓰지 않은 채로 구현한다면 T0~9까지 차례대로 나와야 하지만 쓰레드를 사용하였으므로 ```System.out.println(이하 출력메소드)``` 메소드는 T0~9 까지의 별개의 쓰레드로 실행되었다. 그리고 쓰레드는 한 프로세스 내부에서 개별로 실행되므로 출력메소드를 먼저 처리하는 쓰레드가 먼저 출력해버려서 위와 같은 결과가 출력되었다.
 
@@ -134,7 +130,7 @@ Thread[Thread-2,5,main] @ 9
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0NTc0NzU1MywxNDE4NjczOTk2LC0xND
-UyNTA4MDUxLDI2NDE3ODQ4MSwtMTk2NjkyMjcyMywtMTI1MjM2
-MDAwMSwtMjA4ODc2NTczLC0yMDIwODY2NTExXX0=
+eyJoaXN0b3J5IjpbLTIwMTIzMTY2NzMsMTQxODY3Mzk5NiwtMT
+Q1MjUwODA1MSwyNjQxNzg0ODEsLTE5NjY5MjI3MjMsLTEyNTIz
+NjAwMDEsLTIwODg3NjU3MywtMjAyMDg2NjUxMV19
 -->
