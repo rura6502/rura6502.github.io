@@ -165,10 +165,16 @@ T1, T1, true
 
   ```synchronized``` 블록을 사용하여 쓰레드가 공유 변수에 접근하여 변경하고 출력하기까지의 과정에 lock(자물쇄)를 걸어 어떤 쓰레드가 ```synchronized``` 안의 블록을 실행하는 동안, 다른 쓰레드는 해당 블록을 수행하지 않고 종료될 때 까지 기다렸다가 수행되도록 하였음. 이렇게 하여 특정 쓰레드가 실행 되는 동안 다른 쓰레드가 공유 변수에 접근하여 값을 변경하는 예측할 수 없는 상황을 방지할 수 있음.
 
-  해당 코드를 실행해보면 알겠지만 이전의 예제와는 다르게 출력에 딜레이가 생김. ```synchronized``` 블록의 접근은 여기서 사용한 ```synchronized``` 키워드 사용 방법은 쓰레드가 공유 변수에 접근하면서 생길 수 있는 문제점과 그 문제점을 방지
+> 예시. 은행 공용장부를 각 창구의 개별 컴퓨터에서 업데이트할 수 없게 하고 직접 장
+
+  해당 코드를 실행해보면 알겠지만 이전의 예제와는 다르게 출력에 딜레이가 생김. ```synchronized``` 블록은 특정 쓰레드가 해당 구역을 실행 중이면 다른 쓰레드는 사용하고 있는 쓰레드가 블록을 다 실행할 때 까지 기다렸다가 종료되고 나면 실행하기 때문임.
+
+
+
+여기서 사용한 ```synchronized``` 키워드 사용 방법은 쓰레드가 공유 변수에 접근하면서 생길 수 있는 문제점과 그 문제점을 방지하기 위해 간략하게 든 예씨.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzI0NDQzNzQxLC0xMjE0MDYzODUsLTMwNT
-U1NzUyNSwxMDczMjU3MzQwLDE0MTg2NzM5OTYsLTE0NTI1MDgw
-NTEsMjY0MTc4NDgxLC0xOTY2OTIyNzIzLC0xMjUyMzYwMDAxLC
-0yMDg4NzY1NzMsLTIwMjA4NjY1MTFdfQ==
+eyJoaXN0b3J5IjpbMTY5MTAwOTc1OCwtMTIxNDA2Mzg1LC0zMD
+U1NTc1MjUsMTA3MzI1NzM0MCwxNDE4NjczOTk2LC0xNDUyNTA4
+MDUxLDI2NDE3ODQ4MSwtMTk2NjkyMjcyMywtMTI1MjM2MDAwMS
+wtMjA4ODc2NTczLC0yMDIwODY2NTExXX0=
 -->
