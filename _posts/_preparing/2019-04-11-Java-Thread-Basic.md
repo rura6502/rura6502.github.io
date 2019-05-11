@@ -22,36 +22,33 @@ categories: [java]
 자바의 쓰레드는 ```java.lang.Thread```를 상속받아서 쓰레드로 실행할 부분을 ```run()``` 메소드에 적어서 오버라이드한다. ```java.lang.Runnable``` 클래스를 구현해도된다.
 
 ```java
-package  io.github.rura6502.thread;
-
-  
-
-/**
-
-* Basic
-
-*/
-
-public  class  Basic  extends  Thread {
-
-int  i;
-
-Basic(int  i) {
-
-this.i  = i;
-}
-public  void  run() {
-System.out.println(Thread.currentThread() +  " @ "  + i);
-}
-public  static  void  main(String[] args) {
-// new Basic();
-for (int  i=0; i<10; i++)
-new  Basic(i).start();
-}
+public class Basic extends Thread {
+ int i
+ Basic(int i) {
+  this.i = i;
+ }
+ public void run() {
+  System.out.println(Thread.currentThread() + " @ " + i);
+ }
+ public static void main(String[] args) {
+  for (int i = 0; i < 10; i++)
+   new Basic(i).start();
+ }
 }
 ```
+```
+Thread[Thread-0,5,main] @ 0
+Thread[Thread-6,5,main] @ 6
+Thread[Thread-1,5,main] @ 1
+Thread[Thread-8,5,main] @ 8
 
+Thread[Thread-9,5,main] @ 9
+Thread[Thread-2,5,main] @ 2
+Thread[Thread-3,5,main] @ 3
+Thread[Thread-4,5,main] @ 4
+Thread[Thread-5,5,main] @ 5
+Thread[Thread-7,5,main] @ 7
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwNjI5MDgyNSwtMTI1MjM2MDAwMSwtMj
+eyJoaXN0b3J5IjpbMjA4MzMxMDU5MSwtMTI1MjM2MDAwMSwtMj
 A4ODc2NTczLC0yMDIwODY2NTExXX0=
 -->
