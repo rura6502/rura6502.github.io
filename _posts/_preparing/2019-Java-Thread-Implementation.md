@@ -1,7 +1,9 @@
-
-
-
-> Written with [StackEdit](https://stackedit.io/).
+---
+layout: post
+title:  Java8 Lazy Evaluation
+date:   2019-05-11 00:00:00 +0900
+categories: [java, thread]
+---
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbMTI3NzgyNjYxNyw3MzA5OTgxMTZdfQ==
 -->
