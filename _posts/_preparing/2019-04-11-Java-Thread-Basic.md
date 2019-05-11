@@ -60,8 +60,6 @@ T9
 
 쓰레드를 쓰지 않은 채로 구현한다면 T0~9까지 차례대로 나와야 하지만 쓰레드를 사용하였으므로 ```System.out.println(이하 출력메소드)``` 메소드는 T0~9 까지의 별개의 쓰레드로 실행되었다. 그리고 쓰레드는 한 프로세스 내부에서 개별로 실행되므로 출력메소드를 먼저 처리하는 쓰레드가 먼저 출력해버려서 위와 같은 결과가 출력되었다.
 
-하지만 코드에서 i값 할당과 동시에 쓰레드를 생성하였으며 각각의 쓰레드는 자기만의 변수 i를 가지고 있으므로 다른 쓰레드에 침범?당하지 않고 정상적으로 출력하였다. 만약 Thread1이 Thread9에게 i값을 간섭당하였다면 아래와 같이 출력되었을 것이다.
-
 ```java
 Thread[Thread-1,5,main] @ 9
 Thread[Thread-9,5,main] @ 9
@@ -133,7 +131,7 @@ Thread[Thread-2,5,main] @ 9
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzMDAwMjkxNSwxNDE4NjczOTk2LC0xND
-UyNTA4MDUxLDI2NDE3ODQ4MSwtMTk2NjkyMjcyMywtMTI1MjM2
-MDAwMSwtMjA4ODc2NTczLC0yMDIwODY2NTExXX0=
+eyJoaXN0b3J5IjpbMjQ5NTIxNjQyLDE0MTg2NzM5OTYsLTE0NT
+I1MDgwNTEsMjY0MTc4NDgxLC0xOTY2OTIyNzIzLC0xMjUyMzYw
+MDAxLC0yMDg4NzY1NzMsLTIwMjA4NjY1MTFdfQ==
 -->
