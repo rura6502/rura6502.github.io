@@ -52,7 +52,7 @@ BlokingQueue와 Dequeue를 상속하고 있다. 둘의 특성을 합친 것.
 
 ### TransferQueue
 
-BlokingQueue를 상속하고 있음. 
+BlokingQueue를 상속하고 있음. 생산자(큐에 데이터를 ㄴ소비자(Queue에서 
 
 ## refer to
 [Deque (Java Platform SE 8)](https://docs.oracle.com/javase/8/docs/api/java/util/Deque.html)
@@ -61,7 +61,7 @@ BlokingQueue를 상속하고 있음.
 [BlokingDeQueue (Java Platform SE 8)](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/BlockingDeque.html)
 [Why do we need Deque data structures in the real world? [closed]](https://stackoverflow.com/questions/3880254/why-do-we-need-deque-data-structures-in-the-real-world)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDk3ODEzMDkzLC0xMjQ2ODI0MDMxLDE3Nz
-AxNjY2MDcsNzA1MjI0Njk2LC0yNzI3NTY1NzQsMTA0MjQ3Njky
-MSwxNzI1MjM4NDUxXX0=
+eyJoaXN0b3J5IjpbLTg0MTA4OTA2OSw0OTc4MTMwOTMsLTEyND
+Y4MjQwMzEsMTc3MDE2NjYwNyw3MDUyMjQ2OTYsLTI3Mjc1NjU3
+NCwxMDQyNDc2OTIxLDE3MjUyMzg0NTFdfQ==
 -->
