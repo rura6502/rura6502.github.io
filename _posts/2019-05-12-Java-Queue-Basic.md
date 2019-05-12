@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Java Queue Basic
-date:   2019-05-12 00:00:00 0900
+date:   2019-05-12 00:00:00 +0900
 categories: [Data-Structure, Queue, Java]
 ---
 
