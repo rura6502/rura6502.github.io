@@ -17,7 +17,7 @@ ExecutorService executorService = Executors.new******* // 다양한 ExecutorServ
 
 쓰레드 운용 특성에 따라 여러가지 쓰레드 풀을 생성할 수 있음
 
-* newFixedThreadPool : 정해진 크기(쓰레드 갯수)를 가진 풀을 생성함. 가용할 수 있는 모든 쓰레드를 모두 사용중ㅇ
+* newFixedThreadPool : 정해진 크기(쓰레드 갯수)를 가진 풀을 생성함. 가용할 수 있는 모든 쓰레드를 모두 사용 중일 경우에 여유 쓰레드가 생길 때 까지 큐에 대기시킴. 
 * newSingleSthreadExecutor : 쓰레드를 하나만 운용. 하나만 운용하므로 Thread-Safe(동기화 문제가 발생하지 않음)를 보장함. 
 * 
 
@@ -28,7 +28,7 @@ ExecutorService executorService = Executors.new******* // 다양한 ExecutorServ
 [Java Single Thread Executor](https://farenda.com/java/java-single-thread-executor/)
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5NTY0Mjc3NSwtMTk4Nzk5MjAwLC0xMj
+eyJoaXN0b3J5IjpbLTU3NjAzNTA5OCwtMTk4Nzk5MjAwLC0xMj
 U3NDkzMDU2LDEyMDAyMzYzNTYsLTIwNjM2NTAxMjEsLTE5MjM0
 NjcxNjUsLTEwNjE0MTE1MjcsMjExMzM5MDE0NSwtODg5NzIxNj
 gwXX0=
