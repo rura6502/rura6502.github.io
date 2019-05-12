@@ -15,12 +15,15 @@ ExecutorService를 생성하는 방식은 다양한데 대표적으로 static으
 ExecutorService executorService = Executors.new******* // 다양한 ExecutorService, Pool을 만들 수 있음
 ```
 
+쓰레드 운용 특성에 따라 여러가지 쓰레드 풀을 생성할 수 있음
+
+* newSingleSthreadExecutor : 
 
 
 #### refer to
 [java-executor-service-tutorial](https://www.baeldung.com/java-executor-service-tutorial)
 [Executors (Java Platform SE 7 )](https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/Executors.html)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjM0NjcxNjUsLTEwNjE0MTE1MjcsMj
-ExMzM5MDE0NSwtODg5NzIxNjgwXX0=
+eyJoaXN0b3J5IjpbLTIwNTM1NzkxMTgsLTE5MjM0NjcxNjUsLT
+EwNjE0MTE1MjcsMjExMzM5MDE0NSwtODg5NzIxNjgwXX0=
 -->
