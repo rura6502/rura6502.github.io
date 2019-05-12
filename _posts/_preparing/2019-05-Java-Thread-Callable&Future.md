@@ -60,8 +60,10 @@ class CallableTest implements Callable<String> {  // 직원2
 Hi!
 ```
 
-여기서 유의해야 할 점은 어쨋든 ```Future```의 결과물을 
+여기서 유의해야 할 점은 어쨋든 ```Future```의 결과물을 받기 위해선 최종적으로 해당 Future를 발행한 쓰레드가 반환할 때 까지 기다려야 한다는 것이다.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODUyMjM4OTcsLTEwMzkzNDE1MDYsLT
-E5NTgwODg1NDJdfQ==
+eyJoaXN0b3J5IjpbODA4NTQ0Nzc4LC0xMDM5MzQxNTA2LC0xOT
+U4MDg4NTQyXX0=
 -->
