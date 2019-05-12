@@ -2,7 +2,7 @@
 layout: post
 title:  Java Thread Callable & Future
 date:  2019-05-11 00:00:00 +0900
-categories: [Thread, Java, Spring, Spring Boot]
+categories: [Thread, Java]
 ---
 
 ## Callable & Future
@@ -80,6 +80,6 @@ ExecutorService에서는 Future를 다루는 몇가지 메소드가 있는데 �
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDI2MDAxODE3LC05MTM3NTYxOTQsODA4NT
-Q0Nzc4LC0xMDM5MzQxNTA2LC0xOTU4MDg4NTQyXX0=
+eyJoaXN0b3J5IjpbLTE4NjQ1NDk4NywtOTEzNzU2MTk0LDgwOD
+U0NDc3OCwtMTAzOTM0MTUwNiwtMTk1ODA4ODU0Ml19
 -->
