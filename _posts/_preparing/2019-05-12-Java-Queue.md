@@ -42,7 +42,8 @@ First In First Out 방식의 자료구조. 데이터가 들어가는(입력) 큐
 아래의 특징들이 있음
 
 * null을 허용하지 않음. null을 넣으려고 하면 ```NullPointerException```이 발생함. null은 poll operation 시도 시 큐가 비어있을 때만 반환됨.
-* 대부분의 
+* bounded queue, 용량이 제한되어 있는 큐일 수 있음
+* 
 
 
 
@@ -56,6 +57,6 @@ First In First Out 방식의 자료구조. 데이터가 들어가는(입력) 큐
 [Deque (Java Platform SE 8](https://docs.oracle.com/javase/8/docs/api/java/util/Deque.html)
 [Why do we need Deque data structures in the real world? [closed]](https://stackoverflow.com/questions/3880254/why-do-we-need-deque-data-structures-in-the-real-world)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDAyMjQ5MDksNzA1MjI0Njk2LC0yNz
-I3NTY1NzQsMTA0MjQ3NjkyMSwxNzI1MjM4NDUxXX0=
+eyJoaXN0b3J5IjpbMTc3MDE2NjYwNyw3MDUyMjQ2OTYsLTI3Mj
+c1NjU3NCwxMDQyNDc2OTIxLDE3MjUyMzg0NTFdfQ==
 -->
