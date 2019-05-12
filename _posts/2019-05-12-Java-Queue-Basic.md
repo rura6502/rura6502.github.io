@@ -13,7 +13,8 @@ First In First Out 방식의 자료구조. 데이터가 들어가는(입력) 큐
 
 큐에 크기가 정해져 있느냐 없느냐에 따라 두 가지 용어가 사용됨.
 
-* Unbounded Queue : 큐의 크기가 정해져 이
+* Unbounded Queue : 큐의 크기가 정해져 있지 않음
+* Bounded 
 
 ## Java Queue
 
@@ -65,5 +66,5 @@ BlokingQueue를 상속하고 있음. 생산자(큐에 데이터를 넣는 측, P
 [BlokingDeQueue (Java Platform SE 8)](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/BlockingDeque.html)
 [Why do we need Deque data structures in the real world? [closed]](https://stackoverflow.com/questions/3880254/why-do-we-need-deque-data-structures-in-the-real-world)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODIzMDE0MTcyXX0=
+eyJoaXN0b3J5IjpbMTAxMDM2MzQyMV19
 -->
