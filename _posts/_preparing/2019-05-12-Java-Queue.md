@@ -45,9 +45,12 @@ First In First Out 방식의 자료구조. 데이터가 들어가는(입력) 큐
 * bounded queue, 용량이 제한되어 있는 큐일 수 있음
 * Tread-Safe. 큐에서 제공하는 모든 메소드는 lock을 사용하거나 currency control을 사용함. 
 * Collection을 상속하였으므로 ```addAll, containsAll, retainAll``` 같은 ```bulk Collectio operation```을 사용할 수 있는데 안쓰는 것이 좋음. 작업중 일부가 실패할 수 있음.
-* 
 
+### BlokingDequeue
 
+BlokingQueue와 Dequeue를 상속하고 있다. 둘의 특성을 합친 것.
+
+### TransferQueue
 * BlockingDequeue : 
 * BlockingQueue :
 * Deque :
@@ -58,7 +61,7 @@ First In First Out 방식의 자료구조. 데이터가 들어가는(입력) 큐
 [Deque (Java Platform SE 8](https://docs.oracle.com/javase/8/docs/api/java/util/Deque.html)
 [Why do we need Deque data structures in the real world? [closed]](https://stackoverflow.com/questions/3880254/why-do-we-need-deque-data-structures-in-the-real-world)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDY4MjQwMzEsMTc3MDE2NjYwNyw3MD
-UyMjQ2OTYsLTI3Mjc1NjU3NCwxMDQyNDc2OTIxLDE3MjUyMzg0
-NTFdfQ==
+eyJoaXN0b3J5IjpbLTE3OTM2NDk0MTYsLTEyNDY4MjQwMzEsMT
+c3MDE2NjYwNyw3MDUyMjQ2OTYsLTI3Mjc1NjU3NCwxMDQyNDc2
+OTIxLDE3MjUyMzg0NTFdfQ==
 -->
