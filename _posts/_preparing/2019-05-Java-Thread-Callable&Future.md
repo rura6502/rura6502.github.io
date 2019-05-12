@@ -26,7 +26,7 @@ public interface Runnable {
 
 ```Callable```을 실행시킬 수 있는 ```ExecutorService.submit```은 ```Future```을 반환하는데 이는 일종의 티켓이나 확인찬스? 개념으로 사용됨. ```Callable```로 실행되는 쓰레드를 기다리지 않고 자기 작업을 하면서 나중에 그 리턴값이 필요할 경우에 리턴값을 ```Future.get()```으로 호출하여 반환받을 수 있음.
 
-> 직원1이 직원2에게 할일2을 맡기면 직원2는 직원1에게 '내가 할일2를 진행하고 있을께요. 당신은 할일1을 하고있다가 할일2에 대한 결과물이 필요해지면 나한테 말하세요' 라고 말한다.
+> 직원1이 직원2에게 작업2을 맡기면 직원2는 직원1에게 '내가 작업2를 진행하고 있을께요. 당신은 작업1을 하고있다가 작업2에 대한 결과물이 필요해지면 나한테 말하세요' 라고 말한다.
 
 ```java
 public class FutureBasic {
@@ -34,10 +34,10 @@ public class FutureBasic {
     System.out.println("[main] start @" + Thread.currentThread().getName());
     ExecutorService es = Executors.newSingleThreadExecutor();
     System.out.println("[main] start thread ---");
-    Future<String> result = es.submit(new CallableTest());  // 직원2에게 할일2를 요청하고 나중에 확인할 수 있는 찬스?를 얻는다.(Future)
-    System.out.println("[main] this is main job ---");  // 직원2에게 할일2를 줬으니 직원1은 할일1을 한다.
+    Future<String> result = es.submit(new CallableTest());  // 직원2에게 작업2를 요청하고 나중에 확인할 수 있는 찬스?를 얻는다.(Future)
+    System.out.println("[main] this is main job ---");  // 직원2에게 작업2를 줬으니 직원1은 작업1을 한다.
     System.out.println("[main] I will wait Futre...");
-    System.out.println(result.get());  // 할일2에 대한 결과물이 필요하니 직원2에게 할일2에 대한 결과물을 달라고 한다(get() 호출)
+    System.out.println(result.get());  // 작업2에 대한 결과물이 필요하니 직원2에게 작업2에 대한 결과물을 달라고 한다(get() 호출)
   }
 }
 class CallableTest implements Callable<String> {  // 직원2
@@ -50,7 +50,7 @@ class CallableTest implements Callable<String> {  // 직원2
   } 
 }
 
-// 결과 : 직원1(main)은 직원2(Thread)에게 할일2를 주고 자기는 
+// 결과 : 직원1(main)은 직원2(Thread)에게 작업2를 주고 자기는 작업1을 수행하였다. 나중에 작업2에 대한 결과물이 필요해지자 직원2에게 물어서(get() 호출) 그 결과물을 받았다.
 [main] start @main
 [main] start thread ---
 [main] this is main job ---
@@ -59,7 +59,9 @@ class CallableTest implements Callable<String> {  // 직원2
 [Thread] Job done in call()
 Hi!
 ```
+
+여기서 유의해야 할 점은 어쨋든 ```Future```의 결과물을 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ3MTY1NCwtMTAzOTM0MTUwNiwtMTk1OD
-A4ODU0Ml19
+eyJoaXN0b3J5IjpbLTE5ODUyMjM4OTcsLTEwMzkzNDE1MDYsLT
+E5NTgwODg1NDJdfQ==
 -->
