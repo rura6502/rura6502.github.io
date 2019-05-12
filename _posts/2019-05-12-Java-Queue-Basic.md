@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Java Queue Basic
-date:   2019-05-12 00:00:00 +0900
+date:   2019-05-12 00:00:00 0900
 categories: [Data-Structure, Queue, Java]
 ---
 
@@ -63,5 +63,6 @@ BlokingQueue를 상속하고 있음. 생산자(큐에 데이터를 넣는 측, P
 [BlokingDeQueue (Java Platform SE 8)](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/BlockingDeque.html)
 [Why do we need Deque data structures in the real world? [closed]](https://stackoverflow.com/questions/3880254/why-do-we-need-deque-data-structures-in-the-real-world)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0MDgyMjEyMywxMDEwMzYzNDIxXX0=
+eyJoaXN0b3J5IjpbMTcwNTY1MDE0MCwxOTQwODIyMTIzLDEwMT
+AzNjM0MjFdfQ==
 -->
