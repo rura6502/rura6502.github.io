@@ -19,7 +19,7 @@ ExecutorService executorService = Executors.new******* // 다양한 ExecutorServ
 
 * newFixedThreadPool : 정해진 크기(쓰레드 갯수)를 가진 풀을 생성함. 가용할 수 있는 모든 쓰레드를 모두 사용 중일 경우에 여유 쓰레드가 생길 때 까지 큐에 대기시킴. 
 * newSingleThreadExecutor: 쓰레드를 하나만 운용. 하나만 운용하므로 Thread-Safe(동기화 문제가 발생하지 않음)를 보장함. ```newFixedThreadPool(1)```과 똑같이 동작함.
-* newCachedThreadPool : 쓰레드를 필요한 갯수만큼 생성하는데 이전에 생성한 쓰레드를 재활용 함. 많은 short-lived asynchronous task를 생성하여 성능을 향상시킬 수 있음. 60초 동안 사용되지 않은 쓰레드는 풀에서 삭제됨. 글
+* newCachedThreadPool : 쓰레드를 필요한 갯수만큼 생성하는데 이전에 생성한 쓰레드를 재활용 함. 많은 short-lived asynchronous task를 생성하여 성능을 향상시킬 수 있음. 60초 동안 사용되지 않은 쓰레드는 풀에서 삭제됨. 그러므로 충분한 시간동안 사용되지 않은 풀 그 자체는 어떠한 쓰레드 리소스도 소모하지 않음. 
 
 
 ## refer to
@@ -28,7 +28,7 @@ ExecutorService executorService = Executors.new******* // 다양한 ExecutorServ
 [Java Single Thread Executor](https://farenda.com/java/java-single-thread-executor/)
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjc5NjQ1ODIsMTYxMzQxNzQ4NCwtNT
+eyJoaXN0b3J5IjpbLTExNzE3ODkyMjcsMTYxMzQxNzQ4NCwtNT
 c2MDM1MDk4LC0xOTg3OTkyMDAsLTEyNTc0OTMwNTYsMTIwMDIz
 NjM1NiwtMjA2MzY1MDEyMSwtMTkyMzQ2NzE2NSwtMTA2MTQxMT
 UyNywyMTEzMzkwMTQ1LC04ODk3MjE2ODBdfQ==
