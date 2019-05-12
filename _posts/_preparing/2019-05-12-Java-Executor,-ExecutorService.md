@@ -7,7 +7,8 @@ categories: [Java, Thread, Executor, ExecutorService]
 
 ## Java Executor, ExecutorService
 
-JDK에서는 Executor 인터페이스를 사용하여 쓰레드를 관리하고 이 쓰레드에서 수행되는 일을 테스크(Task) 라는 개념으로 부른다. ExecutorService는 Executor로 쌓여진 쓰레드의 풀을 만들고 관리해주는 객체이다. 
+JDK에서는 Executor 인터페이스를 사용하여 태스크를 관리 함. 태스크란 쓰레드가 특정 목적을 가지고 어떠한 작업을 수행할 때 태스크(Task) 라는 개념으로 부름.(쓰레드와 거의 동일한 개념으로 많이 불리어 지는 듯 함) ExecutorService는 T
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExMzM5MDE0NSwtODg5NzIxNjgwXX0=
+eyJoaXN0b3J5IjpbNTYwNDAwOTAxLDIxMTMzOTAxNDUsLTg4OT
+cyMTY4MF19
 -->
