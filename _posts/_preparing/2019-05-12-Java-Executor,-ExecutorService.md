@@ -22,7 +22,7 @@ ExecutorService executorService = Executors.new******* // 다양한 ExecutorServ
 * newCachedThreadPool : 쓰레드를 필요한 갯수만큼 생성하는데 이전에 생성한 쓰레드를 재활용 함. 많은 short-lived asynchronous task를 생성하여 성능을 향상시킬 수 있음. 60초 동안 사용되지 않은 쓰레드는 풀에서 삭제됨. 그러므로 충분한 시간동안 사용되지 않은 풀 그 자체는 어떠한 쓰레드 리소스도 소모하지 않음.  ```ThreadPoolExecutor```를 사용하여 생성할 경우 세부 프로퍼티를 설정할 수 있음(thread timeout 등)
 * newSingleThreadScheduledExecutor : ```newSingleThreadExecutor```와 같으나 스케쥴링, 딜레이, 주기 등을 설정할 수 있음.
 * newScheduledThreadPool : 스케쥴링, 딜레이, 주기 등을 설정할 수 있는 쓰레드 풀을 생성.
-* newWorkStealingPool : jdk1.8 부터 추가, 파라미터로 전달된 '병렬 처리 수준(Parallelism Level)'에 맞는 적절한 스레드 갯수를 생성하여 운용. 또한 경합(Contention)을 줄이기 위한 다중 큐(Multiple Queue)를 운용. 
+* newWorkStealingPool : jdk1.8 부터 추가, 파라미터로 전달된 '병렬 처리 수준(Parallelism Level)'에 맞는 적절한 스레드 갯수를 생성하여 운용. 또한 경합(Contention)을 줄이기 위한 다중 큐(Multiple Queue)를 운용. 여기서 '병렬 처리 수준' 이란 테스크를 처리하기 위해 사용되어지는 중이거나 사용할 수 있는 스레드의
 
 ## refer to
 [java-executor-service-tutorial](https://www.baeldung.com/java-executor-service-tutorial)
@@ -30,9 +30,9 @@ ExecutorService executorService = Executors.new******* // 다양한 ExecutorServ
 [Java Single Thread Executor](https://farenda.com/java/java-single-thread-executor/)
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjA2OTI1ODc0LDE0NzcyOTQ3NTMsLTQ2MD
-g5MzkzNSwtMTE3MTc4OTIyNywxNjEzNDE3NDg0LC01NzYwMzUw
-OTgsLTE5ODc5OTIwMCwtMTI1NzQ5MzA1NiwxMjAwMjM2MzU2LC
-0yMDYzNjUwMTIxLC0xOTIzNDY3MTY1LC0xMDYxNDExNTI3LDIx
-MTMzOTAxNDUsLTg4OTcyMTY4MF19
+eyJoaXN0b3J5IjpbLTMyODAzOTk3NiwxNDc3Mjk0NzUzLC00Nj
+A4OTM5MzUsLTExNzE3ODkyMjcsMTYxMzQxNzQ4NCwtNTc2MDM1
+MDk4LC0xOTg3OTkyMDAsLTEyNTc0OTMwNTYsMTIwMDIzNjM1Ni
+wtMjA2MzY1MDEyMSwtMTkyMzQ2NzE2NSwtMTA2MTQxMTUyNywy
+MTEzMzkwMTQ1LC04ODk3MjE2ODBdfQ==
 -->
