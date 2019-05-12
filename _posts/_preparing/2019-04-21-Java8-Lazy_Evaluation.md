@@ -33,7 +33,11 @@ First In First Out 방식의 자료구조. 데이터가 들어가는(입력) 큐
 * BlockingQueue :
 * Deque :
 * TrasferQueue : 
+
+
+## refer to
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExNjEwODkyMiw1NzQ2NDA4OCwtNTY4ND
+eyJoaXN0b3J5IjpbMTQ1ODU4MDAzNSw1NzQ2NDA4OCwtNTY4ND
 I5NTE2XX0=
 -->
