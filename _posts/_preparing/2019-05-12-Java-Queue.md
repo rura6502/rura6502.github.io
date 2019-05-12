@@ -55,11 +55,13 @@ BlokingQueue와 Dequeue를 상속하고 있다. 둘의 특성을 합친 것.
 BlokingQueue를 상속하고 있음. 
 
 ## refer to
-[Deque (Java Platform SE 8](https://docs.oracle.com/javase/8/docs/api/java/util/Deque.html)
-[
+[Deque (Java Platform SE 8)](https://docs.oracle.com/javase/8/docs/api/java/util/Deque.html)
+[TransferQueue (Java Platform SE 8)](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TransferQueue.html)
+[BlokingQueue (Java Platform SE 8)](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/BlockingDeque.html)
+[BlokingQueue (Java Platform SE 8)](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/BlockingDeque.html)
 [Why do we need Deque data structures in the real world? [closed]](https://stackoverflow.com/questions/3880254/why-do-we-need-deque-data-structures-in-the-real-world)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0NzAwMzMyMSwtMTI0NjgyNDAzMSwxNz
-cwMTY2NjA3LDcwNTIyNDY5NiwtMjcyNzU2NTc0LDEwNDI0NzY5
-MjEsMTcyNTIzODQ1MV19
+eyJoaXN0b3J5IjpbLTM1NTEwNjYsLTEyNDY4MjQwMzEsMTc3MD
+E2NjYwNyw3MDUyMjQ2OTYsLTI3Mjc1NjU3NCwxMDQyNDc2OTIx
+LDE3MjUyMzg0NTFdfQ==
 -->
