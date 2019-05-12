@@ -30,8 +30,7 @@ First In First Out 방식의 자료구조. 데이터가 들어가는(입력) 큐
 
 ```deck``` 이라고도 부름. 큐의 양 끝(tail, head)에서 입력, 출력을 다 할 수 있음.
 
-> 예시. 보통 사람들은 카드패를 돌릴 때 카드 더미에서 맨 위 혹은 맨 아래 카드를 준다. 위를 주던, 아래를 주던 주는 사람 마음이지만 굳이 번거롭게 중간에서 꺼내서 주진 않는다.
-> 예시. 웹브라우저의 히스토리는 
+> 예시. 보통 사람들은 카드패를 돌릴 때 카드 더미에서 맨 위 혹은 맨 아래 카드를 준다. 위를 주던, 아래를 주던 주는 사람 마음이지만 굳이 번거롭게 중간에서 꺼내서 주진 않는다. 또한 
 
 ### BlokingQueue
 
@@ -47,5 +46,6 @@ First In First Out 방식의 자료구조. 데이터가 들어가는(입력) 큐
 [Deque (Java Platform SE 8](https://docs.oracle.com/javase/8/docs/api/java/util/Deque.html)
 [Why do we need Deque data structures in the real world? [closed]](https://stackoverflow.com/questions/3880254/why-do-we-need-deque-data-structures-in-the-real-world)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0MjQ3NjkyMSwxNzI1MjM4NDUxXX0=
+eyJoaXN0b3J5IjpbMTI3NjQ1MTI0NiwxMDQyNDc2OTIxLDE3Mj
+UyMzg0NTFdfQ==
 -->
