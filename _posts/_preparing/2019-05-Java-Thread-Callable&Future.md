@@ -62,8 +62,10 @@ Hi!
 
 여기서 유의해야 할 점은 어쨋든 ```Future```의 결과물을 받기 위해선 최종적으로 해당 Future를 발행한 쓰레드가 반환할 때 까지 기다려야 한다는 것이다.
 
+### Future Interface
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODA4NTQ0Nzc4LC0xMDM5MzQxNTA2LC0xOT
-U4MDg4NTQyXX0=
+eyJoaXN0b3J5IjpbLTEyNjkyNDc0NDMsODA4NTQ0Nzc4LC0xMD
+M5MzQxNTA2LC0xOTU4MDg4NTQyXX0=
 -->
