@@ -71,12 +71,15 @@ Hi!
 ExecutorService에서는 Future를 다루는 몇가지 메소드가 있는데 대표적으로 ```Callable```가 여러개일 경우 ```List```로 받아서 실행시키고 그 결과를 ```List<Future>```로 받거나 ```Runnable```을 실행하고 정상적으로 끝날 경우 지정한 ```T```를 반환하는 경우가 있다.
 
 * <T> List<Future<T>> invokeAll(Collection<? extends Callable<T>> tasks)
-* <T> List<Future<T>> invokeAll(Collection<? extends Callable<T>> tasks, long timeout, TimeU)
+* <T> List<Future<T>> invokeAll(Collection<? extends Callable<T>> tasks, long timeout, TimeUnit unit)
+* <T> Future<T> submit(Callable<T> task)
+* Future<?> submit(Runnable task) : 정상 종료되면  null을 반환한다.
+* <T> Future<T> submit(Runnable task, T result)
 
-### 
+### Future's implemeation
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjI1MDA1NTI3LDgwODU0NDc3OCwtMTAzOT
-M0MTUwNiwtMTk1ODA4ODU0Ml19
+eyJoaXN0b3J5IjpbLTkxMzc1NjE5NCw4MDg1NDQ3NzgsLTEwMz
+kzNDE1MDYsLTE5NTgwODg1NDJdfQ==
 -->
