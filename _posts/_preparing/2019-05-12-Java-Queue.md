@@ -36,7 +36,9 @@ First In First Out 방식의 자료구조. 데이터가 들어가는(입력) 큐
 
 큐에서 입/출력이 발생할 때 문제가 생기는 경우, 예를들어 입력 시 큐가 꽉 차있거나 출력 시 큐가 비어있을 때 쓰레드를 대기시켜서 해당 문제가 해결될 때까지 대기(Blocking) 시킴. 해결이란 아래를 의미.
 
-* 출력ㅇ
+* 출력이 대기 중일 경우 : 큐에 새로운 요소가 들어와서 '출력'이 가능해질 때 까지
+* 입력이 대기 중인 경우 : 큐에 새로운 요소가 들어갈 자리가 생겨서 '입력'이 가능하질 때 까지
+
 
 
 * BlockingDequeue : 
@@ -49,6 +51,6 @@ First In First Out 방식의 자료구조. 데이터가 들어가는(입력) 큐
 [Deque (Java Platform SE 8](https://docs.oracle.com/javase/8/docs/api/java/util/Deque.html)
 [Why do we need Deque data structures in the real world? [closed]](https://stackoverflow.com/questions/3880254/why-do-we-need-deque-data-structures-in-the-real-world)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxODE5MTE3MSwtMjcyNzU2NTc0LDEwND
+eyJoaXN0b3J5IjpbLTM2OTY5NzYxNCwtMjcyNzU2NTc0LDEwND
 I0NzY5MjEsMTcyNTIzODQ1MV19
 -->
