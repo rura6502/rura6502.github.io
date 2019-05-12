@@ -14,7 +14,7 @@ public interface Runnable {
     public abstract void run();  // 반환이 void 이다.
 }
 ```
-이러한 반환값을 받을 수 없는 단점을 보완하는 ```java.util.concurrent.Callable``` 인터페이스가 있는 이를 사용하여 리턴값을 받을 수 있음. 
+이러한 반환값을 받을 수 없는 단점을 보완하는 ```java.util.concurrent.Callable``` 인터페이스가 있어 이를 사용하여 리턴값을 받을 수 있음. 
 
 일반적으로 쓰레드의 경우는 각각 별개로 움직여서 쓰레드간에 시작/종료가 다른 쓰레드에 영향을 미치지 않음. 예를들어 메인쓰레드에서 실행시킨 쓰레드1~10은 각각의 쓰레드가 실행되거나 종료되거나 상관 없이 각자 할일을 마치고 사라지는 형태임. 
 
@@ -24,12 +24,14 @@ public interface Runnable {
 
 > 직원1이 직원2에게 할일2의 결과물을 받으려면 직원2가 할일2를 모두 끝낼 때 까지 기다려야 한다.
 
-```Callable```을 실행시킬 수 있는 ```ExecutorService.submit```은 ```Future```을 반환하는데
+```Callable```을 실행시킬 수 있는 ```ExecutorService.submit```은 ```Future```을 반환하는데 이는 일종의 티켓이나 확인찬스? 개념으로 사용됨. 
+
+
 을 사용하여 리턴값을 받아서 사용해야 하는 경우엔 리턴값을 반환하는 쓰레드가 끝날 때 까지 기다려야 하고 기다리는 동안 아무것도 못하는 상황이 발생함. 사실상 쓰레드가 제공하는 비동기성을 기대할 수 없음.. 이 부분에서 ```Future```가 이 기다림을 일정부분 유용하게 사용되는데 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0NDYxMzE3LC0xMDM5MzQxNTA2LC0xOT
+eyJoaXN0b3J5IjpbMTMyODQwMzQ2LC0xMDM5MzQxNTA2LC0xOT
 U4MDg4NTQyXX0=
 -->
