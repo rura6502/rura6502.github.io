@@ -34,10 +34,10 @@ public class FutureBasic {
     System.out.println("[main] start @" + Thread.currentThread().getName());
     ExecutorService es = Executors.newSingleThreadExecutor();
     System.out.println("[main] start thread ---");
-    Future<String> result = es.submit(new CallableTest());
-    System.out.println("[main] this is main job ---");
+    Future<String> result = es.submit(new CallableTest());  // 직원2에게 할일2를 요청하고 나중에 확인할 수 있는 찬스?를 얻는다.(Future)
+    System.out.println("[main] this is main job ---");  // 직원2에게 할일2를 줬으니 직원1은 할일1을 한다.
     System.out.println("[main] I will wait Futre...");
-    System.out.println(result.get());
+    System.out.println(result.get());  // 할일2에 대한 결과물이 필요하니 직원2에게 할일2에 대한 결과물을 달라고 한다(get() 호출)
   }
 }
 class CallableTest implements Callable<String> {  // 직원2
@@ -52,6 +52,6 @@ class CallableTest implements Callable<String> {  // 직원2
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzcyOTkwNjcsLTEwMzkzNDE1MDYsLT
-E5NTgwODg1NDJdfQ==
+eyJoaXN0b3J5IjpbMTY3NDAwMzEwMiwtMTAzOTM0MTUwNiwtMT
+k1ODA4ODU0Ml19
 -->
