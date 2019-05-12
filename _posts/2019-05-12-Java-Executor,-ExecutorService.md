@@ -2,7 +2,7 @@
 layout: post
 title:  Java Executor, ExecutorService
 date:   2019-05-12 00:00:00 +0900
-categories: [Java, Thread, Executor, ExecutorService]
+categories: [Executor, ExecutorService, Java, Thread]
 ---
 
 ## Java Executor, ExecutorService
@@ -61,5 +61,5 @@ pool-1-thread-1
 [Java Single Thread Executor](https://farenda.com/java/java-single-thread-executor/)
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTU5MjI5Nzg5XX0=
+eyJoaXN0b3J5IjpbLTExNTEyNzU2NTksOTU5MjI5Nzg5XX0=
 -->
