@@ -15,10 +15,11 @@ ExecutorService를 생성하는 방식은 다양한데 대표적으로 static으
 ExecutorService executorService = Executors.new******* // 다양한 ExecutorService, Pool을 만들 수 있음
 ```
 
-##### refer
 
-!([https://www.baeldung.com/java-executor-service-tutorial](https://www.baeldung.com/java-executor-service-tutorial))[]
+
+#### refer to
+[java-executor-service-tutorial](https://www.baeldung.com/java-executor-service-tutorial)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDUyMjI1NzQsLTEwNjE0MTE1MjcsMj
-ExMzM5MDE0NSwtODg5NzIxNjgwXX0=
+eyJoaXN0b3J5IjpbMzc0MDYzOTI2LC0xMDYxNDExNTI3LDIxMT
+MzOTAxNDUsLTg4OTcyMTY4MF19
 -->
