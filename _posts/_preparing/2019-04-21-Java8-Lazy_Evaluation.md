@@ -11,7 +11,7 @@ First In First Out 방식의 자료구조. 데이터가 들어가는(입력) 큐
 
 ## Java Queue
 
-자바에서는 ```java.util.Queue``` 인터페이스에 큐를 정의해 놓았음. 메소드로는 4가지가 추상화 정의되어 있음.
+자바에서는 ```java.util.Queue``` 인터페이스에 큐를 정의해 놓았음. Iterable, Collection을 상속하고 있어 순회가능한 컬렉션의 일종으로 보면 됨. 메소드로는 4가지가 추상화 정의되어 있음.
 
 * boolean add(E e) : 큐에 새로운 엘리먼트를 추가. 큐에 추가될 여유 사이즈가 없으면 ```IllegalStateException```을 발생시킴.
 * boolean offer(E e) : ```add```와 매우 비슷하게 동작하나 다른점은 큐에 사이즈가 없을 경우 ```False```를 반환. ```add```보다 더 좋다고 설명함.
@@ -20,14 +20,15 @@ First In First Out 방식의 자료구조. 데이터가 들어가는(입력) 큐
 * E element() : 큐에서 현재 head에 있는 엘리먼트를 반환하는데 ```remove```나 ```pool``` 처럼 지우진 않고 그냥 가져옴. 가져올 것이 없으면 ```NoSuchElementException```
 * E peek() : ```element```와 같으나 가져올 것이 없으면 ```null```을 반환함.
 
-사실 이 큐도 Collection, Iterable을 상속하고 있음. 쉽게말해서 순회가능한 콜렉션의 일종.
-
 ## Java Queue Subinterface
 
 크게 4가지의 Subinterface를 구현해놓고 그 아래 특성에 따라 매우 많은 Queue 구현체들이 있음.
 
-* BlockingDequeue
+* BlockingDequeue : 
+* BlockingQueue :
+* Deque :
+* TrasferQueue : 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0OTc2NjkzOCw1NzQ2NDA4OCwtNTY4ND
+eyJoaXN0b3J5IjpbMTU3MzgyNDc0Myw1NzQ2NDA4OCwtNTY4ND
 I5NTE2XX0=
 -->
