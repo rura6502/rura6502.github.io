@@ -26,14 +26,32 @@ public interface Runnable {
 
 ```Callable```을 실행시킬 수 있는 ```ExecutorService.submit```은 ```Future```을 반환하는데 이는 일종의 티켓이나 확인찬스? 개념으로 사용됨. ```Callable```로 실행되는 쓰레드를 기다리지 않고 자기 할일을 하면서 나중에 그 리턴값이 필요할 경우에 리턴값을 ```Future.get()```으로 호출하여 반환받을 수 있음.
 
-> 직원1이 직원2에게 할일2을 맡기면 직원2는 직원1에게 '내가 할일2를 하고 있을
+> 직원1이 직원2에게 할일2을 맡기면 직원2는 직원1에게 '내가 할일2를 진행하고 있을께요. 당신은 할일1을 하고있다가 할일2에 대한 결과물이 필요해지면 나한테 말하세요' 라고 말한다.
 
-
-을 사용하여 리턴값을 받아서 사용해야 하는 경우엔 리턴값을 반환하는 쓰레드가 끝날 때 까지 기다려야 하고 기다리는 동안 아무것도 못하는 상황이 발생함. 사실상 쓰레드가 제공하는 비동기성을 기대할 수 없음.. 이 부분에서 ```Future```가 이 기다림을 일정부분 유용하게 사용되는데 
-
-
-
+```java
+public class FutureBasic {
+  public static void main(String[] args) throws InterruptedException, ExecutionException {  // 직원1
+    System.out.println("[main] start @" + Thread.currentThread().getName());
+    ExecutorService es = Executors.newSingleThreadExecutor();
+    System.out.println("[main] start thread ---");
+    Future<String> result = es.submit(new CallableTest());
+    System.out.println("[main] this is main job ---");
+    System.out.println("[main] I will wait Futre...");
+    System.out.println(result.get());
+  }
+}
+class CallableTest implements Callable<String> {  // 직원2
+  @Override
+  public String call() throws Exception {
+    System.out.println("[Thread] Job start in call() is @" + Thread.currentThread().getName());
+    Thread.sleep(1000);
+    System.out.println("[Thread] Job done in call()");
+    return "Hi!";
+  }
+  
+}
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjc2MDA2MDcsLTEwMzkzNDE1MDYsLT
+eyJoaXN0b3J5IjpbLTE1MzcyOTkwNjcsLTEwMzkzNDE1MDYsLT
 E5NTgwODg1NDJdfQ==
 -->
