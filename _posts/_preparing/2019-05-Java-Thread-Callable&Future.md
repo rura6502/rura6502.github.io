@@ -60,12 +60,13 @@ class CallableTest implements Callable<String> {  // 직원2
 Hi!
 ```
 
-여기서 유의해야 할 점은 어쨋든 ```Future```의 결과물을 받기 위해선 최종적으로 해당 Future를 발행한 쓰레드가 반환할 때 까지 기다려야 한다는 것이다.
-
+여기서 유의해야 할 점은 어쨋든 ```Future```의 결과물을 받기 위해선 최종적으로 해당 Future를 발행한 쓰레드가 반환할 때 까지 기다려야 한다는 것이다. ```Future``
 ### Future Interface
 
-
+* boolean cancel : 말그대로 취소한다. 실행중일 경우 ```Interrupt```를 발생시킨다.
+* boolean isCancelled : 취소되었는지 확인한다.
+* is
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjkyNDc0NDMsODA4NTQ0Nzc4LC0xMD
-M5MzQxNTA2LC0xOTU4MDg4NTQyXX0=
+eyJoaXN0b3J5IjpbMTg2NjAxODIxMyw4MDg1NDQ3NzgsLTEwMz
+kzNDE1MDYsLTE5NTgwODg1NDJdfQ==
 -->
