@@ -25,7 +25,7 @@ for (int i=0; i<10; i++) {
     System.out.println(Thread.currentThread().getName());
   });
 }
-// 결과 : 5개의 스레드가 활동하였음
+// 결과 : 5개의 스레드가 활동하였음.
 pool-1-thread-1
 pool-1-thread-2
 pool-1-thread-2
@@ -45,7 +45,7 @@ for (int i=0; i<3; i++) {
 	System.out.println(Thread.currentThread().getName());
   });
 }
-// 결과 : 1
+// 결과 : 1개의 쓰레드만 활동하였음.
 pool-1-thread-1
 pool-1-thread-1
 pool-1-thread-1
@@ -61,7 +61,7 @@ pool-1-thread-1
 [Java Single Thread Executor](https://farenda.com/java/java-single-thread-executor/)
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwMDYyMDk3MywxODMzOTM3NjQzLDE0Nz
+eyJoaXN0b3J5IjpbLTUxNDE0NDI5MiwxODMzOTM3NjQzLDE0Nz
 cyOTQ3NTMsLTQ2MDg5MzkzNSwtMTE3MTc4OTIyNywxNjEzNDE3
 NDg0LC01NzYwMzUwOTgsLTE5ODc5OTIwMCwtMTI1NzQ5MzA1Ni
 wxMjAwMjM2MzU2LC0yMDYzNjUwMTIxLC0xOTIzNDY3MTY1LC0x
