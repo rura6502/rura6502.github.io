@@ -51,17 +51,15 @@ First In First Out 방식의 자료구조. 데이터가 들어가는(입력) 큐
 BlokingQueue와 Dequeue를 상속하고 있다. 둘의 특성을 합친 것.
 
 ### TransferQueue
-* BlockingDequeue : 
-* BlockingQueue :
-* Deque :
-* TrasferQueue : 
 
+BlokingQueue를 상속하고 있음. 
 
 ## refer to
 [Deque (Java Platform SE 8](https://docs.oracle.com/javase/8/docs/api/java/util/Deque.html)
+[
 [Why do we need Deque data structures in the real world? [closed]](https://stackoverflow.com/questions/3880254/why-do-we-need-deque-data-structures-in-the-real-world)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTM2NDk0MTYsLTEyNDY4MjQwMzEsMT
-c3MDE2NjYwNyw3MDUyMjQ2OTYsLTI3Mjc1NjU3NCwxMDQyNDc2
-OTIxLDE3MjUyMzg0NTFdfQ==
+eyJoaXN0b3J5IjpbMTQ0NzAwMzMyMSwtMTI0NjgyNDAzMSwxNz
+cwMTY2NjA3LDcwNTIyNDY5NiwtMjcyNzU2NTc0LDEwNDI0NzY5
+MjEsMTcyNTIzODQ1MV19
 -->
