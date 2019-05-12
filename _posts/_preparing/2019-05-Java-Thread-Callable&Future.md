@@ -68,12 +68,15 @@ Hi!
 * V get : 리턴값을 받아온다.
 * V get(long timeout, TimeUnit unit) : 리턴값을 받아오는데 timeout시간이 지날 경우 ```TimeoutException```을 발생시킨다.
 
-ExecutorService에서는 Future를 다루는 몇가지 메소드가 있는데 대표적으로 Callable가 여러개일 경우 List로 받아서 실행시키고 그 결과를 List<Future>로 받거나 Runnable을 실행하고 정상적으로 ㄲ
+ExecutorService에서는 Future를 다루는 몇가지 메소드가 있는데 대표적으로 ```Callable```가 여러개일 경우 ```List```로 받아서 실행시키고 그 결과를 ```List<Future>```로 받거나 ```Runnable```을 실행하고 정상적으로 끝날 경우 지정한 ```T```를 반환하는 경우가 있다.
+
+* <T> List<Future<T>> invokeAll(Collection<? extends Callable<T>> tasks)
+* <T> List<Future<T>> invokeAll(Collection<? extends Callable<T>> tasks, long timeout, TimeU)
 
 ### 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDY0MDc2OCw4MDg1NDQ3NzgsLTEwMz
-kzNDE1MDYsLTE5NTgwODg1NDJdfQ==
+eyJoaXN0b3J5IjpbMjI1MDA1NTI3LDgwODU0NDc3OCwtMTAzOT
+M0MTUwNiwtMTk1ODA4ODU0Ml19
 -->
