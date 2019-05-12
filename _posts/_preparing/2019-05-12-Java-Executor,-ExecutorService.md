@@ -19,7 +19,8 @@ ExecutorService executorService = Executors.new******* // 다양한 ExecutorServ
 
 #### refer to
 [java-executor-service-tutorial](https://www.baeldung.com/java-executor-service-tutorial)
+[Executors (Java Platform SE 7 )](https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/Executors.html)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzc0MDYzOTI2LC0xMDYxNDExNTI3LDIxMT
-MzOTAxNDUsLTg4OTcyMTY4MF19
+eyJoaXN0b3J5IjpbLTE5MjM0NjcxNjUsLTEwNjE0MTE1MjcsMj
+ExMzM5MDE0NSwtODg5NzIxNjgwXX0=
 -->
