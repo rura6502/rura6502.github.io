@@ -17,14 +17,17 @@ ExecutorService executorService = Executors.new******* // 다양한 ExecutorServ
 
 쓰레드 운용 특성에 따라 여러가지 쓰레드 풀을 생성할 수 있음
 
-* newSingleSthreadExecutor : 쓰레드를 하나만 운용. 하나만 운용하므로 Thread-Safe를 보장함.
+* newSingleSthreadExecutor : 쓰레드를 하나만 운용. 하나만 운용하므로 Thread-Safe(동기화 문제가 발생하지 않음)를 보장함.
 * 
 
 
 #### refer to
 [java-executor-service-tutorial](https://www.baeldung.com/java-executor-service-tutorial)
 [Executors (Java Platform SE 7 )](https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/Executors.html)
+ [Java Single Thread Executor](https://farenda.com/java/java-single-thread-executor/)
+ 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjM2NTAxMjEsLTE5MjM0NjcxNjUsLT
-EwNjE0MTE1MjcsMjExMzM5MDE0NSwtODg5NzIxNjgwXX0=
+eyJoaXN0b3J5IjpbMTIwMDIzNjM1NiwtMjA2MzY1MDEyMSwtMT
+kyMzQ2NzE2NSwtMTA2MTQxMTUyNywyMTEzMzkwMTQ1LC04ODk3
+MjE2ODBdfQ==
 -->
