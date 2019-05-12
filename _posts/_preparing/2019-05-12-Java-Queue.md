@@ -52,7 +52,7 @@ BlokingQueue와 Dequeue를 상속하고 있다. 둘의 특성을 합친 것.
 
 ### TransferQueue
 
-BlokingQueue를 상속하고 있음. 생산자(큐에 데이터를 ㄴ소비자(Queue에서 
+BlokingQueue를 상속하고 있음. 생산자(큐에 데이터를 넣는 측, Producer)는 소비자(큐에서 데이터를 가져가는 측, Consumer)가 엘리먼트를 가져갈 때 까지 기다린다.
 
 ## refer to
 [Deque (Java Platform SE 8)](https://docs.oracle.com/javase/8/docs/api/java/util/Deque.html)
@@ -61,7 +61,7 @@ BlokingQueue를 상속하고 있음. 생산자(큐에 데이터를 ㄴ소비자(
 [BlokingDeQueue (Java Platform SE 8)](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/BlockingDeque.html)
 [Why do we need Deque data structures in the real world? [closed]](https://stackoverflow.com/questions/3880254/why-do-we-need-deque-data-structures-in-the-real-world)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0MTA4OTA2OSw0OTc4MTMwOTMsLTEyND
-Y4MjQwMzEsMTc3MDE2NjYwNyw3MDUyMjQ2OTYsLTI3Mjc1NjU3
-NCwxMDQyNDc2OTIxLDE3MjUyMzg0NTFdfQ==
+eyJoaXN0b3J5IjpbLTE4ODY4ODQ2NTEsNDk3ODEzMDkzLC0xMj
+Q2ODI0MDMxLDE3NzAxNjY2MDcsNzA1MjI0Njk2LC0yNzI3NTY1
+NzQsMTA0MjQ3NjkyMSwxNzI1MjM4NDUxXX0=
 -->
