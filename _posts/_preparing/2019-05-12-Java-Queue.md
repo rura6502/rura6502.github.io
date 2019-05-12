@@ -44,6 +44,7 @@ First In First Out 방식의 자료구조. 데이터가 들어가는(입력) 큐
 
 ## refer to
 [Deque (Java Platform SE 8](https://docs.oracle.com/javase/8/docs/api/java/util/Deque.html)]
+# [Why do we need Deque data structures in the real world? [closed]](https://stackoverflow.com/questions/3880254/why-do-we-need-deque-data-structures-in-the-real-world)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyNTIzODQ1MV19
+eyJoaXN0b3J5IjpbLTIwNTg0MjY4NjgsMTcyNTIzODQ1MV19
 -->
