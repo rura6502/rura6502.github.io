@@ -9,7 +9,7 @@ categories: [Data-Structure, Queue, Java]
 
 First In First Out 방식의 자료구조. 데이터가 들어가는(입력) 큐의 입구는 tail/rear, 나오는 출구(출력)는 head/front 라고 부름.
 
-> 예시. 음식점에 줄(Queue)은 먼저온 사람(First)이 제일 앞에 서서(In) 자리가 나면 제일 먼저(First) 먹을 수(Out) 있다. 
+> 음식점에 줄(Queue)은 먼저온 사람(First)이 제일 앞에 서서(In) 자리가 나면 제일 먼저(First) 먹을 수(Out) 있다. 
 
 큐에 크기가 정해져 있느냐 없느냐에 따라 Unbounded Queue(큐의 크기가 정해져 있지 않음), Bounded Queue(큐의 크기가 정해져 있음) 라고 불리기도 함.
 
@@ -32,7 +32,7 @@ First In First Out 방식의 자료구조. 데이터가 들어가는(입력) 큐
 
 ```deck``` 이라고도 부름. 큐의 양 끝(tail, head)에서 입력, 출력을 다 할 수 있음.
 
-> 예시. 보통 사람들은 카드패를 돌릴 때 카드 더미에서 맨 위 혹은 맨 아래 카드를 준다. 위를 주던, 아래를 주던(head와 tail에서 출력이 가능) 주는 사람 마음이지만 굳이 번거롭게 중간에서 꺼내서 주진 않는다. 또한 상대방에게 카드를 받았을 때 카드 더미의 위에 얹거나 아래에 나두고 더미로 덮지(head와 tail에서의 입력) 일일이 중간에 끼워넣거나 하는 경우는 잘 없다.(약간의 억지...)
+> 보통 사람들은 카드패를 돌릴 때 카드 더미에서 맨 위 혹은 맨 아래 카드를 준다. 위를 주던, 아래를 주던(head와 tail에서 출력이 가능) 주는 사람 마음이지만 굳이 번거롭게 중간에서 꺼내서 주진 않는다. 또한 상대방에게 카드를 받았을 때 카드 더미의 위에 얹거나 아래에 나두고 더미로 덮지(head와 tail에서의 입력) 일일이 중간에 끼워넣거나 하는 경우는 잘 없다.(약간의 억지...)
 
 ### BlokingQueue
 
@@ -63,6 +63,6 @@ BlokingQueue를 상속하고 있음. 생산자(큐에 데이터를 넣는 측, P
 [BlokingDeQueue (Java Platform SE 8)](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/BlockingDeque.html)
 [Why do we need Deque data structures in the real world? [closed]](https://stackoverflow.com/questions/3880254/why-do-we-need-deque-data-structures-in-the-real-world)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwNTY1MDE0MCwxOTQwODIyMTIzLDEwMT
+eyJoaXN0b3J5IjpbMTk0ODI3MDEyMywxNzA1NjUwMTQwLDEwMT
 AzNjM0MjFdfQ==
 -->
