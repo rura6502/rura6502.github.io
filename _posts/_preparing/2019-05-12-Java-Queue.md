@@ -28,7 +28,7 @@ First In First Out 방식의 자료구조. 데이터가 들어가는(입력) 큐
 
 ### Deque(Dobule-Ended Queue)
 
-```deck``` 이라고도 부름. 
+```deck``` 이라고도 부름. 큐의 양 끝(tail, head)에서 입력, 출력을 다 할 수 있음.
 
 ### BlokingQueue
 
@@ -43,5 +43,5 @@ First In First Out 방식의 자료구조. 데이터가 들어가는(입력) 큐
 ## refer to
 [Deque (Java Platform SE 8](https://docs.oracle.com/javase/8/docs/api/java/util/Deque.html)]
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQzMTIwNTA2XX0=
+eyJoaXN0b3J5IjpbLTU1MTk1Mzc4XX0=
 -->
