@@ -9,7 +9,7 @@ categories: [Data-Structure, Queue, Java]
 
 First In First Out 방식의 자료구조. 데이터가 들어가는(입력) 큐의 입구는 tail/rear, 나오는 출구(출력)는 head/front 라고 부름.
 
-> 예시. 음식점에 줄(Queue)은 먼저온 사람이 제일 앞에 서서 자리가 나면 제일 먼저 먹을 수 있다. 
+> 예시. 음식점에 줄(Queue)은 먼저온 사람(First)이 제일 앞에 서서(In) 자리가 나면 제일 먼저(First) 먹을 수(Out) 있다. 
 
 ## Java Queue
 
@@ -31,6 +31,6 @@ First In First Out 방식의 자료구조. 데이터가 들어가는(입력) 큐
 * Deque :
 * TrasferQueue : 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1NTYzNDM4MCw1NzQ2NDA4OCwtNTY4ND
+eyJoaXN0b3J5IjpbLTg2NTQyNTMwMyw1NzQ2NDA4OCwtNTY4ND
 I5NTE2XX0=
 -->
