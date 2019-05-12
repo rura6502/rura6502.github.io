@@ -9,7 +9,7 @@ categories: [Data-Structure, Queue, Java]
 First In First Out 방식의 자료구조
 
 ## Java Queue
-자바에서는 
+자바에서는 ```java.util.Queue``` 인터페이스에 q
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1MzY3OTc4NywtNTY4NDI5NTE2XX0=
+eyJoaXN0b3J5IjpbNTQ0MzQ2NzI5LC01Njg0Mjk1MTZdfQ==
 -->
