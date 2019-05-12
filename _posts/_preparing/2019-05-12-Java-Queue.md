@@ -39,6 +39,10 @@ First In First Out 방식의 자료구조. 데이터가 들어가는(입력) 큐
 * 출력이 대기 중일 경우 : 큐에 새로운 요소가 들어와서 '출력'이 가능해질 때 까지
 * 입력이 대기 중인 경우 : 큐에 새로운 요소가 들어갈 자리가 생겨서 '입력'이 가능하질 때 까지
 
+아래의 특징들이 있음
+
+* null을 허용하지 않음. null은 poll 
+
 
 
 * BlockingDequeue : 
@@ -51,6 +55,6 @@ First In First Out 방식의 자료구조. 데이터가 들어가는(입력) 큐
 [Deque (Java Platform SE 8](https://docs.oracle.com/javase/8/docs/api/java/util/Deque.html)
 [Why do we need Deque data structures in the real world? [closed]](https://stackoverflow.com/questions/3880254/why-do-we-need-deque-data-structures-in-the-real-world)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzA1MjI0Njk2LC0yNzI3NTY1NzQsMTA0Mj
-Q3NjkyMSwxNzI1MjM4NDUxXX0=
+eyJoaXN0b3J5IjpbLTIxNDMwOTczNiw3MDUyMjQ2OTYsLTI3Mj
+c1NjU3NCwxMDQyNDc2OTIxLDE3MjUyMzg0NTFdfQ==
 -->
