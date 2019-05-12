@@ -15,7 +15,8 @@ public interface Runnable {
 }
 ```
 
-하지
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDk5MzMwMjYyLC0xOTU4MDg4NTQyXX0=
+eyJoaXN0b3J5IjpbLTEwMzkzNDE1MDYsLTE5NTgwODg1NDJdfQ
+==
 -->
