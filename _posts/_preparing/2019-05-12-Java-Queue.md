@@ -24,9 +24,10 @@ First In First Out 방식의 자료구조. 데이터가 들어가는(입력) 큐
 
 ## Java Queue Subinterface
 
-크게 4가지의 Subinterface를 구현해놓고 그 아래 특성에 따라 매우 많은 Queue 구현체들이 있음.
+크게 4가지의 특성에 따라 Subinterface를 구현해놓고 이 4가지 특성을 따르는 많은 Queue 구현체들이 있음.
 
 ### Deque(Dobule-Ended Queue)
+
 
 
 * BlockingDequeue : 
@@ -38,5 +39,5 @@ First In First Out 방식의 자료구조. 데이터가 들어가는(입력) 큐
 ## refer to
 [Deque (Java Platform SE 8](https://docs.oracle.com/javase/8/docs/api/java/util/Deque.html)]
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDkxMDYzMTZdfQ==
+eyJoaXN0b3J5IjpbMTI3NTYyNzUyNl19
 -->
