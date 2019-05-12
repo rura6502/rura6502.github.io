@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Java Thread Basic
-date:  2019-05-11 17:50:00 +0900
+date:  2019-05-11 00:00:00 +0900
 categories: [Java, Thread]
 ---
 
@@ -186,6 +186,6 @@ T1, T1, true
 
 이를 해결하기 위한 방법은, 요청을 적절히 처리할 수 있는 적당한 양의 쓰레드를 미리 만들어 놓고 이를 관리하면서 필요할 경우 사용하고 모두 사용 중일 경우 대기시킨 다음 끝난 쓰레드를 다시 준비시켜 동작시키는 방식을 사용할 수 있음. 이렇게 무엇인가 필요한 것을 ***미리 만들어 놓고 요청에 바로 응답***하며 끝난 것을 다시 관리하고 내어주는 것을 ```pool``` 방식이라고 하며 쓰레드를 ```pool``` 방식으로 관리하는 것을 ```쓰레드 풀(Thread Pool)``` 이라고 칭함.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTg2Nzg2MiwtMTI0Nzc3NDgyMywxMj
-IwMDcwMDgzLDE2ODIyMzY1MjUsLTE4NTEwODE4OTBdfQ==
+eyJoaXN0b3J5IjpbLTE1NTM0OTMzMjMsLTEyNDc3NzQ4MjMsMT
+IyMDA3MDA4MywxNjgyMjM2NTI1LC0xODUxMDgxODkwXX0=
 -->
