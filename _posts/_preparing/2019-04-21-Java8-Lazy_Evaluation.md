@@ -15,9 +15,11 @@ First In First Out 방식의 자료구조. 데이터가 들어가는(입력) 큐
 * boolean offer(E e) : ```add```와 매우 비슷하게 동작하나 다른점은 큐에 사이즈가 없을 경우 ```False```를 반환. ```add```보다 더 좋다고 설명함.
 * E remove() : head에서 요소를 하나를 반환함. 큐에 꺼낼 엘리먼트가 없을 경우 ```NoSuchElementException```를 던짐.
 * E pool() : ```remove```와 유사하게 동작하나 큐에 꺼낼 엘리먼트가 없을 경우 ```null```을 반환함.
-* E element() : 큐에서 현재 head에 있는 엘리먼트를 반환하는데 ```remove```나 ```pool``` 처럼 지우진 않고 그냥 가져옴.
+* E element() : 큐에서 현재 head에 있는 엘리먼트를 반환하는데 ```remove```나 ```pool``` 처럼 지우진 않고 그냥 가져옴. 가져올 것이 없으면 ```NoSuchElementException```
+* E peek() : ```element```와 같으나 가져올 것이 없으면 ```null```을 반환함.
 
+## Java Queue 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjY1NTA2OTQwLDU3NDY0MDg4LC01Njg0Mj
-k1MTZdfQ==
+eyJoaXN0b3J5IjpbMTA4MTk3NDM0Myw1NzQ2NDA4OCwtNTY4ND
+I5NTE2XX0=
 -->
