@@ -23,7 +23,12 @@ else if .....
 그래서 이런방법을 해결할 수 있는 방법이 없을까 해서 찾아봤는데 ```Specification```이라는 나만 모르고 있었던 것이 있었다.
 
 
+
+
+
+## refer to
+[Use Criteria Queries in a Spring Data Application](https://www.baeldung.com/spring-data-criteria-queries)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjA1NDY2OTIsLTE3MTYwNDM3NTMsLT
-E0Mjg2Njg3NDddfQ==
+eyJoaXN0b3J5IjpbMTYwMjE2MjcyNiwtMTAyMDU0NjY5MiwtMT
+cxNjA0Mzc1MywtMTQyODY2ODc0N119
 -->
