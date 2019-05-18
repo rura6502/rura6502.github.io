@@ -6,8 +6,10 @@ categories: [JPA, Specifications, Spring, Spring_Boot]
 ---
 얼마전 Spring Boot, JPA 기반에 Method Query와 JQPL(복잡하거나 메소드 명이 지나치게 길어질 경우 사용)을 혼용하여 사용하고 있었다.
 
-사용하고 있는 도중 2, 3개정도의 WHERE Condition 까진 괜찮았으나 
+사용하고 있는 도중 2, 3개정도의 WHERE Condition 까진 괜찮았으나 그 이상 조건이 넘어가거나 3개 정도만 되더라도 입력이 있을 경우 넣고 없을 경우 빼고 하는 등을 고려할 때 메소드 이름이 너무 길어짐, if문을 많이 넣어야됨, 복잡함 등의 문제들이 발생했다.
+
+그래서 이런방법
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTYwNDM3NTMsLTE0Mjg2Njg3NDddfQ
-==
+eyJoaXN0b3J5IjpbMzYwMzE3MzE0LC0xNzE2MDQzNzUzLC0xND
+I4NjY4NzQ3XX0=
 -->
