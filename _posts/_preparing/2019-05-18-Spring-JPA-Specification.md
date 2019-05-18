@@ -11,14 +11,18 @@ categories: [JPA, Specifications, Spring, Spring_Boot]
 ```java
 // 컬럼 A, B, C가 있을 경우
 
-// 
-if (A == null)
-	return repository.findAllByBA
+if (A == null) // B or C
+	return repository.findAllByBOrC(...)
+else if (B == null) // A or C
+	return repository.findAllByAOrC(...)
+else if (C == null)
+	return (repository.findAllByAOrC
+else if .....
 
 ```
 
 그래서 이런방법을 해결할 수 있는 방법이 없을까 해서 찾아봤는데 ```Specification```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzY2NjU5MTIwLC0xNzE2MDQzNzUzLC0xND
-I4NjY4NzQ3XX0=
+eyJoaXN0b3J5IjpbMTM4ODE4MzE2MywtMTcxNjA0Mzc1MywtMT
+QyODY2ODc0N119
 -->
