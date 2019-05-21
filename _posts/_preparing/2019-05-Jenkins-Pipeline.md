@@ -5,6 +5,8 @@ date:  2019-05-11 00:00:00 +0900
 categories: [, ]
 ---
 
+공식문서에서는 Suite of plugins that supports implementing and integrating continouous delivery pipelines 라고 되어있음. 쉽게말해서 플러그인의 집합. 
+
 ## Concent
 
 ### Pipeline
@@ -112,6 +114,6 @@ node {
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTk3MDUwMTcsLTQwOTY5NDUzOSwxND
-c5ODU3NzA5XX0=
+eyJoaXN0b3J5IjpbMTg2OTUwNjk2MywtMTQxOTcwNTAxNywtND
+A5Njk0NTM5LDE0Nzk4NTc3MDldfQ==
 -->
