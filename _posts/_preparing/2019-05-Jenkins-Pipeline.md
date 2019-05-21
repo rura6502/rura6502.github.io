@@ -24,7 +24,23 @@ Pipeline을 실행하는 주체, machine이라고 표현함.
 파이프라인 문법은 선언적 파이프라인 문법(Declarative) 과 스크립티드 파이프라인 문법(Scripted)으로 나뉨.
 
 ### Declarative Pipeline
+```pipeline``` block으로 시작함.
 
+```jenkinsfile
+pipeline {
+ agent any
+ stages {
+  stage('Build') {
+   steps {
+    // do build tasks
+   }
+  stage('Test') {
+   steps {
+    // do Test tasks
+   }
+  }
+}
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODIxMjIzMDQ3LDE0Nzk4NTc3MDldfQ==
+eyJoaXN0b3J5IjpbLTE5OTE3NTcxMjcsMTQ3OTg1NzcwOV19
 -->
