@@ -11,11 +11,13 @@ categories: [, ]
 
 > 예제는 일렬로 되어있지만 병렬로도 동작이 가능함
 
-기본적인 파이프라인의 순서는 어떤 제공자(깃 서버 등)으로 부터 결과물(소스)를 받아서 어떠한 동작(junit 테스트, maven/gradle 빌드, c 컴파일 뿐만 아니라 복사 등 다양한 행동)을 하고 이를 배포(개발/운영 서버로 전송 후 스크립트 실행 또는 레포트 이메일 전송) 하는 순서로 파이프라인이 진행 됨. 물론 이ㄹ
+기본적인 파이프라인의 순서는 어떤 제공자(깃 서버 등)으로 부터 결과물(소스)를 받아서 어떠한 동작(junit 테스트, maven/gradle 빌드, c 컴파일 뿐만 아니라 복사 등 다양한 행동)을 하고 이를 배포(개발/운영 서버로 전송 후 스크립트 실행 또는 레포트 이메일 전송) 하는 순서로 파이프라인이 진행 됨. 물론 이는 사용자가 배치를 하기 나름임.
 
-젠킨스에서는 이 파이프라인을 Pipeline DSL이라는 Groovy로 이루어진 코드로 작성하여 관리. 
+> 깃 서버로부터 checkout -> test -> compile > build > deploy
 
-> 여기서 limited form Groovy)라는 것을 봐서는 Groovy의 모든 문법을 지원하진 않는 것 같음
+젠킨스에서는 이 파이프라인을 Pipeline DSL이라는 Groovy로 이루어진 코드로 작성하여 정의하고 관리함.
+
+> 여기서 문서상으로 limited form Groovy라고 설명하고 있으므로 프로그래밍 언어로써의 Groovy의 모든 문법을 지원하지는 않을 것으로 예상 됨.
 
 파이프라인에는 Declarative/Scripted Pipeline 두가지 종류(후술)가 있음.
 
@@ -136,7 +138,7 @@ node {
 ## refer to
 [Pipeline](https://jenkins.io/doc/book/pipeline/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDY0MDA1MzcsMTI0MjYwNTcwOCwtMT
-cwNzQzMTgxNiwtMTQxOTcwNTAxNywtNDA5Njk0NTM5LDE0Nzk4
-NTc3MDldfQ==
+eyJoaXN0b3J5IjpbLTIyMjc5ODM0MiwxMjQyNjA1NzA4LC0xNz
+A3NDMxODE2LC0xNDE5NzA1MDE3LC00MDk2OTQ1MzksMTQ3OTg1
+NzcwOV19
 -->
