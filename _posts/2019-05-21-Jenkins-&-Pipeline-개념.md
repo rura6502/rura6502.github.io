@@ -4,6 +4,7 @@ title:  Jenkins & Pipeline 개념
 date:  2019-05-21 00:00:00 +0900
 categories: [Jenkins, Pipeline, CD/CI]
 ---
+## 개념
 
 공식문서에서는 Suite of plugins that supports implementing and integrating continouous delivery pipelines 라고 되어있음. 쉽게말해서 자동으로 빌드, 배포등을 할 수 있도록 관련된 플러그인들을 모아서 관? 처럼 만들어줌.
 
@@ -27,7 +28,7 @@ categories: [Jenkins, Pipeline, CD/CI]
 * ```Classic UI``` : Jenkins에서 원래 제공하는 UI. Blue Ocean UI에 비해서 매우 많이 투박함.
 * ```SCM``` : 직접 ```Jenkinsfile```을 제작
 
-## Concent
+## Glossary
 
 파이프라인을 구성하기 위한 기본 지식
 
@@ -143,5 +144,5 @@ node {
 ## refer to
 [Pipeline](https://jenkins.io/doc/book/pipeline/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2OTYwOTg1N119
+eyJoaXN0b3J5IjpbMTg3NDE5NzQ4OV19
 -->
