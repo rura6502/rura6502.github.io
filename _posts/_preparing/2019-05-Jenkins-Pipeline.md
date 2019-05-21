@@ -11,8 +11,13 @@ categories: [, ]
 
 > 여기서 limited form Groovy)라는 것을 봐서는 Groovy의 모든 문법을 지원하진 않는 것 같음
 
-파이프라인에는 Declarative/Scripted Pipeline 두가지 종류(후술)가 있음. 
+파이프라인에는 Declarative/Scripted Pipeline 두가지 종류(후술)가 있음.
 
+파이프라인을 만들기 위해선 몇가지 방법을 제공함
+
+* Blue Ocean : Blue Ocean UI라는 아주 예쁜 UI를 제공하는데 이를 사용해서 Jenkinsfile을 만들고 소스 프로젝트에 커밋할 수 있음.
+* Classic UI : Jenkins에서 원래 제공하는 UI. Blue Ocean UI에 비해서 매우 많이 투박함.
+* 
 ## Concent
 
 ### Pipeline
@@ -120,6 +125,6 @@ node {
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3NjM2Mzg0MiwtMTQxOTcwNTAxNywtND
+eyJoaXN0b3J5IjpbMTcxNTgzNzA1NCwtMTQxOTcwNTAxNywtND
 A5Njk0NTM5LDE0Nzk4NTc3MDldfQ==
 -->
