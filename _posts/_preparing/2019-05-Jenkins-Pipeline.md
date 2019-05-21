@@ -9,6 +9,8 @@ categories: [, ]
 
 젠킨스에서는 이 파이프라인을 Pipeline DSL이라는 Groovy로 이루어진 코드로 작성하여 관리. 
 
+> 여기서 limited form Groovy)라는 것을 봐서는 Groovy의 모든 문법을 지원하진 않는 것 같음
+
 파이프라인에는 Declarative/Scripted Pipeline 두가지 종류(후술)가 있음. 
 
 ## Concent
@@ -118,6 +120,6 @@ node {
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2NTIzOTcxMywtMTQxOTcwNTAxNywtND
+eyJoaXN0b3J5IjpbMTU3NjM2Mzg0MiwtMTQxOTcwNTAxNywtND
 A5Njk0NTM5LDE0Nzk4NTc3MDldfQ==
 -->
