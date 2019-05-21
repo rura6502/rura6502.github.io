@@ -124,7 +124,12 @@ node {
  }
 }
 ```
+
+
+
+## refer to
+[Pipeline](https://jenkins.io/doc/book/pipeline/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDc0MzE4MTYsLTE0MTk3MDUwMTcsLT
-QwOTY5NDUzOSwxNDc5ODU3NzA5XX0=
+eyJoaXN0b3J5IjpbMTI0MjYwNTcwOCwtMTcwNzQzMTgxNiwtMT
+QxOTcwNTAxNywtNDA5Njk0NTM5LDE0Nzk4NTc3MDldfQ==
 -->
