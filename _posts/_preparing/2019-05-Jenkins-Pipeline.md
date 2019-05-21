@@ -19,7 +19,7 @@ Pipeline을 실행하는 주체, machine이라고 표현함.
 ### Step - single task
 파이프라인을 구성하는 가장 작은 단위. 실제 파이프라인이 수행해야 하는 단위 명령어들이 들어있다고 보면 됨. 예를들어 mkdir, cp, sh, make 등.
 
-## Pipeline Syntax
+## Pipeline Syntax(Declarative Pipeline Syntax/Scripted Pipeline Syntax)
 
 파이프라인 문법은 선언적 파이프라인 문법(Declarative) 과 스크립티드 파이프라인 문법(Scripted)으로 나뉨.
 
@@ -32,15 +32,22 @@ pipeline {
  stages {
   stage('Build') {
    steps {
-    // do build tasks
+    // do Build tasks
    }
   stage('Test') {
    steps {
     // do Test tasks
    }
   }
+  stage('Deploy') {
+   steps {
+    // do Deploy tasks
+   }
+  }
 }
 ```
+
+### Scripted Pipeline
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTE3NTcxMjcsMTQ3OTg1NzcwOV19
+eyJoaXN0b3J5IjpbNTU5Njk2MDc5LDE0Nzk4NTc3MDldfQ==
 -->
