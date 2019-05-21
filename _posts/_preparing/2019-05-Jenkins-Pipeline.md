@@ -95,7 +95,23 @@ pipeline {
 }
 ```
 
+```groovy
+node {
+ stage('Build') {
+  sh 'make'
+ }
+ stage('Test') {
+  sh 'make check'
+  junit 'reports/**/*.xml'
+ }
+ if (currentBuild.currentResult == 'SUCCESS') {
+  stage('Deploy') {
+   sh 'make publish'
+  }
+ }
+}
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwOTY5NDUzOSwxNDc5ODU3NzA5XX0=
+eyJoaXN0b3J5IjpbLTE0MTk3MDUwMTcsLTQwOTY5NDUzOSwxND
+c5ODU3NzA5XX0=
 -->
