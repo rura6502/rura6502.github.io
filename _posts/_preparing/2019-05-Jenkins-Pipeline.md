@@ -27,7 +27,7 @@ Pipeline을 실행하는 주체, machine이라고 표현함.
 
 ```pipeline``` block으로 시작함.
 
-```jenkinsfile
+```groovy
 pipeline {
  agent any
  stages {
@@ -52,7 +52,20 @@ pipeline {
 
 하나 또는 그 이상의 node block으로 구성되어 있음. 
 
-``
+```groovy
+node {  
+ stage('Build') { 
+  // 
+ }
+ stage('Test') { 
+  // 
+ }
+ stage('Deploy') { 
+  // 
+ }
+}
+```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODAyMTcwMywxNDc5ODU3NzA5XX0=
+eyJoaXN0b3J5IjpbLTE3Nzg1MDU1MDcsMTQ3OTg1NzcwOV19
 -->
