@@ -15,9 +15,9 @@ categories: [, ]
 
 파이프라인을 만들기 위해선 몇가지 방법을 제공함
 
-* Blue Ocean : Blue Ocean UI라는 아주 예쁜 UI를 제공하는데 이를 사용해서 Jenkinsfile을 만들고 소스 프로젝트에 커밋할 수 있음.
-* Classic UI : Jenkins에서 원래 제공하는 UI. Blue Ocean UI에 비해서 매우 많이 투박함.
-* 
+* ```Blue Ocean``` : Blue Ocean UI라는 아주 예쁜 UI를 제공하는데 이를 사용해서 ```Jenkinsfile```을 만들고 소스 프로젝트에 커밋할 수 있음.
+* ```Classic UI``` : Jenkins에서 원래 제공하는 UI. Blue Ocean UI에 비해서 매우 많이 투박함.
+* ```SCM``` : 직접 ```Jenkinsfile```을 제작
 ## Concent
 
 ### Pipeline
@@ -125,6 +125,6 @@ node {
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxNTgzNzA1NCwtMTQxOTcwNTAxNywtND
-A5Njk0NTM5LDE0Nzk4NTc3MDldfQ==
+eyJoaXN0b3J5IjpbLTE3MDc0MzE4MTYsLTE0MTk3MDUwMTcsLT
+QwOTY5NDUzOSwxNDc5ODU3NzA5XX0=
 -->
