@@ -70,11 +70,11 @@ node {
 ### Pipeline Example
 ```groovy
 pipeline {
- agent any // jenkins에게 executor
+ agent any // jenkins에게 이 파이프라인을 실행할 executor를 할당하라고 지시
  options {
   skipStagesAfterUnstable()
  }
- stages {
+ stages { // 각 스테이지 단계에서 수행해야될 스텝들을 명시
   stage('Build') {
    steps {
     sh 'make'
@@ -97,5 +97,5 @@ pipeline {
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjA4ODAzOTQ1LDE0Nzk4NTc3MDldfQ==
+eyJoaXN0b3J5IjpbLTQwOTY5NDUzOSwxNDc5ODU3NzA5XX0=
 -->
