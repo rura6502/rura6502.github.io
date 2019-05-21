@@ -53,19 +53,19 @@ pipeline {
 하나 또는 그 이상의 node block으로 구성되어 있음. 
 
 ```groovy
-node {  
- stage('Build') { 
-  // 
+node {
+ stage('Build') {
+  // stage
  }
- stage('Test') { 
-  // 
+ stage('Test') {
+  //
  }
- stage('Deploy') { 
-  // 
+ stage('Deploy') {
+  //
  }
 }
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Nzg1MDU1MDcsMTQ3OTg1NzcwOV19
+eyJoaXN0b3J5IjpbMjY0NDI4MTE1LDE0Nzk4NTc3MDldfQ==
 -->
