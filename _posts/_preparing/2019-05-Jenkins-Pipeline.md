@@ -14,10 +14,14 @@ categories: [, ]
 Pipeline을 실행하는 주체, machine이라고 표현함. 
 
 ### Stage
-파이프라인에서 수행되는 Step의 집합. 
+파이프라인에서 수행되는 스텝(step)의 집합. 여러개의 스텝들이 모여서 build stage, test stage, deploy stage를 구성함.
 
 ### Step
 파이프라인을 구성하는 가장 작은 단위. 실제 파이프라인이 수행해야 하는 단위 명령어들이 들어있다고 보면 됨. 예를들어 mkdir, cp, sh, make 등.
+
+## Pipeline syntax
+
+파이프라인
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwMTcxMTU0MSwxNDc5ODU3NzA5XX0=
+eyJoaXN0b3J5IjpbLTE3NDY4NzIxNzksMTQ3OTg1NzcwOV19
 -->
