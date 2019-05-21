@@ -5,7 +5,9 @@ date:  2019-05-11 00:00:00 +0900
 categories: [, ]
 ---
 
-공식문서에서는 Suite of plugins that supports implementing and integrating continouous delivery pipelines 라고 되어있음. 쉽게말해서 플러그인의 집합. 
+공식문서에서는 Suite of plugins that supports implementing and integrating continouous delivery pipelines 라고 되어있음. 쉽게말해서 자동으로 빌드, 배포등을 할 수 있도록 관련된 플러그인들을 모아서 관? 처럼 만들어줌.
+
+젠킨스에서는 이 파이프라인을 Pipeline DSL이라는 Groovy로 이루어진 코드로 작성ㅎ
 
 ## Concent
 
@@ -114,6 +116,6 @@ node {
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2OTUwNjk2MywtMTQxOTcwNTAxNywtND
-A5Njk0NTM5LDE0Nzk4NTc3MDldfQ==
+eyJoaXN0b3J5IjpbNjQzMTI5NTUyLC0xNDE5NzA1MDE3LC00MD
+k2OTQ1MzksMTQ3OTg1NzcwOV19
 -->
