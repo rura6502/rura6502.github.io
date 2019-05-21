@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  Jenkins Pipeline
-date:  2019-05-11 00:00:00 +0900
-categories: [, ]
+date:  2019-05-21 00:00:00 +0900
+categories: [Jenkins, Pipeline, CD/CI]
 ---
 
 공식문서에서는 Suite of plugins that supports implementing and integrating continouous delivery pipelines 라고 되어있음. 쉽게말해서 자동으로 빌드, 배포등을 할 수 있도록 관련된 플러그인들을 모아서 관? 처럼 만들어줌.
@@ -93,6 +93,7 @@ node {
 
 ### Pipeline Example
 ```groovy
+// Declarative Pipeline
 pipeline {
  agent any // jenkins에게 이 파이프라인을 실행할 executor를 할당하라고 지시
  options {
@@ -120,6 +121,7 @@ pipeline {
 ```
 
 ```groovy
+// Scripted Pipeline
 node {
  stage('Build') {
   sh 'make'
@@ -141,7 +143,7 @@ node {
 ## refer to
 [Pipeline](https://jenkins.io/doc/book/pipeline/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjgwMzc3MDM2LDEyNDI2MDU3MDgsLTE3MD
-c0MzE4MTYsLTE0MTk3MDUwMTcsLTQwOTY5NDUzOSwxNDc5ODU3
-NzA5XX0=
+eyJoaXN0b3J5IjpbLTQ1MzA1MDQwNywxMjQyNjA1NzA4LC0xNz
+A3NDMxODE2LC0xNDE5NzA1MDE3LC00MDk2OTQ1MzksMTQ3OTg1
+NzcwOV19
 -->
