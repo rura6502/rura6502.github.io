@@ -67,6 +67,38 @@ node {
 }
 ```
 
+### Pipeline Example
+```groovy
+Jenkinsfile (Declarative Pipeline)
+
+```groovy
+pipeline { 
+    agent any 
+    options {
+        skipStagesAfterUnstable()
+    }
+    stages {
+        stage('Build') { 
+            steps { 
+                sh 'make' 
+            }
+        }
+        stage('Test'){
+            steps {
+                sh 'make check'
+                junit 'reports/**/*.xml' 
+            }
+        }
+        stage('Deploy') {
+            steps {
+                sh 'make publish'
+            }
+        }
+    }
+}
+```
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU1ODcxODAxNywxNDc5ODU3NzA5XX0=
+eyJoaXN0b3J5IjpbNjc2NDQzOTM1LDE0Nzk4NTc3MDldfQ==
 -->
