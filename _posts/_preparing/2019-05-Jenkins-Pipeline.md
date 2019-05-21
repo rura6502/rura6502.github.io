@@ -26,7 +26,10 @@ categories: [, ]
 * ```Blue Ocean``` : Blue Ocean UI라는 아주 예쁜 UI를 제공하는데 이를 사용해서 ```Jenkinsfile```을 만들고 소스 프로젝트에 커밋할 수 있음.
 * ```Classic UI``` : Jenkins에서 원래 제공하는 UI. Blue Ocean UI에 비해서 매우 많이 투박함.
 * ```SCM``` : 직접 ```Jenkinsfile```을 제작
+
 ## Concent
+
+파이프라인을 구성하기 위한 기본 지식
 
 ### Pipeline
 빌드 프로세스를 기술한 전체 CD 모델. 애플리케이션을 빌딩하고 테스팅하고 배포하기위한 stage 들로 구성되어 있음. Pipeline을 구성하는 요소를 block이라고 부르고 이 block에는 다양한 종류들이 있음.
@@ -138,7 +141,7 @@ node {
 ## refer to
 [Pipeline](https://jenkins.io/doc/book/pipeline/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyMjc5ODM0MiwxMjQyNjA1NzA4LC0xNz
-A3NDMxODE2LC0xNDE5NzA1MDE3LC00MDk2OTQ1MzksMTQ3OTg1
-NzcwOV19
+eyJoaXN0b3J5IjpbNjgwMzc3MDM2LDEyNDI2MDU3MDgsLTE3MD
+c0MzE4MTYsLTE0MTk3MDUwMTcsLTQwOTY5NDUzOSwxNDc5ODU3
+NzA5XX0=
 -->
