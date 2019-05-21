@@ -7,7 +7,9 @@ categories: [, ]
 
 공식문서에서는 Suite of plugins that supports implementing and integrating continouous delivery pipelines 라고 되어있음. 쉽게말해서 자동으로 빌드, 배포등을 할 수 있도록 관련된 플러그인들을 모아서 관? 처럼 만들어줌.
 
-기본적으로는 어떤 제공자(깃 서버 등)으로 부터 결과물(소스)를 받아서 어떠한 동작(junit 테스트, maven/gradle 빌드, c 컴파일 뿐만 아니라 복사 등 다양한 행동)을 하고 이를 배포(개발/운영 서버로 전송 후
+젠킨스가 제공하고 또는 설치할 수 있는 플러그인들은 매우 다양한데 예를들어 깃, 도커 빌드, 쉘스크립트 등 매우 많음. 이를 배열해서 
+
+기본적으로는 어떤 제공자(깃 서버 등)으로 부터 결과물(소스)를 받아서 어떠한 동작(junit 테스트, maven/gradle 빌드, c 컴파일 뿐만 아니라 복사 등 다양한 행동)을 하고 이를 배포(개발/운영 서버로 전송 후 스크립트 실행 또는 레포트 이메일 전송)
 
 젠킨스에서는 이 파이프라인을 Pipeline DSL이라는 Groovy로 이루어진 코드로 작성하여 관리. 
 
@@ -132,7 +134,7 @@ node {
 ## refer to
 [Pipeline](https://jenkins.io/doc/book/pipeline/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzk0NTI3NzYwLDEyNDI2MDU3MDgsLTE3MD
+eyJoaXN0b3J5IjpbMTU3NDI2MzA1LDEyNDI2MDU3MDgsLTE3MD
 c0MzE4MTYsLTE0MTk3MDUwMTcsLTQwOTY5NDUzOSwxNDc5ODU3
 NzA5XX0=
 -->
