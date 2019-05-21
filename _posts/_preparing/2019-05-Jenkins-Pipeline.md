@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Jenkins Pipeline
+title:  Jenkins와 Pipeline 개념
 date:  2019-05-21 00:00:00 +0900
 categories: [Jenkins, Pipeline, CD/CI]
 ---
@@ -143,7 +143,7 @@ node {
 ## refer to
 [Pipeline](https://jenkins.io/doc/book/pipeline/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1MzA1MDQwNywxMjQyNjA1NzA4LC0xNz
+eyJoaXN0b3J5IjpbLTY0ODE4NjAzOSwxMjQyNjA1NzA4LC0xNz
 A3NDMxODE2LC0xNDE5NzA1MDE3LC00MDk2OTQ1MzksMTQ3OTg1
 NzcwOV19
 -->
