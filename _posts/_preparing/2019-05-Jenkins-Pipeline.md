@@ -69,36 +69,33 @@ node {
 
 ### Pipeline Example
 ```groovy
-Jenkinsfile (Declarative Pipeline)
-
-```groovy
-pipeline { 
-    agent any 
-    options {
-        skipStagesAfterUnstable()
-    }
-    stages {
-        stage('Build') { 
-            steps { 
-                sh 'make' 
-            }
-        }
-        stage('Test'){
-            steps {
-                sh 'make check'
-                junit 'reports/**/*.xml' 
-            }
-        }
-        stage('Deploy') {
-            steps {
-                sh 'make publish'
-            }
-        }
-    }
+pipeline {
+ agent any // jenkins에게 executor
+ options {
+  skipStagesAfterUnstable()
+ }
+ stages {
+  stage('Build') {
+   steps {
+    sh 'make'
+   }
+  }
+  stage('Test') {
+   steps {
+    sh 'make check'
+    junit 'reports/**/*.xml'
+   }
+  }
+  stage('Deploy') {
+   steps {
+    sh 'make publish'
+   }
+  }
+ }
 }
 ```
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjc2NDQzOTM1LDE0Nzk4NTc3MDldfQ==
+eyJoaXN0b3J5IjpbNjA4ODAzOTQ1LDE0Nzk4NTc3MDldfQ==
 -->
