@@ -55,7 +55,8 @@ pipeline {
 ```groovy
 node {
  stage('Build') {
-  // stage
+  // Scripted Pipeline syntax에서 stage블록은 있어도되고 없어도됨.
+  // 하지만 가독성을 위해서 서술. Jenkins UI 에서도 잘 볼 수 있음.
  }
  stage('Test') {
   //
@@ -67,5 +68,5 @@ node {
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjY0NDI4MTE1LDE0Nzk4NTc3MDldfQ==
+eyJoaXN0b3J5IjpbLTU1ODcxODAxNywxNDc5ODU3NzA5XX0=
 -->
