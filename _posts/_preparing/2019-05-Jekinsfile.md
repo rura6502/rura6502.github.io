@@ -27,7 +27,8 @@ categories: [Jenkins, Pipeline, CD/CI, Jenkinsfile]
 
 ### SCM
 
-```Classic UI```에서 제공하는 텍스트 에디터로 처음부터 끝까지 코드로 짤 수 있음. 파이프라인을 코딩하는데 실력이 충분하지 않다면 블루오션이나 
+그냥 에디터나 IDE 등을 통해서 직접 코드를 작성하고 커밋한 다음 파이프라인을 구동하는 방식
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxNzkzNTMyNiw3NjU5Nzg2NjJdfQ==
+eyJoaXN0b3J5IjpbLTE0Mzk0NDE4NTEsLTgxNzkzNTMyNiw3Nj
+U5Nzg2NjJdfQ==
 -->
