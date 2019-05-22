@@ -23,7 +23,7 @@ categories: [Jenkins, Pipeline, CD/CI, Jenkinsfile]
 
 ### Classic UI
 
-이름에서도 알수있다시피 
+이름에서도 알수있다시피 기본 젠킨스 UI의 New Item 항목에서 제공하는 파이프라인을 만듬. ```Blue Ocean```보다 예쁘진 않지만 기능에 충실하고 오히려 세세한 부분을 적기엔 ```Blue Ocean
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5NzYxNDg4MSw3NjU5Nzg2NjJdfQ==
+eyJoaXN0b3J5IjpbLTEwOTYyODYzMDQsNzY1OTc4NjYyXX0=
 -->
