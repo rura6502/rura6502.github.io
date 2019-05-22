@@ -19,7 +19,11 @@ categories: [Jenkins, Pipeline, CD/CI, Jenkinsfile]
 
 ### Blue Ocean
 
-기본으로는 설치되어 있지 않고 추가로 설치해야되는 플러그인인데 플러그인 매니져에서 
+개인적으로 가장 강력 추천. 기본으로는 설치되어 있지 않고 추가로 설치해야되는 플러그인인데 플러그인 매니져에서 검색하면 바로 나옴. 약간 아재냄새나는 젠킨스와는 달리 수려한 UI를 가지고 있으며 UI를 통해서 파이프라인의 각 단계를 설정하고 코드를 삽입할 수 있음.
+
+### Classic UI
+
+이름에서도 알수있다시피 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxODM4MTYyOSw3NjU5Nzg2NjJdfQ==
+eyJoaXN0b3J5IjpbMTk5NzYxNDg4MSw3NjU5Nzg2NjJdfQ==
 -->
