@@ -12,6 +12,14 @@ categories: [Jenkins, Pipeline, CD/CI, Jenkinsfile]
 > ssh 등을 사용할 때 계정정보등을 넣으면 안됨
 
 젠킨스파일은 Groovy 언어로 되어있고 그 양식은 Declarative(버전 2.5 이상), Scripted로 나뉨.
+
+## Create Jenkinsfile
+
+젠킨스가 젠킨스 파일을 생성하는 방법은 3가지가 있음
+
+### Blue Ocean
+
+기본으로는 설치되어 있지 않고 추가로 설치해야되는 플러그인인데 플러그인 매니져에서 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDE4NzAxMDcsNzY1OTc4NjYyXX0=
+eyJoaXN0b3J5IjpbMjAxODM4MTYyOSw3NjU5Nzg2NjJdfQ==
 -->
