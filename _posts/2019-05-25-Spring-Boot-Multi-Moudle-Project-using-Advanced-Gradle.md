@@ -146,7 +146,36 @@ apply plugin: 'io.spring.dependency-management'
 자바 프로젝트의 기본 뼈대를 만들어줄 task를 구현
 
 ```groovy
-
+task initFolder {
+if (!project.name.contains('root')) {
+  sourceSets*.java.srcDirs*.each {
+    if (!it.exists()) {
+      it.mkdirs()
+      new File(it.toString()
+                      + File.separatorChar
+                      + "io" + File.separatorChar
+                      + "github" + File.separatorChar
+                      + "rura6502" + File.separatorChar
+                      + "multimodule_test" + File.separatorChar
+                      + project.name).mkdirs();
+    }
+  }
+  sourceSets.main.resources.srcDirs.each {
+    if (!it.exists()) {
+      it.mkdirs()
+      if (project.name.contains('web')) {
+        new File(it.toString()
+                          + File.separatorChar
+                          + project.name
+                          + '-dev.properties').createNewFile()
+        new File(it.toString()
+                          + File.separatorChar
+                          + project.name
+                          + '-pro.properties').createNewFile()
+      }
+    }
+  }
+}
 ```
 
 
@@ -159,8 +188,8 @@ apply plugin: 'io.spring.dependency-management'
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4ODAyMDIxNywtMTQ1Njk5MDk4MCwxNz
-c0NzUwMTUsLTk0MzcwMjAxNiwxMjQ5NTI2NTI1LDUwOTYyNjg2
-MSwxNzE0NDg4MTc3LC0xODUwNTc3Mjc4LC0xOTkxNDUwNTAwXX
-0=
+eyJoaXN0b3J5IjpbMTc4NjY1OTg4LC0xNDU2OTkwOTgwLDE3Nz
+Q3NTAxNSwtOTQzNzAyMDE2LDEyNDk1MjY1MjUsNTA5NjI2ODYx
+LDE3MTQ0ODgxNzcsLTE4NTA1NzcyNzgsLTE5OTE0NTA1MDBdfQ
+==
 -->
