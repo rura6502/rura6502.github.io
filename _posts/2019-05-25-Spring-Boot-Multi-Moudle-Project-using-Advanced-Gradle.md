@@ -231,7 +231,20 @@ dependencies {
 
 조건식을 사용해서 각 프로젝트에 공통적으로 수행할 행위등을 구현하였음.
 
-그리고 마지막으로 각 프로젝ㅌ의 
+그리고 마지막으로  root 프로젝트들은 `묶음` 역할만 하고 별도의 소스파일을 직접 가지고 있지 않으므로 jar파일을 가질 필요가 없고 comm 프로젝트들은 spring-boot-jar로 컴파일되는게 아니라 디펜던시 참조용 jar만 생성하면 되므로 아래와 같이 설정이 필요함.
+
+```groovy
+if (project.name.contains('root')) {
+  bootJar.enabled =  false
+  jar.enabled =  false
+}
+if (project.name.contains('comm')) {
+  bootJar.enabled =  false
+  jar.enabled =  true
+}
+```
+
+이렇게 하지 않으면 root 프로젝트에서 main
 
 ### 각 프로젝트 고유 설정
 
@@ -255,7 +268,7 @@ dependencies {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5MjI5OTgwNSw0NjM1MTk4NDksMTU3MD
+eyJoaXN0b3J5IjpbLTEwMDgzOTk5MSw0NjM1MTk4NDksMTU3MD
 Q4MTQ1MCwxMzA4MTYwNTczLDE1MjcyNDMzNzYsLTkzMzI2NzYw
 NywtNTMyODcyODM1LDE0ODE2NjQzNSwtMTQ1Njk5MDk4MCwxNz
 c0NzUwMTUsLTk0MzcwMjAxNiwxMjQ5NTI2NTI1LDUwOTYyNjg2
