@@ -42,14 +42,14 @@ include "A_b:A_b_comm"
 include "A_b:A_b_b"
 ```
 
-`gradle.build`파일에서 앞서 기술한 다양한 빌드 설정들을 해주어야 함. 우선 빌드 행위들을 적절한 위치에 해주기 위해선 그래들에서 제공하는 
+`gradle.build`파일에서 앞서 기술한 다양한 빌드 설정들을 해주어야 함. 우선 빌드 행위들을 적절한 위치에 해주기 위해선 그래들에서 원하는 구조를 이해를 하고 내가 원하는 행위가 해당하는 구조에 들어가함. 그래들에선 이 구조를 `
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTI0ODc0OTY5LC05NDM3MDIwMTYsMTI0OT
+eyJoaXN0b3J5IjpbNzU2MzQ0Njg2LC05NDM3MDIwMTYsMTI0OT
 UyNjUyNSw1MDk2MjY4NjEsMTcxNDQ4ODE3NywtMTg1MDU3NzI3
 OCwtMTk5MTQ1MDUwMF19
 -->
