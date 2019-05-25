@@ -143,9 +143,11 @@ apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 ```
 
-자바 프로젝트의 기본 뼈대를 만들어줄 task를 지정
+자바 프로젝트의 기본 뼈대를 만들어줄 task를 구현
 
+```groovy
 
+```
 
 
 
@@ -157,7 +159,7 @@ apply plugin: 'io.spring.dependency-management'
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5MjExMDE5OCwtMTQ1Njk5MDk4MCwxNz
+eyJoaXN0b3J5IjpbLTU4ODAyMDIxNywtMTQ1Njk5MDk4MCwxNz
 c0NzUwMTUsLTk0MzcwMjAxNiwxMjQ5NTI2NTI1LDUwOTYyNjg2
 MSwxNzE0NDg4MTc3LC0xODUwNTc3Mjc4LC0xOTkxNDUwNTAwXX
 0=
