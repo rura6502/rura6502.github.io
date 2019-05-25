@@ -185,6 +185,8 @@ task initFolder {
 
 
 
+## Todo
+* web 이름이 들어가는 프로젝트는 스프링 부트 프로젝트라는 것을 가정했을 때 메인 메소드가 들어가있는 클래스를 자동으로 만들기 -> 그래들 쪽에 `Classs Generator`라는 플러그인이 몇개 보이는데 이를 적용하면 가능할 것으로 에ㅅ
 
 
 ## refer to
@@ -195,8 +197,8 @@ task initFolder {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzMjg3MjgzNSwxNDgxNjY0MzUsLTE0NT
-Y5OTA5ODAsMTc3NDc1MDE1LC05NDM3MDIwMTYsMTI0OTUyNjUy
-NSw1MDk2MjY4NjEsMTcxNDQ4ODE3NywtMTg1MDU3NzI3OCwtMT
-k5MTQ1MDUwMF19
+eyJoaXN0b3J5IjpbLTExMzU1NDE1NjksLTUzMjg3MjgzNSwxND
+gxNjY0MzUsLTE0NTY5OTA5ODAsMTc3NDc1MDE1LC05NDM3MDIw
+MTYsMTI0OTUyNjUyNSw1MDk2MjY4NjEsMTcxNDQ4ODE3NywtMT
+g1MDU3NzI3OCwtMTk5MTQ1MDUwMF19
 -->
