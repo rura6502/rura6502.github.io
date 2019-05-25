@@ -134,7 +134,18 @@ subprojects {
 }
 ```
 
-우선 모든 프족ㅌ
+우선 모든 프로젝트에 적용할 부분
+
+```groovy
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+```
+
+자바 프로젝트의 기본 뼈대를 만들어줄 task를 지정
+
+
 
 
 
@@ -146,8 +157,8 @@ subprojects {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTAxMDUxODcsLTE0NTY5OTA5ODAsMT
-c3NDc1MDE1LC05NDM3MDIwMTYsMTI0OTUyNjUyNSw1MDk2MjY4
-NjEsMTcxNDQ4ODE3NywtMTg1MDU3NzI3OCwtMTk5MTQ1MDUwMF
-19
+eyJoaXN0b3J5IjpbMTI5MjExMDE5OCwtMTQ1Njk5MDk4MCwxNz
+c0NzUwMTUsLTk0MzcwMjAxNiwxMjQ5NTI2NTI1LDUwOTYyNjg2
+MSwxNzE0NDg4MTc3LC0xODUwNTc3Mjc4LC0xOTkxNDUwNTAwXX
+0=
 -->
