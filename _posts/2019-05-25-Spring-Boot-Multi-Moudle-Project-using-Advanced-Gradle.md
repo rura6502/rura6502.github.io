@@ -197,10 +197,12 @@ task initFolder {
 
 1. 'A_{  }_comm'은 'A_comm'을 상속받는다.
 2. 'A_{  }_web'은 'A_web_comm' 을 사용한다.
-3. 'A_{X}_web'과 'A_{X}_{  }'는 'A_{X}_comm'을 사용
+3. 'A_{X}_web'과 'A_{X}_{  }'는 'A_{X}_comm'을 사용한다.
+
+위와 같은 조건을 구현한 설정은 아래와 같음
 
 ```groovy
-
+if (Pattern.matches("A_
 ```
 
 
@@ -218,8 +220,8 @@ task initFolder {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTU2NDU5OTMsLTkzMzI2NzYwNywtNT
-MyODcyODM1LDE0ODE2NjQzNSwtMTQ1Njk5MDk4MCwxNzc0NzUw
-MTUsLTk0MzcwMjAxNiwxMjQ5NTI2NTI1LDUwOTYyNjg2MSwxNz
-E0NDg4MTc3LC0xODUwNTc3Mjc4LC0xOTkxNDUwNTAwXX0=
+eyJoaXN0b3J5IjpbMTUyNzI0MzM3NiwtOTMzMjY3NjA3LC01Mz
+I4NzI4MzUsMTQ4MTY2NDM1LC0xNDU2OTkwOTgwLDE3NzQ3NTAx
+NSwtOTQzNzAyMDE2LDEyNDk1MjY1MjUsNTA5NjI2ODYxLDE3MT
+Q0ODgxNzcsLTE4NTA1NzcyNzgsLTE5OTE0NTA1MDBdfQ==
 -->
