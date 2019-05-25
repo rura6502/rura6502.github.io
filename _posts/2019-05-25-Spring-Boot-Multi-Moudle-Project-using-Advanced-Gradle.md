@@ -203,7 +203,9 @@ task initFolder {
 
 ```groovy
 if (Pattern.matches("(A_)([^(web)]\S)+(\_comm)", project.name)) {
-
+  dependencies {
+    
+  }
 }
 ```
 
@@ -222,9 +224,9 @@ if (Pattern.matches("(A_)([^(web)]\S)+(\_comm)", project.name)) {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwODE2MDU3MywxNTI3MjQzMzc2LC05Mz
-MyNjc2MDcsLTUzMjg3MjgzNSwxNDgxNjY0MzUsLTE0NTY5OTA5
-ODAsMTc3NDc1MDE1LC05NDM3MDIwMTYsMTI0OTUyNjUyNSw1MD
-k2MjY4NjEsMTcxNDQ4ODE3NywtMTg1MDU3NzI3OCwtMTk5MTQ1
-MDUwMF19
+eyJoaXN0b3J5IjpbNTU3NjI5MjIsMTMwODE2MDU3MywxNTI3Mj
+QzMzc2LC05MzMyNjc2MDcsLTUzMjg3MjgzNSwxNDgxNjY0MzUs
+LTE0NTY5OTA5ODAsMTc3NDc1MDE1LC05NDM3MDIwMTYsMTI0OT
+UyNjUyNSw1MDk2MjY4NjEsMTcxNDQ4ODE3NywtMTg1MDU3NzI3
+OCwtMTk5MTQ1MDUwMF19
 -->
