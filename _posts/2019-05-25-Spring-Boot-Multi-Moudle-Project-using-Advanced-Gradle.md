@@ -9,11 +9,11 @@ categories: [Spring_Boot, Gradle, Multi_Module]
 
 ![reason_of_using_multi_module_project](https://github.com/rura6502/rura6502.github.io/blob/master/_posts/_image/reason_of_using_multi_module_project.jpg?raw=true)
 
-위에 있는 그림처럼 
+위에 있는 그림은 수많은 멀티모듈 프로젝트의  활용가능한 예시 중 하나이며 매우 다양하게 활용될 수 있음. 이렇게 뎁스가 2정도 되는 모듈에 대한 예제는 많고
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTE0NTA1MDBdfQ==
+eyJoaXN0b3J5IjpbMTU3NjA3NzUzNywtMTk5MTQ1MDUwMF19
 -->
