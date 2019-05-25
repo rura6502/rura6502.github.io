@@ -180,8 +180,8 @@ task initFolder {
 }
 ```
 
-위의 코드가 하는일은 위에서 정한 프로젝트 네이밍 룰에 따라서 하위 프로젝트에 소스 폴더구조를 구축할 지 안할지 결정하였음. 이름에 root가 들어가면 `묶음`기능만 제공하는 부모 프로젝트로 간주하여 패키지 폴더 구조를 구축하지 않았으며 이름이 들어가지 않은 경우만 패
-키지 폴더 구조를 구축하였음.  또한 이름에 `ㅈ듀
+위의 코드가 하는일은 위에서 정한 프로젝트 네이밍 룰에 따라서 하위 프로젝트에 소스 폴더구조를 구축할 지 안할지 결정하였음. 이름에 `root`가 들어가면 `묶음`기능만 제공하는 부모 프로젝트로 간주하여 패키지 폴더 구조를 구축하지 않았으며 이름이 들어가지 않은 경우만 패
+키지 폴더 구조를 구축하였음.  또한 이름에 `web`이라는 글자가 들어가면 웹 프로젝트로 간주하고 내부에 스프링에서 기본적으로 사용하는 properties 파일을 
 
 
 
@@ -193,8 +193,8 @@ task initFolder {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5NzI1MzI4MSwtMTQ1Njk5MDk4MCwxNz
-c0NzUwMTUsLTk0MzcwMjAxNiwxMjQ5NTI2NTI1LDUwOTYyNjg2
-MSwxNzE0NDg4MTc3LC0xODUwNTc3Mjc4LC0xOTkxNDUwNTAwXX
-0=
+eyJoaXN0b3J5IjpbMTQ4MTY2NDM1LC0xNDU2OTkwOTgwLDE3Nz
+Q3NTAxNSwtOTQzNzAyMDE2LDEyNDk1MjY1MjUsNTA5NjI2ODYx
+LDE3MTQ0ODgxNzcsLTE4NTA1NzcyNzgsLTE5OTE0NTA1MDBdfQ
+==
 -->
