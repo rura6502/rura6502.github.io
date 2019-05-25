@@ -244,14 +244,32 @@ if (project.name.contains('comm')) {
 }
 ```
 
-이렇게 하지 않으면 root 프로젝트에서 main
+이렇게 하지 않으면 한번에 build할 때 root 프로젝트에서 main class파일이 없다고 에러가 출력되고 여러가지 java, spring 플러그인에서 제공하는 task에 대한 에러가 많이 발생함. 
 
 ### 각 프로젝트 고유 설정
 
 이제 네이밍 규칙을 활용한 공통 설정은 모두 하였으므로 각 프로젝트에 사용할 고유 설정들을 하면 됨.
 
 ```groovy
-
+project(":A_comm") {/* */}
+project(":A_web_comm") {
+  dependencies {
+    compile 'org.springframework.boot:spring-boot-starter-web'
+    compile 'org.springframework.boot:spring-boot-starter-test'
+    compile 'com.h2database:h2'
+    runtimeOnly 'org.springframework.boot:spring-boot-devtools'
+  }
+}
+project(":A_a_root:A_a_comm") {/* */}
+project(":A_a_root:A_a_web") {/* */}
+project(":A_a_root:A_a_b") {/* */}
+project(":A_b_root:A_b_comm") {/* */}
+project(":A_b_root:A_b_web") {
+  dependencies {
+    compile 'org.springframework.boot:spring-boot-starter-webflux'
+  }
+}
+project(":A_b_root:A_b_b") {/* */}
 ```
 
 
@@ -268,10 +286,10 @@ if (project.name.contains('comm')) {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDgzOTk5MSw0NjM1MTk4NDksMTU3MD
-Q4MTQ1MCwxMzA4MTYwNTczLDE1MjcyNDMzNzYsLTkzMzI2NzYw
-NywtNTMyODcyODM1LDE0ODE2NjQzNSwtMTQ1Njk5MDk4MCwxNz
-c0NzUwMTUsLTk0MzcwMjAxNiwxMjQ5NTI2NTI1LDUwOTYyNjg2
-MSwxNzE0NDg4MTc3LC0xODUwNTc3Mjc4LC0xOTkxNDUwNTAwXX
-0=
+eyJoaXN0b3J5IjpbMTY3NTMxMTA4LDQ2MzUxOTg0OSwxNTcwND
+gxNDUwLDEzMDgxNjA1NzMsMTUyNzI0MzM3NiwtOTMzMjY3NjA3
+LC01MzI4NzI4MzUsMTQ4MTY2NDM1LC0xNDU2OTkwOTgwLDE3Nz
+Q3NTAxNSwtOTQzNzAyMDE2LDEyNDk1MjY1MjUsNTA5NjI2ODYx
+LDE3MTQ0ODgxNzcsLTE4NTA1NzcyNzgsLTE5OTE0NTA1MDBdfQ
+==
 -->
