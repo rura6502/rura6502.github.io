@@ -5,7 +5,7 @@ date:  2019-05-25 00:00:00 +0900
 categories: [Spring_Boot, Gradle, Multi_Module]
 ---
 
-> 본 포스팅에서 고안한 '유엲
+> 본 포스팅에서 고안한 '유연하다'는 방식은 그루비 언어를 활용하여 구성하는 방식으로 정답은 아니고 더 좋은 방식이 있다면 조언바랍니다.
 
 여러 연관성 있는 프로젝트를 한꺼번에 묶어서 관리하게 해주는 프로젝트를 멀티 모듈 프로젝트라고 함. 멀티 모듈 프로젝트를 구성하여 서브 프로젝트간에 공통 라이브러리를 공유하고 관리를 더 쉽게 할 수 있음.
 
@@ -15,15 +15,13 @@ categories: [Spring_Boot, Gradle, Multi_Module]
 
 ![gradle-flexible-multimodule-project](https://github.com/rura6502/rura6502.github.io/blob/master/_posts/_image/gradle-flexible-multimodule-project.jpg?raw=true)
 
-
-
-gradle은 `build.gradle`, `settings.gradle` 파일을 사용하여 프로젝트를 구
+gradle은 `build.gradle`, `settings.gradle` 파일을 사용하여 프로젝트를 구성하게 되는데 이 파일들은 groovy라는 `프로그래밍 언어`를 사용한다는 점과 어느정도 자바 라이브러리를 지원한다는 아이디어를 착안하여 몇가지 룰을 저
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2MTYzNzQ1LC0xODUwNTc3Mjc4LC0xOT
-kxNDUwNTAwXX0=
+eyJoaXN0b3J5IjpbLTE5MTYyMDIwOTYsLTE4NTA1NzcyNzgsLT
+E5OTE0NTA1MDBdfQ==
 -->
