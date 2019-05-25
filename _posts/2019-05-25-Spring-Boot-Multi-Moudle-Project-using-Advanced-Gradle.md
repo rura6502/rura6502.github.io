@@ -17,6 +17,8 @@ categories: [Spring_Boot, Gradle, Multi_Module]
 
 ![gradle-flexible-multimodule-project-possible-example1](![gradle-flexible-multimodule-project-possible-example1.jpg](https://github.com/rura6502/rura6502.github.io/blob/master/_posts/_image/gradle-flexible-multimodule-project-possible-example1.jpg?raw=true)
 
+## with advaned gradle
+
 gradle은 `build.gradle`, `settings.gradle` 파일을 사용하여 프로젝트를 구성하게 되는데 이 파일들은 groovy라는 `프로그래밍 언어`를 사용한다는 점과 어느정도 자바 라이브러리를 지원한다는 아이디어를 착안하여 몇가지 룰을 정하고 그 룰에 맞게 라이브러리를 주입하는 방식을 구상하였음. 해야 할 일은 다음과 같음.
 
 1. 트리형 구조를 가지는 프로젝트 구조를 구성
@@ -96,6 +98,8 @@ subproejcts {
 }
 ```
 
+## settings.gradle
+
 일단 기본적인 전체 구조부터 설정
 
 ```groovy
@@ -114,7 +118,10 @@ buildscript {
 }
 ```
 
+## gradle.build
+
 아래부턴 `subprojects` 블록의 내용
+
 
 
 
@@ -126,7 +133,7 @@ buildscript {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODg2NTk3MjcsMTc3NDc1MDE1LC05ND
+eyJoaXN0b3J5IjpbLTE0NTY5OTA5ODAsMTc3NDc1MDE1LC05ND
 M3MDIwMTYsMTI0OTUyNjUyNSw1MDk2MjY4NjEsMTcxNDQ4ODE3
 NywtMTg1MDU3NzI3OCwtMTk5MTQ1MDUwMF19
 -->
