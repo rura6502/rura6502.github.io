@@ -143,7 +143,7 @@ apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 ```
 
-자바 프로젝트의 기본 뼈대를 만들어줄 task를 구현. 아래의 코드가 하는일은 위에서 정한 프로젝트 네이밍 룰에 따라서 하위 프로젝트에 소스 폴더구조를 구축할 지 안할지 결정하였다. 이름에 'root'라는 글자가 들어가면 우리
+자바 프로젝트의 기본 뼈대를 만들어줄 task를 구현.
 
 ```groovy
 task initFolder {
@@ -180,6 +180,10 @@ task initFolder {
 }
 ```
 
+위의 코드가 하는일은 위에서 정한 프로젝트 네이밍 룰에 따라서 하위 프로젝트에 소스 폴더구조를 구축할 지 안할지 결정하였음. 이름에 root가 들어가면 `묶음`기능만 제공하는 부모 프로젝트로 간주하여 패키지 폴더 구조를 구축하지 않았으며 이름이 들어가지 않은 경우만 패
+키지 폴더 구조를 구축하였음.  또한 이름에 `ㅈ듀
+
+
 
 ## refer to
 [Gradle Build Language  Reference](https://docs.gradle.org/current/dsl/index.html)
@@ -189,8 +193,8 @@ task initFolder {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTk3MzY3MTksLTE0NTY5OTA5ODAsMT
-c3NDc1MDE1LC05NDM3MDIwMTYsMTI0OTUyNjUyNSw1MDk2MjY4
-NjEsMTcxNDQ4ODE3NywtMTg1MDU3NzI3OCwtMTk5MTQ1MDUwMF
-19
+eyJoaXN0b3J5IjpbMTY5NzI1MzI4MSwtMTQ1Njk5MDk4MCwxNz
+c0NzUwMTUsLTk0MzcwMjAxNiwxMjQ5NTI2NTI1LDUwOTYyNjg2
+MSwxNzE0NDg4MTc3LC0xODUwNTc3Mjc4LC0xOTkxNDUwNTAwXX
+0=
 -->
