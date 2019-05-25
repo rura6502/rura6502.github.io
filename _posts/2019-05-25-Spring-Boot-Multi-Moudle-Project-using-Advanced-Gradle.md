@@ -9,14 +9,17 @@ categories: [Spring_Boot, Gradle, Multi_Module]
 
 ![reason_of_using_multi_module_project](https://github.com/rura6502/rura6502.github.io/blob/master/_posts/_image/reason_of_using_multi_module_project.jpg?raw=true)
 
-위에 있는 그림은 수많은 멀티모듈 프로젝트의  활용가능한 예시 중 하나이며 매우 다양하게 활용될 수 있음. 이렇게 뎁스가 2정도 되는 모듈에 대한 예제는 많으므로 뎁스가 3이면서 좀 더 유언하게 활용할 수 있는 멀티모듈 프로젝트를 구성 해 보겠음 
+위에 있는 그림은 수많은 멀티모듈 프로젝트의  활용가능한 예시 중 하나이며 매우 다양하게 활용될 수 있음. 이렇게 뎁스가 2정도 되는 모듈에 대한 예제는 많으므로 뎁스가 3이면서 좀 더 유연하게 활용할 수 있는 멀티모듈 프로젝트를 구성 해 보겠음.
 
+![gradle-flexible-multimodule-project](https://github.com/rura6502/rura6502.github.io/blob/master/_posts/_image/gradle-flexible-multimodule-project.jpg?raw=true)
+
+dgradle은 `build.gradle`, `settings.gradle` 파일을 사용하여 프로젝트를 구
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDQ0MTA5ODIsLTE4NTA1NzcyNzgsLT
-E5OTE0NTA1MDBdfQ==
+eyJoaXN0b3J5IjpbMTg1MDk3NjQyMSwtMTg1MDU3NzI3OCwtMT
+k5MTQ1MDUwMF19
 -->
