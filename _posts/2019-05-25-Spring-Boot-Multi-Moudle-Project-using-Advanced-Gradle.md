@@ -143,41 +143,42 @@ apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 ```
 
-자바 프로젝트의 기본 뼈대를 만들어줄 task를 구현
+자바 프로젝트의 기본 뼈대를 만들어줄 task를 구현. 아래의 코드가 하는일은 위에서 정한 프로젝트 네이밍 룰에 따라서 하위 프로젝트에 소스 폴더구조를 구축할 지 안할지 결정하였다. 이름에 'root'라는 글자가 들어가면 우리
 
 ```groovy
 task initFolder {
-if (!project.name.contains('root')) {
-  sourceSets*.java.srcDirs*.each {
+task initFolder {
+  if (!project.name.contains('root')) {
+    sourceSets*.java.srcDirs*.each {
     if (!it.exists()) {
       it.mkdirs()
       new File(it.toString()
-                      + File.separatorChar
-                      + "io" + File.separatorChar
-                      + "github" + File.separatorChar
-                      + "rura6502" + File.separatorChar
-                      + "multimodule_test" + File.separatorChar
-                      + project.name).mkdirs();
+              + File.separatorChar
+              + "io" + File.separatorChar
+              + "github" + File.separatorChar
+              + "rura6502" + File.separatorChar
+              + "multimodule_test" + File.separatorChar
+              + project.name).mkdirs();
     }
-  }
-  sourceSets.main.resources.srcDirs.each {
+    }
+    sourceSets.main.resources.srcDirs.each {
     if (!it.exists()) {
       it.mkdirs()
       if (project.name.contains('web')) {
-        new File(it.toString()
-                          + File.separatorChar
-                          + project.name
-                          + '-dev.properties').createNewFile()
-        new File(it.toString()
-                          + File.separatorChar
-                          + project.name
-                          + '-pro.properties').createNewFile()
+      new File(it.toString()
+                + File.separatorChar
+                + project.name
+                + '-dev.properties').createNewFile()
+      new File(it.toString()
+                + File.separatorChar
+                + project.name
+                + '-pro.properties').createNewFile()
       }
+    }
     }
   }
 }
 ```
-
 
 
 ## refer to
@@ -188,8 +189,8 @@ if (!project.name.contains('root')) {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4NjY1OTg4LC0xNDU2OTkwOTgwLDE3Nz
-Q3NTAxNSwtOTQzNzAyMDE2LDEyNDk1MjY1MjUsNTA5NjI2ODYx
-LDE3MTQ0ODgxNzcsLTE4NTA1NzcyNzgsLTE5OTE0NTA1MDBdfQ
-==
+eyJoaXN0b3J5IjpbLTE1NTk3MzY3MTksLTE0NTY5OTA5ODAsMT
+c3NDc1MDE1LC05NDM3MDIwMTYsMTI0OTUyNjUyNSw1MDk2MjY4
+NjEsMTcxNDQ4ODE3NywtMTg1MDU3NzI3OCwtMTk5MTQ1MDUwMF
+19
 -->
