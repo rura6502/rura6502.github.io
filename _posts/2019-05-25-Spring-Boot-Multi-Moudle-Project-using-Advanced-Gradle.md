@@ -206,14 +206,26 @@ task initFolder {
 import  java.util.regex.Pattern;
 import  java.util.regex.Matcher;
 
-if (Pattern.matches("(A_)([^(web)]\\S)+(_comm)", project.name)) {
-  dependencies {
+dependencies {
+  // web_comm 을 제외한 모든 _comm 으로 끝나는 프로젝트는 A_comm 디펜던시를 가짐
+  if (Pattern.matches("(A_)([^(web)]\\S)+(_comm)", project.name)) {
     compile project(":A_comm")
   }
-}
-if (Pattern.matches("(A_)(\S)+(_web)", project.name)) {
-  dependencies {
+  // _web 으로 끝나는 프로젝트들은 모두 A_web_comm 디펜던시를 가짐
+  if (Pattern.matches("(A_)(\\S)+(_web)", project.name)) {
     compile project(":A_web_comm")
+  }
+  // root 프로젝트를 제외한 하위 프로젝트는 같은 레벨의 하위 프로젝트에
+  // comm 프로젝트 디펜던시를 가짐
+  if (!project.name.contains("root")) {
+    Matcher forInjectComm = Pattern.compile("_(.*?)_[^(comm)]")
+                              .matcher(project.name);
+    if (forInjectComm.find()) {
+    String subProjectName = forInjectComm.group(1);
+    System.out.println(subProjectName)
+    compile project (":A_" + subProjectName + "_root"
+                          + ":A_" + subProjectName + "_comm")
+    }
   }
 }
 ```
@@ -233,9 +245,9 @@ if (Pattern.matches("(A_)(\S)+(_web)", project.name)) {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4ODA1MjY3NSwxNTcwNDgxNDUwLDEzMD
-gxNjA1NzMsMTUyNzI0MzM3NiwtOTMzMjY3NjA3LC01MzI4NzI4
-MzUsMTQ4MTY2NDM1LC0xNDU2OTkwOTgwLDE3NzQ3NTAxNSwtOT
-QzNzAyMDE2LDEyNDk1MjY1MjUsNTA5NjI2ODYxLDE3MTQ0ODgx
-NzcsLTE4NTA1NzcyNzgsLTE5OTE0NTA1MDBdfQ==
+eyJoaXN0b3J5IjpbNDYzNTE5ODQ5LDE1NzA0ODE0NTAsMTMwOD
+E2MDU3MywxNTI3MjQzMzc2LC05MzMyNjc2MDcsLTUzMjg3Mjgz
+NSwxNDgxNjY0MzUsLTE0NTY5OTA5ODAsMTc3NDc1MDE1LC05ND
+M3MDIwMTYsMTI0OTUyNjUyNSw1MDk2MjY4NjEsMTcxNDQ4ODE3
+NywtMTg1MDU3NzI3OCwtMTk5MTQ1MDUwMF19
 -->
