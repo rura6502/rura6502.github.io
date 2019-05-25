@@ -231,6 +231,8 @@ dependencies {
 
 조건식을 사용해서 각 프로젝트에 공통적으로 수행할 행위등을 구현하였음.
 
+그리고 마지막으로 각 프로젝ㅌ의 
+
 ### 각 프로젝트 고유 설정
 
 이제 네이밍 규칙을 활용한 공통 설정은 모두 하였으므로 각 프로젝트에 사용할 고유 설정들을 하면 됨.
@@ -253,7 +255,7 @@ dependencies {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5NDg3ODY4MCw0NjM1MTk4NDksMTU3MD
+eyJoaXN0b3J5IjpbLTk5MjI5OTgwNSw0NjM1MTk4NDksMTU3MD
 Q4MTQ1MCwxMzA4MTYwNTczLDE1MjcyNDMzNzYsLTkzMzI2NzYw
 NywtNTMyODcyODM1LDE0ODE2NjQzNSwtMTQ1Njk5MDk4MCwxNz
 c0NzUwMTUsLTk0MzcwMjAxNiwxMjQ5NTI2NTI1LDUwOTYyNjg2
