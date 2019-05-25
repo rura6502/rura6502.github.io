@@ -122,6 +122,14 @@ buildscript {
 
 아래부턴 `subprojects` 블록의 내용
 
+기본적으로 모든 프로젝트에 적용할 부분, 특정 프로젝트에 적용할 부분을 아래와 같이 나누면 됨
+
+```groovy
+subprojects {
+  
+}
+```
+
 
 
 
@@ -133,7 +141,8 @@ buildscript {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTY5OTA5ODAsMTc3NDc1MDE1LC05ND
-M3MDIwMTYsMTI0OTUyNjUyNSw1MDk2MjY4NjEsMTcxNDQ4ODE3
-NywtMTg1MDU3NzI3OCwtMTk5MTQ1MDUwMF19
+eyJoaXN0b3J5IjpbMTQ4ODM2NjcxMiwtMTQ1Njk5MDk4MCwxNz
+c0NzUwMTUsLTk0MzcwMjAxNiwxMjQ5NTI2NTI1LDUwOTYyNjg2
+MSwxNzE0NDg4MTc3LC0xODUwNTc3Mjc4LC0xOTkxNDUwNTAwXX
+0=
 -->
