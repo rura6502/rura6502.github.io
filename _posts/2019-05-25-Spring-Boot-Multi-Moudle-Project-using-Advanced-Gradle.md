@@ -207,9 +207,9 @@ if (Pattern.matches("(A_)([^(web)]\\S)+(_comm)", project.name)) {
     compile project(":A_comm")
   }
 }
-if (Pattern.matches("(A_)(\S)+(\_web)", project.name)) {
+if (Pattern.matches("(A_)(\S)+(_web)", project.name)) {
   dependencies {
-    compile
+    compile project(":A_web_comm")
   }
 }
 ```
@@ -229,7 +229,7 @@ if (Pattern.matches("(A_)(\S)+(\_web)", project.name)) {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1MDMyOTMzOSwxMzA4MTYwNTczLDE1Mj
+eyJoaXN0b3J5IjpbMTU3MDQ4MTQ1MCwxMzA4MTYwNTczLDE1Mj
 cyNDMzNzYsLTkzMzI2NzYwNywtNTMyODcyODM1LDE0ODE2NjQz
 NSwtMTQ1Njk5MDk4MCwxNzc0NzUwMTUsLTk0MzcwMjAxNiwxMj
 Q5NTI2NTI1LDUwOTYyNjg2MSwxNzE0NDg4MTc3LC0xODUwNTc3
