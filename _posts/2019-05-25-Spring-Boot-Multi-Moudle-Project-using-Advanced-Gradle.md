@@ -196,7 +196,7 @@ task initFolder {
 프로젝트 네이밍 규칙에 따라서 설정해야 되는 항목은 아래와 같음.
 
 1. A_{  }_comm 은 A_comm을 상속받는다.
-2. A_
+2. A_{  }_web 은 A_
 
 ```groovy
 
@@ -217,8 +217,8 @@ task initFolder {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDQ2ODQ4ODUsLTkzMzI2NzYwNywtNT
-MyODcyODM1LDE0ODE2NjQzNSwtMTQ1Njk5MDk4MCwxNzc0NzUw
-MTUsLTk0MzcwMjAxNiwxMjQ5NTI2NTI1LDUwOTYyNjg2MSwxNz
-E0NDg4MTc3LC0xODUwNTc3Mjc4LC0xOTkxNDUwNTAwXX0=
+eyJoaXN0b3J5IjpbMTEyMzQ1MzEwMCwtOTMzMjY3NjA3LC01Mz
+I4NzI4MzUsMTQ4MTY2NDM1LC0xNDU2OTkwOTgwLDE3NzQ3NTAx
+NSwtOTQzNzAyMDE2LDEyNDk1MjY1MjUsNTA5NjI2ODYxLDE3MT
+Q0ODgxNzcsLTE4NTA1NzcyNzgsLTE5OTE0NTA1MDBdfQ==
 -->
