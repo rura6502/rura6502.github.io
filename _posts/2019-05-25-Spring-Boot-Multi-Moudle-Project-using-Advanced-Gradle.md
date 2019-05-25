@@ -193,7 +193,14 @@ task initFolder {
 
 ### 프로젝트 네이밍 규칙에 따른 설정
 
-web
+프로젝트 네이밍 규칙에 따라서 설정해야 되는 항목은 아래와 같음.
+
+1. A_{  }_comm 은 A_comm을 상속받는다.
+2. A_
+
+```groovy
+
+```
 
 
 
@@ -210,8 +217,8 @@ web
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzMzI2NzYwNywtNTMyODcyODM1LDE0OD
-E2NjQzNSwtMTQ1Njk5MDk4MCwxNzc0NzUwMTUsLTk0MzcwMjAx
-NiwxMjQ5NTI2NTI1LDUwOTYyNjg2MSwxNzE0NDg4MTc3LC0xOD
-UwNTc3Mjc4LC0xOTkxNDUwNTAwXX0=
+eyJoaXN0b3J5IjpbLTIxMDQ2ODQ4ODUsLTkzMzI2NzYwNywtNT
+MyODcyODM1LDE0ODE2NjQzNSwtMTQ1Njk5MDk4MCwxNzc0NzUw
+MTUsLTk0MzcwMjAxNiwxMjQ5NTI2NTI1LDUwOTYyNjg2MSwxNz
+E0NDg4MTc3LC0xODUwNTc3Mjc4LC0xOTkxNDUwNTAwXX0=
 -->
