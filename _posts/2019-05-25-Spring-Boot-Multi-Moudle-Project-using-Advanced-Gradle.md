@@ -202,6 +202,10 @@ task initFolder {
 위와 같은 조건을 구현한 설정은 아래와 같음
 
 ```groovy
+// 프로젝트 최 상단에 사용할 자바 라이브러리를 임포트 한다.
+import  java.util.regex.Pattern;
+import  java.util.regex.Matcher;
+
 if (Pattern.matches("(A_)([^(web)]\\S)+(_comm)", project.name)) {
   dependencies {
     compile project(":A_comm")
@@ -229,9 +233,9 @@ if (Pattern.matches("(A_)(\S)+(_web)", project.name)) {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3MDQ4MTQ1MCwxMzA4MTYwNTczLDE1Mj
-cyNDMzNzYsLTkzMzI2NzYwNywtNTMyODcyODM1LDE0ODE2NjQz
-NSwtMTQ1Njk5MDk4MCwxNzc0NzUwMTUsLTk0MzcwMjAxNiwxMj
-Q5NTI2NTI1LDUwOTYyNjg2MSwxNzE0NDg4MTc3LC0xODUwNTc3
-Mjc4LC0xOTkxNDUwNTAwXX0=
+eyJoaXN0b3J5IjpbMTg4ODA1MjY3NSwxNTcwNDgxNDUwLDEzMD
+gxNjA1NzMsMTUyNzI0MzM3NiwtOTMzMjY3NjA3LC01MzI4NzI4
+MzUsMTQ4MTY2NDM1LC0xNDU2OTkwOTgwLDE3NzQ3NTAxNSwtOT
+QzNzAyMDE2LDEyNDk1MjY1MjUsNTA5NjI2ODYxLDE3MTQ0ODgx
+NzcsLTE4NTA1NzcyNzgsLTE5OTE0NTA1MDBdfQ==
 -->
