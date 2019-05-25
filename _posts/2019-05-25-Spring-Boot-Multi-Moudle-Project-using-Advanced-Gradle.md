@@ -202,7 +202,9 @@ task initFolder {
 위와 같은 조건을 구현한 설정은 아래와 같음
 
 ```groovy
-if (Pattern.matches("A_
+if (Pattern.matches("(A_)([^(web)]\S)+(\_comm)", project.name)) {
+
+}
 ```
 
 
@@ -220,8 +222,9 @@ if (Pattern.matches("A_
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyNzI0MzM3NiwtOTMzMjY3NjA3LC01Mz
-I4NzI4MzUsMTQ4MTY2NDM1LC0xNDU2OTkwOTgwLDE3NzQ3NTAx
-NSwtOTQzNzAyMDE2LDEyNDk1MjY1MjUsNTA5NjI2ODYxLDE3MT
-Q0ODgxNzcsLTE4NTA1NzcyNzgsLTE5OTE0NTA1MDBdfQ==
+eyJoaXN0b3J5IjpbMTMwODE2MDU3MywxNTI3MjQzMzc2LC05Mz
+MyNjc2MDcsLTUzMjg3MjgzNSwxNDgxNjY0MzUsLTE0NTY5OTA5
+ODAsMTc3NDc1MDE1LC05NDM3MDIwMTYsMTI0OTUyNjUyNSw1MD
+k2MjY4NjEsMTcxNDQ4ODE3NywtMTg1MDU3NzI3OCwtMTk5MTQ1
+MDUwMF19
 -->
