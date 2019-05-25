@@ -202,9 +202,14 @@ task initFolder {
 위와 같은 조건을 구현한 설정은 아래와 같음
 
 ```groovy
-if (Pattern.matches("(A_)([^(web)]\S)+(\_comm)", project.name)) {
+if (Pattern.matches("(A_)([^(web)]\\S)+(_comm)", project.name)) {
   dependencies {
-    
+    compile project(":A_comm")
+  }
+}
+if (Pattern.matches("(A_)(\S)+(\_web)", project.name)) {
+  dependencies {
+    compile
   }
 }
 ```
@@ -224,9 +229,9 @@ if (Pattern.matches("(A_)([^(web)]\S)+(\_comm)", project.name)) {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTU3NjI5MjIsMTMwODE2MDU3MywxNTI3Mj
-QzMzc2LC05MzMyNjc2MDcsLTUzMjg3MjgzNSwxNDgxNjY0MzUs
-LTE0NTY5OTA5ODAsMTc3NDc1MDE1LC05NDM3MDIwMTYsMTI0OT
-UyNjUyNSw1MDk2MjY4NjEsMTcxNDQ4ODE3NywtMTg1MDU3NzI3
-OCwtMTk5MTQ1MDUwMF19
+eyJoaXN0b3J5IjpbLTc1MDMyOTMzOSwxMzA4MTYwNTczLDE1Mj
+cyNDMzNzYsLTkzMzI2NzYwNywtNTMyODcyODM1LDE0ODE2NjQz
+NSwtMTQ1Njk5MDk4MCwxNzc0NzUwMTUsLTk0MzcwMjAxNiwxMj
+Q5NTI2NTI1LDUwOTYyNjg2MSwxNzE0NDg4MTc3LC0xODUwNTc3
+Mjc4LC0xOTkxNDUwNTAwXX0=
 -->
