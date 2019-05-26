@@ -207,7 +207,7 @@ import  java.util.regex.Matcher;
 
 dependencies {
   // web_comm 을 제외한 모든 _comm 으로 끝나는 프로젝트는 A_comm 디펜던시를 가짐
-  if (Pattern.matches("(A_)([^(web)]\\S)+(_comm)", project.name)) {
+  if (Pattern.matches("^(A_)((?!web).)*(_comm)\$", project.name)) {
     compile project(":A_comm")
   }
   // _web 으로 끝나는 프로젝트들은 모두 A_web_comm 디펜던시를 가짐
@@ -221,7 +221,6 @@ dependencies {
                               .matcher(project.name);
     if (forInjectComm.find()) {
     String subProjectName = forInjectComm.group(1);
-    System.out.println(subProjectName)
     compile project (":A_" + subProjectName + "_root"
                           + ":A_" + subProjectName + "_comm")
     }
@@ -297,10 +296,10 @@ spring boot jar로 패키징 될 web 프로젝트들은 `mainClassName`을 설�
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ3MDU3NzM3LDE2NzUzMTEwOCw0NjM1MT
-k4NDksMTU3MDQ4MTQ1MCwxMzA4MTYwNTczLDE1MjcyNDMzNzYs
-LTkzMzI2NzYwNywtNTMyODcyODM1LDE0ODE2NjQzNSwtMTQ1Nj
-k5MDk4MCwxNzc0NzUwMTUsLTk0MzcwMjAxNiwxMjQ5NTI2NTI1
-LDUwOTYyNjg2MSwxNzE0NDg4MTc3LC0xODUwNTc3Mjc4LC0xOT
-kxNDUwNTAwXX0=
+eyJoaXN0b3J5IjpbMTA1NTgxMDk2Niw4NDcwNTc3MzcsMTY3NT
+MxMTA4LDQ2MzUxOTg0OSwxNTcwNDgxNDUwLDEzMDgxNjA1NzMs
+MTUyNzI0MzM3NiwtOTMzMjY3NjA3LC01MzI4NzI4MzUsMTQ4MT
+Y2NDM1LC0xNDU2OTkwOTgwLDE3NzQ3NTAxNSwtOTQzNzAyMDE2
+LDEyNDk1MjY1MjUsNTA5NjI2ODYxLDE3MTQ0ODgxNzcsLTE4NT
+A1NzcyNzgsLTE5OTE0NTA1MDBdfQ==
 -->
