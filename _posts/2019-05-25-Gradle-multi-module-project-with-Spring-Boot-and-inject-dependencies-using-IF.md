@@ -443,6 +443,8 @@ project(":A_b_root:A_b_b") {
 
 ### source file
 
+[https://github.com/rura6502/repo.rura6502.github.io/tree/master/gradle/multi-module-with-spring-boot-using-IF-injecntion](https://github.com/rura6502/repo.rura6502.github.io/tree/master/gradle/multi-module-with-spring-boot-using-IF-injecntion)
+
 
 ### 개별 빌드
 
@@ -473,5 +475,5 @@ project(":A_b_root:A_b_b") {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODk4NzM5MjIyXX0=
+eyJoaXN0b3J5IjpbLTQ1NzcxNTAxOSw4OTg3MzkyMjJdfQ==
 -->
