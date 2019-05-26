@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Spring Boot Multi Module Proejct with Advaned Gradle
+title:  Spring Boot Multi Module Project with Flexible Gradle Setting
 date:  2019-05-25 00:00:00 +0900
 categories: [Spring_Boot, Gradle, Multi_Module]
 ---
@@ -304,7 +304,7 @@ spring boot jar로 패키징 될 web 프로젝트들은 `mainClassName`을 설�
 ```
 ./gradlew :부모프로젝트:개별프로젝트:작업
 ./gradlew :A_a_root:A_a_comm:clean
-
+./gradlew :A_a_root:A_a_comm:build
 
 
 
@@ -324,7 +324,7 @@ spring boot jar로 패키징 될 web 프로젝트들은 `mainClassName`을 설�
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwMzc1OTgxMSw4NDcwNTc3MzcsMTY3NT
+eyJoaXN0b3J5IjpbLTQwMjYyMjE3MCw4NDcwNTc3MzcsMTY3NT
 MxMTA4LDQ2MzUxOTg0OSwxNTcwNDgxNDUwLDEzMDgxNjA1NzMs
 MTUyNzI0MzM3NiwtOTMzMjY3NjA3LC01MzI4NzI4MzUsMTQ4MT
 Y2NDM1LC0xNDU2OTkwOTgwLDE3NzQ3NTAxNSwtOTQzNzAyMDE2
