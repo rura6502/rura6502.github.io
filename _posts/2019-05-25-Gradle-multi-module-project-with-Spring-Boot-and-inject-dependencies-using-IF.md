@@ -439,7 +439,10 @@ project(":A_b_root:A_b_b") {
 }
 ```
 
-## 추가 참고 사항
+## Appendix
+
+### source file
+
 
 ### 개별 빌드
 
@@ -451,7 +454,7 @@ project(":A_b_root:A_b_b") {
 ./gradlew :A_a_root:A_a_comm:build
 ```
 
-이렇게 사용해서 할 수 있음. 개별빌드를 활용하면 jenkins등을 사용할때 각 프로젝트를 개별빌드하는 파이프라인을 구성해서 병렬로 개별테스트, 빌드, 배포를 할 수 있음.
+이렇게 사용해서 할 수 있음. 개별빌드를 활용하면 jenkins등을 사용할때 각 프로젝트를 개별빌드하는 파이프라인을 구성해서 병렬로 개별테스트, 빌드, 배포를 할 수 있음. 하지만 그래들의 `--pararell` 옵션 사용시 본 기능이 아직 incubating이라는 메세지가 뜸.
 
 ### 간단한 확인
 
@@ -459,8 +462,7 @@ project(":A_b_root:A_b_b") {
 
 ## Todo
 
-* web 이름이 들어가는 프로젝트는 스프링 부트 프로젝트라는 것을 가정했을 때 메인 메소드가 들어가있는 클래스를 자동으로 만들기 -> 그래들 쪽에 `Classs Generator`라는 플러그인이 몇개 보이는데 이를 적용하면 가능할 것으로 예상
-* 개별프로젝트 빌드
+* web 이름이 들어가는 프로젝트는 스프링 부트 프로젝트라는 것을 가정했을 때 메인 메소드가 들어가있는 클래스를 자동으로 만들기 -> 그래들 쪽에 `Classs Generator`라는 플러그인이 몇개 보이는데 이를 적용하면 가능할 것으로 예상.
 
 
 ## refer to
@@ -471,5 +473,5 @@ project(":A_b_root:A_b_b") {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzU3MDQyNDZdfQ==
+eyJoaXN0b3J5IjpbODk4NzM5MjIyXX0=
 -->
