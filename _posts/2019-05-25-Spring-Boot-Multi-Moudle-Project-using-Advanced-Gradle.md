@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Spring Boot Multi Module Project with Flexible Gradle Setting
+title:  Gradle multi-module project with Spring Boot and dependencies using IF
 date:  2019-05-25 00:00:00 +0900
 categories: [Spring_Boot, Gradle, Multi_Module]
 ---
@@ -324,10 +324,10 @@ spring boot jar로 패키징 될 web 프로젝트들은 `mainClassName`을 설�
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwMjYyMjE3MCw4NDcwNTc3MzcsMTY3NT
-MxMTA4LDQ2MzUxOTg0OSwxNTcwNDgxNDUwLDEzMDgxNjA1NzMs
-MTUyNzI0MzM3NiwtOTMzMjY3NjA3LC01MzI4NzI4MzUsMTQ4MT
-Y2NDM1LC0xNDU2OTkwOTgwLDE3NzQ3NTAxNSwtOTQzNzAyMDE2
-LDEyNDk1MjY1MjUsNTA5NjI2ODYxLDE3MTQ0ODgxNzcsLTE4NT
-A1NzcyNzgsLTE5OTE0NTA1MDBdfQ==
+eyJoaXN0b3J5IjpbLTE1NTEzNDg1MDUsODQ3MDU3NzM3LDE2Nz
+UzMTEwOCw0NjM1MTk4NDksMTU3MDQ4MTQ1MCwxMzA4MTYwNTcz
+LDE1MjcyNDMzNzYsLTkzMzI2NzYwNywtNTMyODcyODM1LDE0OD
+E2NjQzNSwtMTQ1Njk5MDk4MCwxNzc0NzUwMTUsLTk0MzcwMjAx
+NiwxMjQ5NTI2NTI1LDUwOTYyNjg2MSwxNzE0NDg4MTc3LC0xOD
+UwNTc3Mjc4LC0xOTkxNDUwNTAwXX0=
 -->
