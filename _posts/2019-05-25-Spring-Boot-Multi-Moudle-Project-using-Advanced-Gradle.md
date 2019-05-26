@@ -261,16 +261,25 @@ project(":A_web_comm") {
   }
 }
 project(":A_a_root:A_a_comm") {/* */}
-project(":A_a_root:A_a_web") {/* */}
+project(":A_a_root:A_a_web") {
+  bootJar {
+    mainClassName = "io.github.rura6502.multimodule_test.A_a_web.A_a_web_App.java"
+  }
+}
 project(":A_a_root:A_a_b") {/* */}
 project(":A_b_root:A_b_comm") {/* */}
 project(":A_b_root:A_b_web") {
+  bootJar {
+    mainClassName = "io.github.rura6502.multimodule_test.A_b_web.A_b_web_App.java"
+  }
   dependencies {
     compile 'org.springframework.boot:spring-boot-starter-webflux'
   }
 }
 project(":A_b_root:A_b_b") {/* */}
 ```
+
+spring boot jar로 패키징 될 web 프로젝트들은 `mainClassName`을 설정해주 었다. 
 
 
 ## Todo
@@ -286,10 +295,10 @@ project(":A_b_root:A_b_b") {/* */}
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3NTMxMTA4LDQ2MzUxOTg0OSwxNTcwND
-gxNDUwLDEzMDgxNjA1NzMsMTUyNzI0MzM3NiwtOTMzMjY3NjA3
-LC01MzI4NzI4MzUsMTQ4MTY2NDM1LC0xNDU2OTkwOTgwLDE3Nz
-Q3NTAxNSwtOTQzNzAyMDE2LDEyNDk1MjY1MjUsNTA5NjI2ODYx
-LDE3MTQ0ODgxNzcsLTE4NTA1NzcyNzgsLTE5OTE0NTA1MDBdfQ
-==
+eyJoaXN0b3J5IjpbLTg5NTczMzcyNSwxNjc1MzExMDgsNDYzNT
+E5ODQ5LDE1NzA0ODE0NTAsMTMwODE2MDU3MywxNTI3MjQzMzc2
+LC05MzMyNjc2MDcsLTUzMjg3MjgzNSwxNDgxNjY0MzUsLTE0NT
+Y5OTA5ODAsMTc3NDc1MDE1LC05NDM3MDIwMTYsMTI0OTUyNjUy
+NSw1MDk2MjY4NjEsMTcxNDQ4ODE3NywtMTg1MDU3NzI3OCwtMT
+k5MTQ1MDUwMF19
 -->
