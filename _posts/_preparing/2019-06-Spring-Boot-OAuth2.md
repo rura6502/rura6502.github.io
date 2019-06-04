@@ -51,10 +51,11 @@ Client details can be updated in a running application by access the underlying 
 
 `AuthorizationServerTokenServices` 인터페이스는 OAuth 2.0에서 토큰을 관리하는 필수적인 운영에 대한 구현을 제공함.
 
-* 엑세스 토큰이 생성될 때 ㅇ
+* 엑세스 토큰이 생성될 때 리소스를 허용하는 엑세스 토큰을 나중에 참조할 수 있도록 반드시 인증을 저정해야 함.
+* 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyMzQ2NDU1MSwxMTMxMjgwMjUsNzMwOT
+eyJoaXN0b3J5IjpbLTE0MTczMTMxOCwxMTMxMjgwMjUsNzMwOT
 k4MTE2XX0=
 -->
