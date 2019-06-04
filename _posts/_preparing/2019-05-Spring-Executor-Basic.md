@@ -34,9 +34,11 @@ OAuth 2.0에서 provider의 역할은 인증 서비스(Authorization Service)와
 * `AuthorizationServerSecurityConfigurer` : token endpoint에 대한 보안 제약을 정의
 * `AuthorizationServerEndpointsConfigurer` : 인증과 토큰 엔드포인트, 토큰 서비스를 정의
 
-프로바이더 설정에서의 중요한 점은 OAuth client에게 인증 코드를 제공하는 방법을 정의하는 것이다. 인증 코드는 OAuth client가 end-user에게 '인증 서버에서 제공하는 인증 페이지에서 인증을 받아서 
+프로바이더 설정에서의 중요한 점은 OAuth client에게 인증 코드를 제공하는 방법을 정의하는 것이다. 인증 코드는 OAuth client가 end-user에게 '인증 서버에서 제공하는 인증 페이지에서 증명서를 이용해 인증을 받아서 나오는 결과물을 나한테 줘'라고 지시함으로써 얻어진다.
+
+### Configuring Client Details
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3ODE5NDExLC0yNjk0Nzk1NzEsMTQ3Mz
-UxMTUxNCwtMjAxMTcxMjE3OV19
+eyJoaXN0b3J5IjpbLTYxODIxMzAwNywtMjY5NDc5NTcxLDE0Nz
+M1MTE1MTQsLTIwMTE3MTIxNzldfQ==
 -->
