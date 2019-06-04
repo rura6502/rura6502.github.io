@@ -18,12 +18,15 @@ OAuth 2.0에서 provider의 역할은 인증 서비스(Authorization Service)와
 토큰 요청은 Spring MVC controller endpoints가 담당하며 접근 제한 리소스는 Standard Spring Security request filter가 담당한다. 인증 서버를 구현하기 위한 Spring Security filter chain에 아래와 같은 엔드포인트가 요구된다.
 
 * `AuthorizationEndpoint` - `default: /oauth/authorize`, 인증을 위한 서비스 리퀘스트에 사용
-* `TokenEndpoint` - `default: /oauth/token`, 
+* `TokenEndpoint` - `default: /oauth/token`, 엑세스 토큰을 위한 서비스 리퀘스트에 사용
 
+다음은 리소스 서버를 구현하기 위해 요구되는 필터
+
+* `OAuth2AuthenticationProcessingFilter` - 리퀘스트와 함께 온 인증 엑세스 토큰의 정보를 로드하는데 사용
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDAyNTA4OTUsMTQ3MzUxMTUxNCwtMj
-AxMTcxMjE3OV19
+eyJoaXN0b3J5IjpbLTExMTU1ODM1NCwxNDczNTExNTE0LC0yMD
+ExNzEyMTc5XX0=
 -->
