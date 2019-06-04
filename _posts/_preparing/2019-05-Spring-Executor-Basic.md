@@ -26,11 +26,11 @@ OAuth 2.0에서 provider의 역할은 인증 서비스(Authorization Service)와
 
 ### Authorization Server Configuration
 
-인증 서버를 구성하기 전에 어떤 승인 방식(Grant Type)을 사용할 지 고려해야 하
+인증 서버를 구성하기 전에 어떤 승인 방식(Grant Type)을 사용할 지 고려해야 한다. 서버의 환경설정은 `client details service`, `token service`를 제공하고 어떻게
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzc4Mjc2NjAsMTQ3MzUxMTUxNCwtMj
-AxMTcxMjE3OV19
+eyJoaXN0b3J5IjpbLTk3MjY1NTk2NiwxNDczNTExNTE0LC0yMD
+ExNzEyMTc5XX0=
 -->
