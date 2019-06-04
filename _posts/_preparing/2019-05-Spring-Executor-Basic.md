@@ -31,10 +31,12 @@ OAuth 2.0에서 provider의 역할은 인증 서비스(Authorization Service)와
 `@EnableAuthorizationServer` 애노테이션은 OAuth 2.0 인증 서버를 설정하는데 사용되는데 `AuthorizationServerConfigurer`를 구현하는(어댑터 구현도 있음) `@Beans`와 함께 사용해야 한다. 
 
 * `ClientDetailsServiceConfigurer` : client details service를 정의하는 설정자(Configurer). Client details는 초기화될 수 있고 또는 이미 만들어져 있는 것을 참조할 수 있음
-* `AuthorizationServerSecurityConfigurer` : 
+* `AuthorizationServerSecurityConfigurer` : token endpoint에 대한 보안 제약을 정의
+* `AuthorizationServerEndpointsConfigurer` : 인증과 토큰 엔드포인트, 토큰 서비스를 정의
 
+프로바이더 설정에서의 중요한 점은 OAuth client에게 인증 코드를 제공하는 방법을 정의하는 것이다. 인증 코드는 OAuth client가 end-user에게 '인증 서버에서 제공하는 인증 페이지에서 인증을 받아서 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODEzMjI5MSwtMjY5NDc5NTcxLDE0Nz
-M1MTE1MTQsLTIwMTE3MTIxNzldfQ==
+eyJoaXN0b3J5IjpbLTM3ODE5NDExLC0yNjk0Nzk1NzEsMTQ3Mz
+UxMTUxNCwtMjAxMTcxMjE3OV19
 -->
