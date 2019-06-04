@@ -62,8 +62,8 @@ Client details can be updated in a running application by access the underlying 
 
 ### JWT Tokens
 
-JWT 토큰 방식을 사용하려면 `JwtTokenStore`가 인증 서버에 필요함. 이는 리소스 서버에도 토큰을 디코드하기위해 `JwtTokenStore`가 가지고 있는 `JwtAccessTokenConverter`가 필요함. 토큰은 기본적으로 서명되며 리소스 서버도 또한 이 서명을 검증(verify the signature)할 수 있어야 함. 그래서 같은 symmetric(signing) key를 가지고 이
+JWT 토큰 방식을 사용하려면 `JwtTokenStore`가 인증 서버에 필요함. 이는 리소스 서버에도 토큰을 디코드하기위해 `JwtTokenStore`가 가지고 있는 `JwtAccessTokenConverter`가 필요함. 토큰은 기본적으로 서명되며 리소스 서버도 또한 이 서명을 검증(verify the signature)할 수 있어야 함. 이 서명에 대한 키는 대
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1MzQwNzUwNywtMTYzNDY5NjEzLC0xND
-E3MzEzMTgsMTEzMTI4MDI1LDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbOTQ3MzM0MzUzLC0xNjM0Njk2MTMsLTE0MT
+czMTMxOCwxMTMxMjgwMjUsNzMwOTk4MTE2XX0=
 -->
