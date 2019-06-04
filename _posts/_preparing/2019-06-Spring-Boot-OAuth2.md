@@ -54,10 +54,9 @@ Client details can be updated in a running application by access the underlying 
 * 엑세스 토큰이 생성될 때 리소스를 허용하는 엑세스 토큰을 나중에 참조할 수 있도록 반드시 인증을 저정해야 함.
 * 엑세스 토큰은 인증을을 로드하는데 사용됨
 
-`AuthorizationServerTokenServices` 구현체가 구현되면 
-
+`AuthorizationServerTokenServices` 구현체가 구현되면 엑세스 토큰을 저장하거나 그 양식을 변경하는데 얼마든지 유연하게 적용 가능한 많은 전략들을 설정할 수 있다. 기본적으로 토큰은 랜덤값을 기반으로 만들어지며 토큰의 영구 저장(Persistence)와 관련된 객체인 `TokenSto
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzMDUxNTUwNiwtMTQxNzMxMzE4LDExMz
-EyODAyNSw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbMTQwNTE1MjI3LC0xNDE3MzEzMTgsMTEzMT
+I4MDI1LDczMDk5ODExNl19
 -->
