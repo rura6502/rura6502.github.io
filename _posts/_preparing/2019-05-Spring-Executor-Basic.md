@@ -22,11 +22,15 @@ OAuth 2.0에서 provider의 역할은 인증 서비스(Authorization Service)와
 
 다음은 리소스 서버를 구현하기 위해 요구되는 필터
 
-* `OAuth2AuthenticationProcessingFilter` - 리퀘스트와 함께 온 인증 엑세스 토큰의 정보를 로드하는데 사용
+* `OAuth2AuthenticationProcessingFilter` - 리퀘스트와 함께 온 인증 엑세스 토큰의 정보를 로드하고 처리하는데 사용
+
+### Authorization Server Configuration
+
+인증 서버를 구성하기 전에 어떤 승인 방식(Grant Type)을 사용할 지 고려해야 하
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTU1ODM1NCwxNDczNTExNTE0LC0yMD
-ExNzEyMTc5XX0=
+eyJoaXN0b3J5IjpbLTEzNzc4Mjc2NjAsMTQ3MzUxMTUxNCwtMj
+AxMTcxMjE3OV19
 -->
