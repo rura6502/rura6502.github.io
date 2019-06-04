@@ -58,9 +58,9 @@ Client details can be updated in a running application by access the underlying 
 
 * `InMemoryTokenStore` - 싱글 서버에 사용하기 적합(트래픽이 적고 failure을 대비한 backup 서버로의 hot swap이 필요하지 않음). 대부분의 프로젝트가 이 구현체로 시작하며 개발 모드에서도 많이 사용된다. 별도의 디펜던시가 필요하지 않아서 서버를 구성하기 쉽다.
 * `JdbcTokenStore` - 토큰 데이터를 관계형 데이터에 저장. 서버간에 데이터베이스를 사용하여 공유.
-* `JSON Web Token(JWT)` - 토큰에 권한과 관련된 데이터를 넣고 그 자체를 인코딩하여 저장(백
+* `JSON Web Token(JWT)` - 토큰에 권한과 관련된 데이터를 넣고 그 자체를 인코딩하여 저장(백 엔드 저장소가 없는 장점이 있음). 단점은 토큰을 취소하기가 어려움. 이 방법을 보완하기 위하여 유효시간을 짧게 주고 refresh token을 사용하여 재발급 받게 하는 방법이 있음. 다른 단점으로는 너무 많은 양의 정보가 토큰에 담기면 낭비가 될 수 있음.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODY0Mjc2OSwtMTYzNDY5NjEzLC0xND
-E3MzEzMTgsMTEzMTI4MDI1LDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbNzY5MjA1MDc5LC0xNjM0Njk2MTMsLTE0MT
+czMTMxOCwxMTMxMjgwMjUsNzMwOTk4MTE2XX0=
 -->
