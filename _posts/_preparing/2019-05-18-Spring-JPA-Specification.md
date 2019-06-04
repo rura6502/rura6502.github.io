@@ -2,7 +2,7 @@
 layout: post
 title:  Spring JPA Speficiation
 date:  2019-05-11 00:00:00 +0900
-categories: [JPA, Specifications, Spring, Spring_Boot]
+categories: [JPA, Specifications, Spring, Spring-Boot]
 ---
 얼마전 Spring Boot, JPA 기반에 Method Query와 JQPL(복잡하거나 메소드 명이 지나치게 길어질 경우 사용)을 혼용하여 사용하고 있었다.
 
@@ -29,6 +29,6 @@ else if .....
 ## refer to
 [Use Criteria Queries in a Spring Data Application](https://www.baeldung.com/spring-data-criteria-queries)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwMjE2MjcyNiwtMTAyMDU0NjY5MiwtMT
-cxNjA0Mzc1MywtMTQyODY2ODc0N119
+eyJoaXN0b3J5IjpbMTAwNzkzNDg3MiwxNjAyMTYyNzI2LC0xMD
+IwNTQ2NjkyLC0xNzE2MDQzNzUzLC0xNDI4NjY4NzQ3XX0=
 -->
