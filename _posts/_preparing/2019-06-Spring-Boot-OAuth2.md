@@ -49,10 +49,12 @@ Client details can be updated in a running application by access the underlying 
 
 ### Managing Tokens
 
-`AuthorizationServerTokenServices`
+`AuthorizationServerTokenServices` 인터페이스는 OAuth 2.0에서 토큰을 관리하는 필수적인 운영에 대한 구현을 제공함.
+
+* 엑세스 토큰이 생성될 때 ㅇ
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzM5MzEzODc1LDExMzEyODAyNSw3MzA5OT
-gxMTZdfQ==
+eyJoaXN0b3J5IjpbLTkyMzQ2NDU1MSwxMTMxMjgwMjUsNzMwOT
+k4MTE2XX0=
 -->
