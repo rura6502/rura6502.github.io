@@ -13,12 +13,14 @@ categories: [Spring-Boot, OAuth2]
 
 ### Oauth 2.0 Provider Implementation
 
-OAuth 2.0에서 provider의 역할은 인증 서비스(Authorization Service)와 리소스 서비스(Resource Service)를 분리하는 것이다. 이 분리 구조는 필요에 따라서 같은 애플리케이션에 구축되기도하며 여러개의 리소스 서비스가 하나의 인증 서버를 구현하거나 한 Spring Security OAuth는 이를 지원한다.
+OAuth 2.0에서 provider의 역할은 인증 서비스(Authorization Service)와 리소스 서비스(Resource Service)를 분리하는 것이다. 이 분리 구조는 필요에 따라서 같은 애플리케이션에 구축되기도하며 Spring Security OAuth는 여러개의 리소스 서비스가 하나의 인증 서버를 구현하거나 하는 등의  다양한 구성을 지원한다.
+
+토큰 요청은 Spring MVC controller endpoints가 담당하며 접근 제한 리소스는 Standard Spring Secu
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODI0NjQxMjgyLDE0NzM1MTE1MTQsLTIwMT
-E3MTIxNzldfQ==
+eyJoaXN0b3J5IjpbMTI2NTY1NTcwMSwxNDczNTExNTE0LC0yMD
+ExNzEyMTc5XX0=
 -->
