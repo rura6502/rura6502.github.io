@@ -45,8 +45,10 @@ OAuth 2.0에서 provider의 역할은 인증 서비스(Authorization Service)와
 *   `authorizedGrantTypes`: Grant types that are authorized for the client to use. Default value is empty.
 *   `authorities`: Authorities that are granted to the client (regular Spring Security authorities).
 
-Client detials는 애플리케이션이 동작중일 때도 업데이트 될 수 있는 
+Client details can be updated in a running application by access the underlying store directly (e.g. database tables in the case of `JdbcClientDetailsService`) or through the `ClientDetailsManager` interface (which both implementations of `ClientDetailsService` also implement).
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0NzQ3MzA0LC0yNjk0Nzk1NzEsMTQ3Mz
+eyJoaXN0b3J5IjpbMTEzMTI4MDI1LC0yNjk0Nzk1NzEsMTQ3Mz
 UxMTUxNCwtMjAxMTcxMjE3OV19
 -->
