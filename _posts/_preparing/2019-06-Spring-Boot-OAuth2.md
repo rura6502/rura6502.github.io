@@ -47,7 +47,12 @@ OAuth 2.0에서 provider의 역할은 인증 서비스(Authorization Service)와
 
 Client details can be updated in a running application by access the underlying store directly (e.g. database tables in the case of `JdbcClientDetailsService`) or through the `ClientDetailsManager` interface (which both implementations of `ClientDetailsService` also implement).
 
+### Managing Tokens
+
+`AuthorizationServerTokenServices`
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzMTI4MDI1LDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbNzM5MzEzODc1LDExMzEyODAyNSw3MzA5OT
+gxMTZdfQ==
 -->
