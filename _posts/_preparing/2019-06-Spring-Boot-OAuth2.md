@@ -54,9 +54,11 @@ Client details can be updated in a running application by access the underlying 
 * 엑세스 토큰이 생성될 때 리소스를 허용하는 엑세스 토큰을 나중에 참조할 수 있도록 반드시 인증을 저정해야 함.
 * 엑세스 토큰은 인증을을 로드하는데 사용됨
 
-`AuthorizationServerTokenServices` 구현체가 구현되면 엑세스 토큰을 저장하거나 그 양식을 변경하는데 얼마든지 유연하게 적용 가능한 많은 전략들을 설정할 수 있다. 기본적으로 토큰은 랜덤값을 기반으로 만들어지며 토큰의 영구 저장(Persistence)와 관련된 객체인 `TokenSto
+`AuthorizationServerTokenServices` 구현체가 구현되면 엑세스 토큰을 저장하거나 그 양식을 변경하는데 얼마든지 유연하게 적용 가능한 많은 전략들을 설정할 수 있다. 기본적으로 토큰은 랜덤값을 기반으로 만들어지며 토큰의 영구 저장(Persistence)와 관련된 객체인 `TokenStore`이 하는 일을 제외하고 토큰을 다루는 거의 모든 일들을 한다고 보면 된다. store의 기본 구현체는 `in-memory implementation`이지만 변경가능하다.
+
+* `InMemoryTokenStore` - 싱글 서버에 사용하기 적합(트래픽이 적고 hot swap용 백업 서버
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwNTE1MjI3LC0xNDE3MzEzMTgsMTEzMT
+eyJoaXN0b3J5IjpbNTU3MTY1MDc4LC0xNDE3MzEzMTgsMTEzMT
 I4MDI1LDczMDk5ODExNl19
 -->
