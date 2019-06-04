@@ -39,9 +39,14 @@ OAuth 2.0에서 provider의 역할은 인증 서비스(Authorization Service)와
 ### Configuring Client Details
 `ClientDetailsServiceConfigurer`(`AuthorizationServerConfigurer`에 의해서 콜백되는)는 in-memory 또는 JDBC 방식을 지원한다. 아래는 주요 속성이다.
 
-* `clientId` : (reqired) 클라이언트 아이디
-* sec
+*   `clientId`: (required) the client id.
+*   `secret`: (required for trusted clients) the client secret, if any.
+*   `scope`: The scope to which the client is limited. If scope is undefined or empty (the default) the client is not limited by scope.
+*   `authorizedGrantTypes`: Grant types that are authorized for the client to use. Default value is empty.
+*   `authorities`: Authorities that are granted to the client (regular Spring Security authorities).
+
+Client detials는 애플리케이션이 동작중일 때도 업데이트 될 수 있는 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzA4OTkxNDk5LC0yNjk0Nzk1NzEsMTQ3Mz
+eyJoaXN0b3J5IjpbLTY0NzQ3MzA0LC0yNjk0Nzk1NzEsMTQ3Mz
 UxMTUxNCwtMjAxMTcxMjE3OV19
 -->
