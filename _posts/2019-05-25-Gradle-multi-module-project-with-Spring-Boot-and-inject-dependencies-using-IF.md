@@ -2,7 +2,7 @@
 layout: post
 title:  Gradle multi-module project with Spring Boot and inject dependencies using IF
 date:  2019-05-25 00:00:00 +0900
-categories: [Spring_Boot, Gradle, Multi_Module]
+categories: [Spring-Boot, Gradle, Multi-Module]
 ---
 
 > 본 포스팅에서 고안한 '유연하다'는 방식은 그루비 언어를 활용하여 구성하는 방식으로 정답은 아니고 더 좋은 방식이 있다면 조언바랍니다.
@@ -475,5 +475,6 @@ project(":A_b_root:A_b_b") {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1NzcxNTAxOSw4OTg3MzkyMjJdfQ==
+eyJoaXN0b3J5IjpbMTY3MDUzMTQwOSwtNDU3NzE1MDE5LDg5OD
+czOTIyMl19
 -->
