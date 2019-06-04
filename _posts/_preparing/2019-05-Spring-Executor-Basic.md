@@ -9,11 +9,11 @@ categories: [Spring-Boot, OAuth2]
 
 ## OAuth 2.0 Provider
 
-접근이 제한되어 있는 리소스(protected resource)를 제공하는 역할.  OAuth 2.0의 클라이언트 역할을 하며 
+접근이 제한되어 있는 리소스(protected resource)를 제공하는 역할. OAuth 2.0에서 유저를 대신해서 제한된 리소스에 엑세스할 수 있는 클라이언트(client) 역할을 수행한다. 이 프로바이더는 OAuth 2.0의 리소스 접근에 사용되는 토큰을 검증하고(verifying) 관리함으로써 이러한 역할을 수행한다. 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0Njc1MTIwNCwtMjAxMTcxMjE3OV19
+eyJoaXN0b3J5IjpbMTQ3MzUxMTUxNCwtMjAxMTcxMjE3OV19
 -->
