@@ -28,10 +28,10 @@ OAuth 2.0에서 provider의 역할은 인증 서비스(Authorization Service)와
 
 인증 서버를 구성하기 전에 어떤 승인 방식(Grant Type)을 사용할 지 고려해야 한다. 서버의 환경설정은 `client details service implementation`, `token service implementation`, 전역적으로 어떻게 허용할지 안할지에 대한 구현체를 제공하는데 사용된다. Note, however, that each client can be configured specifically with permissions to be able to use certain authorization mechanisms and access grants. I.e. just because your provider is configured to support the "client credentials" grant type, doesn't mean that a specific client is authorized to use that grant type.
 
-`@EnableAuthorizationServer` 애노테이션은 OAuth 2.0 인증 서버를 설정하는데 사용되는데 `AuthorizationServerConfigurer`를 구현하는 `@ㅠㄷ무
+`@EnableAuthorizationServer` 애노테이션은 OAuth 2.0 인증 서버를 설정하는데 사용되는데 `AuthorizationServerConfigurer`를 구현하는(어댑터 구현도 있음) `@Beans`와 함께 사용해야 한다. 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzU4Njc0MDksLTI2OTQ3OTU3MSwxNDczNT
-ExNTE0LC0yMDExNzEyMTc5XX0=
+eyJoaXN0b3J5IjpbLTE1NzcxOTM5MjgsLTI2OTQ3OTU3MSwxND
+czNTExNTE0LC0yMDExNzEyMTc5XX0=
 -->
