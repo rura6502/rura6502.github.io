@@ -76,6 +76,13 @@ To use the `JwtTokenStore` you need "spring-security-jwt" on your classpath (you
 * `implicitGrantService`: manages state during the imlpicit grant.
 * `tokenGranter`: the  `TokenGranter`  (taking full control of the granting and ignoring the other properties above)
 
+### Configuring the Endpoint URLs
+
+`AuthorizationServerEndpointsConfigurer`은 `pathMapping()` 메소드를 가지고 있음. 이 메소드는 두가지 아규먼트를 가짐.
+
+-   The default (framework implementation) URL path for the endpoint
+-   The custom path required (starting with a "/")
+
 
 
 
@@ -86,7 +93,7 @@ To use the `JwtTokenStore` you need "spring-security-jwt" on your classpath (you
 
 
 ## refer to
-[OAuth 2 Developers  Guide][[https://projects.spring.io/spring-security-oauth/docs/oauth2.html](https://projects.spring.io/spring-security-oauth/docs/oauth2.html)
+[OAuth 2 Developers  Guide](https://projects.spring.io/spring-security-oauth/docs/oauth2.html)
 
 
 
@@ -110,7 +117,7 @@ To use the `JwtTokenStore` you need "spring-security-jwt" on your classpath (you
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0NzUzMzcyOSwzMzM4MzM0MjEsLTE5OT
-cyMTYzOTAsLTE2MzQ2OTYxMywtMTQxNzMxMzE4LDExMzEyODAy
-NSw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbNzMyNTU3NzkxLDMzMzgzMzQyMSwtMTk5Nz
+IxNjM5MCwtMTYzNDY5NjEzLC0xNDE3MzEzMTgsMTEzMTI4MDI1
+LDczMDk5ODExNl19
 -->
