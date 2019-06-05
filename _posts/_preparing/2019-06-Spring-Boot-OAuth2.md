@@ -77,8 +77,40 @@ To use the `JwtTokenStore` you need "spring-security-jwt" on your classpath (you
 * `tokenGranter`: the  `TokenGranter`  (taking full control of the granting and ignoring the other properties above)
 
 
+
+
+
+
+
+
+
+
+## refer to
+[OAuth 2 Developers  Guide][[https://projects.spring.io/spring-security-oauth/docs/oauth2.html](https://projects.spring.io/spring-security-oauth/docs/oauth2.html)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDIxMjYzMDQ0LDMzMzgzMzQyMSwtMTk5Nz
-IxNjM5MCwtMTYzNDY5NjEzLC0xNDE3MzEzMTgsMTEzMTI4MDI1
-LDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbMjA0NzUzMzcyOSwzMzM4MzM0MjEsLTE5OT
+cyMTYzOTAsLTE2MzQ2OTYxMywtMTQxNzMxMzE4LDExMzEyODAy
+NSw3MzA5OTgxMTZdfQ==
 -->
