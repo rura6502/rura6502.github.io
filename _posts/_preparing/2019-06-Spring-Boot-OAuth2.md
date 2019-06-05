@@ -80,8 +80,12 @@ To use the `JwtTokenStore` you need "spring-security-jwt" on your classpath (you
 
 `AuthorizationServerEndpointsConfigurer`은 `pathMapping()` 메소드를 가지고 있음. 이 메소드는 두가지 아규먼트를 가짐.
 
- The default (framework implementation) URL path for the endpoint
--   The custom path required (starting with a "/")
+* The default (framework implementation) URL path for the endpoint
+* The custom path required (starting with a "/")
+
+framework에서 제공하는 url은 역할에 따라 몇가지 카테고리로 나뉘어져있다.
+
+*  `/oauth/authorize`와 토큰 엔드포인트를 담당하는 `/ouath/token`, 
 
 
 
@@ -117,7 +121,7 @@ To use the `JwtTokenStore` you need "spring-security-jwt" on your classpath (you
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyODUwNDI4LDczMjU1Nzc5MSwzMzM4Mz
-M0MjEsLTE5OTcyMTYzOTAsLTE2MzQ2OTYxMywtMTQxNzMxMzE4
-LDExMzEyODAyNSw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTE2MzQzMTk1Niw3MzI1NTc3OTEsMzMzOD
+MzNDIxLC0xOTk3MjE2MzkwLC0xNjM0Njk2MTMsLTE0MTczMTMx
+OCwxMTMxMjgwMjUsNzMwOTk4MTE2XX0=
 -->
