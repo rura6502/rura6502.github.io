@@ -71,9 +71,10 @@ To use the `JwtTokenStore` you need "spring-security-jwt" on your classpath (you
 `AuthorizationServerEndpointsConfigurer`에 정의되어 있는 `AuthorizationEndpoint`를 통하여 권한을 부여하는 방법을 지원한다. 기본적으로 모든 권한 부여 방법은 패스워드를 제외하도록 되어있다.
 
 * `authenticationManager`  - `AuthenticationManager`를 인젝팅하여 패스워드 정책을 변경할 수 있음
-* `userDetailsService` - `UserDetailsService`를 인젝팅하거나 `anyway (e.g. in a GlobalAuthenticationManagerConfigurer)`로 설정하면 
+* `userDetailsService` - if you inject a `UserDetailsService` or if one is configured globally anyway (e.g. in a `GlobalAuthenticationManagerConfigurer`) then a refresh token grant will contain a check on the user details, to ensure that the account is still active
+* `authorizationCodeServices` : 인증 코드 서비스를 정의.(
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzMzODMzNDIxLC0xOTk3MjE2MzkwLC0xNj
-M0Njk2MTMsLTE0MTczMTMxOCwxMTMxMjgwMjUsNzMwOTk4MTE2
-XX0=
+eyJoaXN0b3J5IjpbMTU4NDM2MzgwMCwzMzM4MzM0MjEsLTE5OT
+cyMTYzOTAsLTE2MzQ2OTYxMywtMTQxNzMxMzE4LDExMzEyODAy
+NSw3MzA5OTgxMTZdfQ==
 -->
