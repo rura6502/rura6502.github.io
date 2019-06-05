@@ -68,8 +68,11 @@ To use the `JwtTokenStore` you need "spring-security-jwt" on your classpath (you
 
 ### Grant Types
 
-`AuthorizationEndpoint`를 통하여 권한을 부여하는 방법을 지원하며 
+`AuthorizationServerEndpointsConfigurer`에 정의되어 있는 `AuthorizationEndpoint`를 통하여 권한을 부여하는 방법을 지원한다. 기본적으로 모든 권한 부여 방법은 패스워드를 제외하도록 되어있다.
+
+`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTcyMTYzOTAsLTE2MzQ2OTYxMywtMT
-QxNzMxMzE4LDExMzEyODAyNSw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTU0NzEyOTM3NywtMTk5NzIxNjM5MCwtMT
+YzNDY5NjEzLC0xNDE3MzEzMTgsMTEzMTI4MDI1LDczMDk5ODEx
+Nl19
 -->
