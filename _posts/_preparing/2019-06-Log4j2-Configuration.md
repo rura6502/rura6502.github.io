@@ -54,10 +54,10 @@ L:oggerConfig는 Log Level을 가짐. 기본적으로 내정되어 있는 레벨
 
 logging requests에 대한 enable/disable을 결정하는 것은 매우 일부분. Log4j는 로깅 요청들을 출력할 수 있는 다중 창구(Multiple Destination)을 제원하는데 하나의 아웃풋 창구를 Appender라고 부름. Appender는 콘솔, 파일, 소켓통신, JMS, daemon, database 등 다양한 창구 기능을 제공함. Appender는 Logger의 `addLoggerAppender`를 호출하여 자유롭게 추가될 수 있음. 매칭되는 이름의 LoggerConfig가 없으면 새로 생성되고 자동으로 attached 되고 모든 로거에게 LoggerConfig가 새로 생성되었으니 참조를 업데이트하라고 알림을 전송함.
 
-logger를 통하여 전송되는 각각의 로깅 리퀘스트는 그 Logger가 가지고 있는 모든 LoggerConfig에 선언되어 있는 Appenders와 LoggerConfig의 부모의 Appenders에게도 전송됨. Appenders는 LoggerConfig hierarchy 구조에 따라서 상속이 되는데, 예를들어 console appender가 root logger에 추가되면 모든 로깅 리퀘스트는 적어도 console에 출력 +a 임. `additivity="false"`옵션을 사용해서 오버라이드 하여 부모의 동
+logger를 통하여 전송되는 각각의 로깅 리퀘스트는 그 Logger가 가지고 있는 모든 LoggerConfig에 선언되어 있는 Appenders와 LoggerConfig의 부모의 Appenders에게도 전송됨. Appenders는 LoggerConfig hierarchy 구조에 따라서 상속이 되는데, 예를들어 console appender가 root logger에 추가되면 모든 로깅 리퀘스트는 적어도 console에 출력 +a 임. `additivity="false"`옵션을 사용해서 오버라이드 하여 부모의 동작을 막고 재정의할 수도 있음.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTk3MDE2NjA5LC02OTE4NTEzOTIsLTQ0ND
-kwMjQ3OCwxMjgwMzY2NjkwLDg0NjgxOTU3NSwtMTQwMDIwMTQ2
-MywyMDM4Mzc2NTExXX0=
+eyJoaXN0b3J5IjpbLTIwODg1MTM2NTgsLTY5MTg1MTM5MiwtND
+Q0OTAyNDc4LDEyODAzNjY2OTAsODQ2ODE5NTc1LC0xNDAwMjAx
+NDYzLDIwMzgzNzY1MTFdfQ==
 -->
