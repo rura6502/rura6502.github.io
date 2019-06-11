@@ -58,9 +58,11 @@ logger를 통하여 전송되는 각각의 로깅 리퀘스트는 그 Logger가 
 
 ### Layout
 
-Appender에서 사용하며 output format을 담당. 사용자의 설정에 따라 LogEvent의 포매팅을 담당함. PatternLayout은 C언어의 printf function 스타일과 유사한 패턴 방식의 포맷을 설정할 수 있게 해줌.
+Appender에서 사용하며 output format을 담당. 사용자의 설정에 따라 LogEvent의 포매팅을 담당함. 포맷은 일반 텍스트일 수도 있으며 JSON, HTML, XML 등 다양한 방식을 지원함.  PatternLayout은 C언어의 printf function 스타일과 유사한 패턴 방식의 포맷을 설정할 수 있게 해줌.
+
+## Configuration
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0MTA4NDk1NCwtNjkxODUxMzkyLC00ND
-Q5MDI0NzgsMTI4MDM2NjY5MCw4NDY4MTk1NzUsLTE0MDAyMDE0
-NjMsMjAzODM3NjUxMV19
+eyJoaXN0b3J5IjpbLTExODgyNDkwODYsLTY5MTg1MTM5MiwtND
+Q0OTAyNDc4LDEyODAzNjY2OTAsODQ2ODE5NTc1LC0xNDAwMjAx
+NDYzLDIwMzgzNzY1MTFdfQ==
 -->
