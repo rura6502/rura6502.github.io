@@ -50,8 +50,11 @@ L:oggerConfig는 Log Level을 가짐. 기본적으로 내정되어 있는 레벨
 * Deny : 이벤트가 바로 무시되어야 하며 caller에게 control이 return 되어야 함.
 * Neutral : 이벤트가 다른 필터로 전달되어야 함. 만약 다른 필터가 없을 경우 처리됨.
 
+### Appender
+logging requestㄴ
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0NDkwMjQ3OCwxMjgwMzY2NjkwLDg0Nj
-gxOTU3NSwtMTQwMDIwMTQ2MywyMDM4Mzc2NTExXX0=
+eyJoaXN0b3J5IjpbNzU2NDEzNDQ0LC00NDQ5MDI0NzgsMTI4MD
+M2NjY5MCw4NDY4MTk1NzUsLTE0MDAyMDE0NjMsMjAzODM3NjUx
+MV19
 -->
