@@ -7,7 +7,7 @@ categories: [log4j2]
 
 ![log4j_architecture_class_diagram](https://github.com/rura6502/rura6502.github.io/blob/master/_posts/_image/log4j_architecture_class_diagram.jpg?raw=true)
 
-Log4j의 구조. Application은 Logger를 통해서 Log4j에 접근한다. 즉 Logger는 Application
+Log4j의 구조. Application은 Logger를 통해서 Log4j에 접근한다. Logger는 고유의 이름을 가지고 LogManager에 의해서 생성된다. LogManager는 LoggerContext에 있는데 이 LoggerContext는 Configuration과 함께 전체 로그 시
 
 Log4j2의 환경설정을 위해 이해야 하는 개념들
 
@@ -50,6 +50,6 @@ L:oggerConfig는 Log Level을 가짐. 기본적으로 내정되어 있는 레벨
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0NjAzNzMwLDEyODAzNjY2OTAsODQ2OD
-E5NTc1LC0xNDAwMjAxNDYzLDIwMzgzNzY1MTFdfQ==
+eyJoaXN0b3J5IjpbMTk1MDc3NjU3OSwxMjgwMzY2NjkwLDg0Nj
+gxOTU3NSwtMTQwMDIwMTQ2MywyMDM4Mzc2NTExXX0=
 -->
