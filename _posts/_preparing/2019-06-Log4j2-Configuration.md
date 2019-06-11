@@ -7,7 +7,9 @@ categories: [log4j2]
 
 Log4j2의 환경설정을 위해 이해야 하는 개념들
 
-# 
+### Configuration
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4ODE1OTIxNV19
+eyJoaXN0b3J5IjpbNDM2NzcyNTg3XX0=
 -->
