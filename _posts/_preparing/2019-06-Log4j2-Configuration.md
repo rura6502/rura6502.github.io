@@ -51,10 +51,11 @@ L:oggerConfig는 Log Level을 가짐. 기본적으로 내정되어 있는 레벨
 * Neutral : 이벤트가 다른 필터로 전달되어야 함. 만약 다른 필터가 없을 경우 처리됨.
 
 ### Appender
-logging requestㄴ
+
+logging requests에 대한 enable/disable을 결정하는 것은 매우 일부분. Log4j는 로깅 요청들을 출력할 수 있는 다중 창구(Multiple Destination)을 제원하는데 하나의 아웃풋 창구를 Appender라고 부름. 다양
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzU2NDEzNDQ0LC00NDQ5MDI0NzgsMTI4MD
-M2NjY5MCw4NDY4MTk1NzUsLTE0MDAyMDE0NjMsMjAzODM3NjUx
-MV19
+eyJoaXN0b3J5IjpbLTIwMjQ3NzE1MjYsLTQ0NDkwMjQ3OCwxMj
+gwMzY2NjkwLDg0NjgxOTU3NSwtMTQwMDIwMTQ2MywyMDM4Mzc2
+NTExXX0=
 -->
