@@ -17,9 +17,13 @@ Log4j2의 로그시스템의 중심.
 
 ### Logger
 
-이름을 가지고 LoggerConfig와 실제 연관되어 실제 로그 작업을 수행하는 주체. 
+이름을 가지고 LoggerConfig와 실제 연관되어 실제 로그 작업을 수행하는 주체.
+
+### LoggerConfig
+
+로깅 환경설정 내부에 선언되어 있는 Loggers가 만들어지면 생성되는 객체. 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5MzA4ODgxOF19
+eyJoaXN0b3J5IjpbMTM3NjcyMjYzMF19
 -->
