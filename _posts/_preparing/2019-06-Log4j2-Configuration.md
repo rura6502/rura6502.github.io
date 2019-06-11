@@ -27,7 +27,7 @@ Log4j2의 로그시스템의 중심.
 
 ### Log Levels
 
-L:oggerConfig는 Log Level을 가짐. 기본적으로 내정되어 있는 레벨은 TRACE, DEBUG, INFO, WARN, ERROR, FATAL이 있지만 커스텀도 가능함.
+L:oggerConfig는 Log Level을 가짐. 기본적으로 내정되어 있는 레벨은 TRACE, DEBUG, INFO, WARN, ERROR, FATAL이 있지만 커스텀도 가능함. 앞서 나열한 순서대로 필터는 지정된 로그 레벨 보다 뒤에 있는 레벨들을 필터함. 예를들어서 필터의
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDgzNjk3M119
+eyJoaXN0b3J5IjpbLTQ1ODk3Njg4NF19
 -->
