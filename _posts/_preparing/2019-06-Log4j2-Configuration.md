@@ -21,9 +21,7 @@ Log4j2의 로그시스템의 중심.
 
 ### LoggerConfig
 
-로깅 환경설정 내부에 선언되어 있는 Loggers가 만들어지면 생성되는 객체. 
-
-
+로깅 환경설정 내부에 선언되어 있는 Loggers가 만들어지면 생성되는 객체.  Appenders를 ㅊㅁ
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3NjcyMjYzMF19
+eyJoaXN0b3J5IjpbMjA3Nzk4MzAxMV19
 -->
