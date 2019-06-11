@@ -42,8 +42,10 @@ L:oggerConfig는 Log Level을 가짐. 기본적으로 내정되어 있는 레벨
 
 * Accept : 필터가 더이상 호출될 필요 없으며 이벤트가 진행되어야 함.
 * Deny : 이벤트가 바로 무시되어야 하며 caller에게 control이 return 되어야 함.
+* Neutral : 이벤트가 다른 필터로 전달되어야 함. 만약 다른 필터가 없을 경우 처리됨.
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ2ODE5NTc1LC0xNDAwMjAxNDYzLDIwMz
-gzNzY1MTFdfQ==
+eyJoaXN0b3J5IjpbMTI4MDM2NjY5MCw4NDY4MTk1NzUsLTE0MD
+AyMDE0NjMsMjAzODM3NjUxMV19
 -->
