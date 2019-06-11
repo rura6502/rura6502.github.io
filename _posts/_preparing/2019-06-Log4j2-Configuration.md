@@ -15,7 +15,11 @@ Log4j2의 로그시스템의 중심.
 
 모든 LoggerContext는 active Configuration을 기반으로 동작함. Configuration은 Appenders, context-wide Filters, LoggerConfigs, StrSubstitutor 등 로그 동작에 필요한 모든 값들을 가짐.
 
+### Logger
+
+이름을 가지고 LoggerConfig와 실제 연관되어 실제 로그 작업을 수행하는 주체. 
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTk1NjU5MTJdfQ==
+eyJoaXN0b3J5IjpbMTk5MzA4ODgxOF19
 -->
