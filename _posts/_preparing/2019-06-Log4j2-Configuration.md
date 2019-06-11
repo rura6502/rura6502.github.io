@@ -36,9 +36,11 @@ L:oggerConfig는 Log Level을 가짐. 기본적으로 내정되어 있는 레벨
 * 컨트롤이 LoggerConfig로 전달되기 전
 * 컨트롤이 LoggerConfig로 전달되었지만 어떠한 Appenders도 호출되기 전
 * 컨트롤이 LoggerConfig로 전달되었지만  특정 Appender가 호출되기 전
-* 컨트롤이 Logger채
+* 개별 Appender에서
+
+방화벽의 필터와 유사하게 동작함. 각각의 필터는 세가지 중 하나의 상태를 반환하는데 Accept, Deny, Neu
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjk0NzY3OTMwLC0xNDAwMjAxNDYzLDIwMz
-gzNzY1MTFdfQ==
+eyJoaXN0b3J5IjpbNDAzMDU0MTEsLTE0MDAyMDE0NjMsMjAzOD
+M3NjUxMV19
 -->
