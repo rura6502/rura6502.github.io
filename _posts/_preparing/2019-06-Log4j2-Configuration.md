@@ -7,6 +7,8 @@ categories: [log4j2]
 
 Log4j2의 환경설정을 위해 이해야 하는 개념들
 
+## Glossary
+
 ### LoggerContext
 
 Log4j2의 로그시스템의 중심.
@@ -21,7 +23,11 @@ Log4j2의 로그시스템의 중심.
 
 ### LoggerConfig
 
-로깅 환경설정 내부에 선언되어 있는 Loggers가 만들어지면 생성되는 객체.  Appenders를 ㅊㅁ
+로깅 환경설정 내부에 선언되어 있는 Loggers가 만들어지면 생성되는 객체.  Appenders를 참조하고 있음.
+
+### Log Levels
+
+L:oggerConfig는 Log Level을 가짐. 기본적으로 내정되어 있는 레벨은 TRACE, DEBUG, INFO, WARN, ERROR, FATAL이 있지만 커스텀도 가능함.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3Nzk4MzAxMV19
+eyJoaXN0b3J5IjpbLTIwNDgzNjk3M119
 -->
