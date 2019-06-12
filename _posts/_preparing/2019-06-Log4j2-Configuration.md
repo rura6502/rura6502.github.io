@@ -69,10 +69,10 @@ Log4j2의 환경설정은 총 4가지 방법이 있음.
 * 코드로 Configuration interface가 제공하는 api를 사용하여 default configuration에 컴포넌트를 추가
 * 코드로 내부 Logger class의 메소드를 호출하여 설정
 
-
+Log4j는 시작하면서 모든 ConfigurationFactory를 찾고 우선순위에 따라 배열한다. 총 4가지의 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1ODQ3MDI3MCwtMTM5OTE2NzQwOCwtMT
-cwNzQ1MjQ5NiwtNjkxODUxMzkyLC00NDQ5MDI0NzgsMTI4MDM2
-NjY5MCw4NDY4MTk1NzUsLTE0MDAyMDE0NjMsMjAzODM3NjUxMV
-19
+eyJoaXN0b3J5IjpbLTEyODYyNjk2MiwxNzU4NDcwMjcwLC0xMz
+k5MTY3NDA4LC0xNzA3NDUyNDk2LC02OTE4NTEzOTIsLTQ0NDkw
+MjQ3OCwxMjgwMzY2NjkwLDg0NjgxOTU3NSwtMTQwMDIwMTQ2My
+wyMDM4Mzc2NTExXX0=
 -->
