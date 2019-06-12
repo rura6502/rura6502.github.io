@@ -10,12 +10,14 @@ Log4j2의 XML 설정 파일은 아래와 같은 구조로 구성되어 있음.
 ```xml
 <Configuration>
 	<Appenders>
-	<!-- define Appender
+		<!-- define Appender --!>
 	</Appenders>
 	<Loggers>
-	
+		<!-- define Logger --!>
 	</Loggers>
 </Configuration>
+```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODI3MjQwNzIsMTg0NzgzMzg4MV19
+eyJoaXN0b3J5IjpbMTE3ODA4NzY3NiwxODQ3ODMzODgxXX0=
 -->
