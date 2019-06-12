@@ -67,9 +67,10 @@ Log4j2의 환경설정은 총 4가지 방법이 있음.
 * XML, JSON, YAML, properties 양식의 환경설정 파일을 읽는 방식
 * 코드로 ConfigurationFactory와 Configuration 구현체를 생성
 * 코드로 Configuration interface가 제공하는 api를 사용하여 default configuration에 컴포넌트를 추가
-* 
+* 코드로 내부 Logger class의 메소드를 호출하여 설정
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDUwNjUwODI1LC0xNzA3NDUyNDk2LC02OT
-E4NTEzOTIsLTQ0NDkwMjQ3OCwxMjgwMzY2NjkwLDg0NjgxOTU3
-NSwtMTQwMDIwMTQ2MywyMDM4Mzc2NTExXX0=
+eyJoaXN0b3J5IjpbLTEzOTkxNjc0MDgsLTE3MDc0NTI0OTYsLT
+Y5MTg1MTM5MiwtNDQ0OTAyNDc4LDEyODAzNjY2OTAsODQ2ODE5
+NTc1LC0xNDAwMjAxNDYzLDIwMzgzNzY1MTFdfQ==
 -->
