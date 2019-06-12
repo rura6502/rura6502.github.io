@@ -7,9 +7,9 @@ categories: [log4j2]
 
 ![log4j_architecture_class_diagram](https://github.com/rura6502/rura6502.github.io/blob/master/_posts/_image/log4j_architecture_class_diagram.jpg?raw=true)
 
-Log4j의 구조. Application은 Logger를 통해서 Log4j에 접근한다. Logger는 고유의 이름을 가지고 LogManager에 의해서 생성된다. LogManager는 LoggerContext에 있는데 이 LoggerContext는 Configuration과 함께 전체 로그 시스템의 core를 이룬다. loggerConfig는 환경설정 내부에 선언된 Logger 선언에 의해서 생성된다. LoggerConfig와 연결되어있는 Appender는 LogEvents를 어떻게 다룰 것인지(저장/출력)에 대하여 정의한다.
+Log4j의 구조. Application은 Logger를 통해서 Log4j에 접근함. Logger는 고유의 이름을 가지고 LogManager에 의해서 생성됨. LogManager는 LoggerContext에 있는데 이 LoggerContext는 Configuration과 함께 전체 로그 시스템의 core를 이룸. loggerConfig는 환경설정 내부에 선언된 Logger 선언에 의해서 생성됨. LoggerConfig와 연결되어있는 Appender는 LogEvents를 어떻게 다룰 것인지(저장/출력)에 대하여 정의함.
 
-Logger는 항상 LoggerConfig를 가지고 있는데 Logger가 가지고 있는 LoggerConfig는 Logger와 이름이 같거나, 부모 패키지의 이름을 가지거나, Root LoggerConfig이다. 
+> Logger는 항상 LoggerConfig를 가지고 있는데 Logger가 가지고 있는 LoggerConfig는 Logger와 이름이 같거나, 부모 패키지의 이름을 가지거나, Root LoggerConfig이다. 
 
 Log4j2의 환경설정을 위해 이해야 하는 개념들
 
@@ -71,11 +71,12 @@ Log4j2의 환경설정은 총 4가지 방법이 있음.
 
 Log4j는 시작하면서 모든 ConfigurationFactory를 찾고 우선순위에 따라 배열한다. 총 4가지의 ConfigurationFactory 구현체로 JSON, YAML, properties, XML이 있는데 아래의 과정을 거치게 된다.
 
-1. 시스템 프로퍼티 `log4j.configurationFile` 값이 있는지 확인하고, 만약에 설정되어 있으면 ConfigurationFactory가 읽을 수 있는 확장자를 가진 파일을 읽고 설정을 로드한다.
-2. 시스템 프로퍼티가 설정되어 있지
+1. 시스템 프로퍼티 `log4j.configurationFile` 값이 있는지 확인하고, 만약에 설정되어 있으면 ConfigurationFactory가 읽을 수 있는 확장자를 가진 파일을 읽고 설정을 로드함.
+2. 시스템 프로퍼티가 설정되어 있지 않으면 클래스패스상의 `log4j-test.properties` 파일을 찾음.
+3.  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzNjcxODg1OCwxNzA3NjU2NzI3LDE2OD
-I1NjIzMjAsMTc1ODQ3MDI3MCwtMTM5OTE2NzQwOCwtMTcwNzQ1
-MjQ5NiwtNjkxODUxMzkyLC00NDQ5MDI0NzgsMTI4MDM2NjY5MC
-w4NDY4MTk1NzUsLTE0MDAyMDE0NjMsMjAzODM3NjUxMV19
+eyJoaXN0b3J5IjpbNTI4OTgzNzEyLDE3MDc2NTY3MjcsMTY4Mj
+U2MjMyMCwxNzU4NDcwMjcwLC0xMzk5MTY3NDA4LC0xNzA3NDUy
+NDk2LC02OTE4NTEzOTIsLTQ0NDkwMjQ3OCwxMjgwMzY2NjkwLD
+g0NjgxOTU3NSwtMTQwMDIwMTQ2MywyMDM4Mzc2NTExXX0=
 -->
