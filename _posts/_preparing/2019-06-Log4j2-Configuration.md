@@ -72,10 +72,10 @@ Log4j2의 환경설정은 총 4가지 방법이 있음.
 Log4j는 시작하면서 모든 ConfigurationFactory를 찾고 우선순위에 따라 배열한다. 총 4가지의 ConfigurationFactory 구현체로 JSON, YAML, properties, XML이 있는데 아래의 과정을 거치게 된다.
 
 1. 시스템 프로퍼티 `log4j.configurationFile` 값이 있는지 확인하고, 만약에 설정되어 있으면 ConfigurationFactory가 읽을 수 있는 확장자를 가진 파일을 읽고 설정을 로드함.
-2. 시스템 프로퍼티가 설정되어 있지 않으면 클래스패스상의 `log4j-test.properties` 파일을 찾음.
-3.  
+2. 시스템 프로퍼티가 설정되어 있지 않으면 클래스패스상의 `log4j-test.properties` 파일을 찾아서 `log4j.configurationFile` 프로퍼티가 설정되어 있는지 찾음.
+3. `log4j.configurationFile` 프로퍼티를 읽는 것에 실패하면 log4j2-test.yaml,
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTI4OTgzNzEyLDE3MDc2NTY3MjcsMTY4Mj
+eyJoaXN0b3J5IjpbNzEzMjkzOTc3LDE3MDc2NTY3MjcsMTY4Mj
 U2MjMyMCwxNzU4NDcwMjcwLC0xMzk5MTY3NDA4LC0xNzA3NDUy
 NDk2LC02OTE4NTEzOTIsLTQ0NDkwMjQ3OCwxMjgwMzY2NjkwLD
 g0NjgxOTU3NSwtMTQwMDIwMTQ2MywyMDM4Mzc2NTExXX0=
