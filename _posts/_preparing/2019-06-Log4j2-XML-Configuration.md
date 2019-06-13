@@ -24,7 +24,8 @@ Log4j2의 XML 설정 파일은 아래와 같은 구조로 구성되어 있음.
 
 
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxMTI1ODk5MSwtMjk3NjA5ODM2LDExMT
+eyJoaXN0b3J5IjpbMTU4MTAwMTY5MywtMjk3NjA5ODM2LDExMT
 I1MjkyMTcsMTE3ODA4NzY3NiwxODQ3ODMzODgxXX0=
 -->
