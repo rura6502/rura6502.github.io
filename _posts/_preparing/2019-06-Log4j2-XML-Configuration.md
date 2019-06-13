@@ -20,8 +20,11 @@ Log4j2의 XML 설정 파일은 아래와 같은 구조로 구성되어 있음.
 
 ### <Configuration />
 
-Configuration 태그에서 사용할 수 있는
+Configuration 태그에서 사용할 수 있는 대표적인 기능들
+
+* Automitic Reconfiguration : 로그의 설정 파일(log4j2*.*) 내용이 변경되면 별도의 재시작이나 재적용 작업 없이 그 설정을 적용시키는 기능
+* Advertise : 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5NDU2NDI5NSwxMTc4MDg3Njc2LDE4ND
+eyJoaXN0b3J5IjpbMTExMjUyOTIxNywxMTc4MDg3Njc2LDE4ND
 c4MzM4ODFdfQ==
 -->
