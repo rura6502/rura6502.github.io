@@ -24,10 +24,12 @@ Log4j2의 XML 설정 파일은 아래와 같은 구조로 구성되어 있음.
 
 LoggerConfig는 하나 또는 그 이상의 AppenderRef 엘리먼트를 선언해서 특정 Appeder를 참조할 수 있음. 만약 다수의 Appender를 참조한다면 LoggerConfig는 발생하는 로깅 이벤트를 모두 각각의 Appender로 보냄.
 
-여기서 주의해야 할 점은 모든 Logger들은 root Logger를 상속받게 되는데 root Logger는 위에서 언급했던 default 값
+여기서 주의해야 할 점은 모든 Logger들은 별도로 이름이 없이 기본으로 선언되어 있는 root Logger를 상속받게 되는데 root Logger는 level이 error이며 additivity 속성과 이름을 가지고 있지 않음.
+
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzMzk4NzA5NSwtMjk3NjA5ODM2LDExMT
-I1MjkyMTcsMTE3ODA4NzY3NiwxODQ3ODMzODgxXX0=
+eyJoaXN0b3J5IjpbLTI3OTMyNzg2LC0yOTc2MDk4MzYsMTExMj
+UyOTIxNywxMTc4MDg3Njc2LDE4NDc4MzM4ODFdfQ==
 -->
