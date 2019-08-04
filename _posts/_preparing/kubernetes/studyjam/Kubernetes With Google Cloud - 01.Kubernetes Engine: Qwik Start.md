@@ -16,11 +16,11 @@
 > --type="LoadBalancer" : 컨테이너의 컴퓨팅 엔진 부하 분산기를 생성
 
 > 서비스 확인
-> `kubectl get service hello-server
+> `kubectl get service hello-server`
 
-
+> 서비스 삭제
+> `gcloud container clusters delete [CLUSTER-NAME]`
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDc2ODg4MjMsLTE4NzM4NzU2OTBdfQ
-==
+eyJoaXN0b3J5IjpbLTE2MDUzMzY2NywtMTg3Mzg3NTY5MF19
 -->
