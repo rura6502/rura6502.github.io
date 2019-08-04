@@ -2,7 +2,13 @@
 
 노드 : 클러스터 구성을 위해 쿠퍼넷 프로세스를 실행하는 가상머신 인스턴스
 
+> 컴퓨팅 영역(리전) 설정 : `gcloud config set compute/zone us-central1-a
+`
 
+> Kubernetes Engine 클러스터 생성 : `
+gcloud container clusters create [CLUSTER-NAME]
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzM4NzU2OTBdfQ==
+eyJoaXN0b3J5IjpbMTA1MDc1OTA3MCwtMTg3Mzg3NTY5MF19
 -->
