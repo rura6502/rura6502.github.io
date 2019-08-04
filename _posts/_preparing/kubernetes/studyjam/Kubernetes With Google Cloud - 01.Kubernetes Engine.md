@@ -94,11 +94,17 @@ exit
 
 서비스가 제공하는 팟 집합에 대한 액세스 수준 유형
 
-* Cluster IP(내부) : tjq
+* Cluster IP(내부) : 클러스터 안에서만 액세스 가능
+* NodePort : 각 노드의 외부에서 액세스 가능한 IP를 제공
+* LoadBalancer : 클라우드 업체로 부터 부하 분산기를 추가하여 서비스에서 유입되는 트래픽을 내부에 있는 노드로 전달
+
+### 서비스 만들기
+
+
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTAxOTM3MDUsMTkxODUxMjcxNCw4Nz
-g2NTQ0NzJdfQ==
+eyJoaXN0b3J5IjpbMTM3MDk4Mzk4LDE5MTg1MTI3MTQsODc4Nj
+U0NDcyXX0=
 -->
