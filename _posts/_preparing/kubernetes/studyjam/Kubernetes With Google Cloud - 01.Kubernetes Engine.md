@@ -90,11 +90,15 @@ exit
 
 팟은 영구적이지 않음. 다양한 원인들로 문제가 발생할 수 있음. 서비스는 팟을 위한 안정적인 엔트포인트를 제공
 
+서비스는 라벨을 사용해서 어떤 포트에서 작동할 지 결정. 팟에 라벨이 지정이 되어 있으면 서비스가 이를감지하여 자동으로 노출.
 
+서비스가 제공하는 팟 집합에 대한 액세스 수준 유형
+
+* Cluster IP(내부) : tjq
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjg1NDk1MzMsMTkxODUxMjcxNCw4Nz
+eyJoaXN0b3J5IjpbLTE5MTAxOTM3MDUsMTkxODUxMjcxNCw4Nz
 g2NTQ0NzJdfQ==
 -->
