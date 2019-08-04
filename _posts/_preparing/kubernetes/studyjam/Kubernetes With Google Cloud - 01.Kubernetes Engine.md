@@ -72,10 +72,16 @@ kubectl get pods
 
 kubectl describe pods monolith
 ```
-팟에는 기본적으로 클러스터 밖에서 접근할 수 없는 IP주소가 부여됨. 
+팟에는 기본적으로 클러스터 밖에서 접근할 수 없는 IP주소가 부여됨. 포터포워딩을 통해서 통신할 수 있음
+
+```bash
+kubectl port-forward monolith 10080:80
+```
+
+
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODc1NzQ0Nzg3LDg3ODY1NDQ3Ml19
+eyJoaXN0b3J5IjpbMTkxODUxMjcxNCw4Nzg2NTQ0NzJdfQ==
 -->
