@@ -65,10 +65,17 @@ spec:
 kubectl create -f pods/monolith.yaml
 ```
 
+실행중인 팟 확인
 
+```
+kubectl get pods
+
+kubectl describe pods monolith
+```
+팟에는 기본적으로 클러스터 밖에서 접근할 수 없는 IP주소가 부여됨. 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODc4NjU0NDcyXX0=
+eyJoaXN0b3J5IjpbODc1NzQ0Nzg3LDg3ODY1NDQ3Ml19
 -->
