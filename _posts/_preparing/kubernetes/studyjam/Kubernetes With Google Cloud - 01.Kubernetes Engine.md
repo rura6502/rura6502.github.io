@@ -27,7 +27,11 @@
 
 ### 팟 만들기
 
-팟은 팟 구성 파일을 사용하여 만들 수 있음. 아래의 팟 구성 ㅍ
+팟은 팟 구성 파일을 사용하여 만들 수 있음. 아래의 팟 구성 파일로 알 수 있는 것
+
+* 1개의 컨테이너로 구성되어 있음.
+* args로 몇가지 인수를 전달함
+* http 용 80번 포트를 개방함.
 
 ```bash
 cat pods/monolith.yaml
@@ -55,9 +59,16 @@ spec:
           cpu: 0.2
 ```
 
+팟을 생성하는 명령어
+
+```bash
+kubectl create -f pods/monolith.yaml
+```
+
+
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2MDc0NTY0Nl19
+eyJoaXN0b3J5IjpbODc4NjU0NDcyXX0=
 -->
