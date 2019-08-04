@@ -78,10 +78,23 @@ kubectl describe pods monolith
 kubectl port-forward monolith 10080:80
 ```
 
+팟의 대화형 셸 실행
+
+```bash
+kubectl exec monolith --stdin --tty -c monolith /bin/sh
+
+exit
+```
+
+## 서비스(Services)
+
+팟은 영구적이지 않음. 다양한 원인들로 문제가 발생할 수 있음. 서비스는 팟을 위한 안정적인 엔트포인트를 제공
+
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxODUxMjcxNCw4Nzg2NTQ0NzJdfQ==
+eyJoaXN0b3J5IjpbLTExNjg1NDk1MzMsMTkxODUxMjcxNCw4Nz
+g2NTQ0NzJdfQ==
 -->
