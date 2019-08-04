@@ -25,8 +25,39 @@
 
 1개 이상의 컨테이너가 포함된 모음. 팟은 볼륨을 포함하고 있음. 볼륨은 팟과 같이 존재하는 데이터 디스크. 컨테이너에 의해 사용될 수 있음. 팟은 컨텐츠에 공유된 네임스페이스를 제공. 같은 팟에 있는 컨테이너는 서로 통신할 수 있고 볼륨을 공유함. 네트워크 네임스페이스도 공유함. 팟은 IP 주소를 한개씩 가지고 있음
 
-> 팟 만들기 : 
+### 팟 만들기
+
+팟은 팟 구성 파일을 사용하여 만들 수 있음. 아래의 팟 구성 ㅍ
+
+```bash
+cat pods/monolith.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: monolith
+  labels:
+    app: monolith
+spec:
+  containers:
+    - name: monolith
+      image: kelseyhightower/monolith:1.0.0
+      args:
+        - "-http=0.0.0.0:80"
+        - "-health=0.0.0.0:81"
+        - "-secret=secret"
+      ports:
+        - name: http
+          containerPort: 80
+        - name: health
+          containerPort: 81
+      resources:
+        limits:
+          cpu: 0.2
+```
+
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2MjkxNDgzMV19
+eyJoaXN0b3J5IjpbLTc2MDc0NTY0Nl19
 -->
