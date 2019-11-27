@@ -23,13 +23,17 @@ fun main() {
 function printMessage(message: String): Unit {
   println(message)
 }
-// String 파라미터가 하나있고 Unit 타입을 반환하는 함수. 현재 return은 null 임.
+```
+String 파라미터가 하나있고 Unit 타입(void)을 반환하는 함수.
 
+```kotlin
 function printMessage(message: String, prefix: String = "Info")
   print("[$prefix] $message")
-}
-// 두번째 파라미터는 optional이며 기본값은 'Info'를 가짐.
+} 
 ```
+두번째 파라미터는 optional이며 기본값은 'Info'를 가짐. 반환 타입을 별도로 지정하지 않았으므로 Unit(void) 임.
+
+
 
 
 
@@ -40,5 +44,5 @@ function printMessage(message: String, prefix: String = "Info")
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwNTMzNjcwMiwtMTU0NzQ3OTU5MV19
+eyJoaXN0b3J5IjpbLTIzNDYwMzgwNCwtMTU0NzQ3OTU5MV19
 -->
