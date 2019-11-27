@@ -19,6 +19,15 @@ fun main() {
 
 ### Functions
 
+```kotlin
+function printMessage(message: String): Unit {
+  println(message)
+}
+// String 파라미터가 하나있고 Unit 타입을 반환하는 함수. 현재 return은 null 임.
+
+
+```
+
 
 
 
@@ -28,6 +37,5 @@ fun main() {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjk0NjY5OTcsLTE1NDc0Nzk1OTFdfQ
-==
+eyJoaXN0b3J5IjpbODcxMTU4MTksLTE1NDc0Nzk1OTFdfQ==
 -->
