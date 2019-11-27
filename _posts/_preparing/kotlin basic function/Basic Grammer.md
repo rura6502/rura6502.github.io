@@ -11,11 +11,14 @@ categories: [Kotlin, Basic, Language]
 // 패키지 이름, 명시하지 않으면 default package로 지정됨.
 package org.kotlinlang.play
 
-// Kotlin application의 entry point. Java의 
+// Kotlin application의 entry point. Java의 main 함수. Kotlin 1.3부터는 파라미터 없이 선언할 수 있음. 이전 버전은 'args: Array<String>'을 적어야 함.
 fun main() {
-  println("Hello, World!")
+  println("Hello, World!") // 표준 출력. 문장 끝의 세미콜론(;)은 optional.
 }
 ```
+
+### Functions
+
 
 
 
@@ -25,5 +28,6 @@ fun main() {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1NjQyMTU4MCwtMTU0NzQ3OTU5MV19
+eyJoaXN0b3J5IjpbLTEwNjk0NjY5OTcsLTE1NDc0Nzk1OTFdfQ
+==
 -->
