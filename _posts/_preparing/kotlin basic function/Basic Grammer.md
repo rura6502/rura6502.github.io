@@ -7,8 +7,19 @@ categories: [Kotlin, Basic, Language]
 
 ## Hello World
 
+```kotln
+package org.kotlinlang.play
+
+fun main() {
+
+}
+```
+
+
+## refer to
+[Learn Kotlin by Example](https://play.kotlinlang.org/byExample/overview)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NjQ5OTIwMDBdfQ==
+eyJoaXN0b3J5IjpbLTEzMjk1OTM0NDZdfQ==
 -->
