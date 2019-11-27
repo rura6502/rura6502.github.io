@@ -7,11 +7,11 @@ categories: [Kotlin, Basic, Language]
 
 ## Hello World
 
-```kotln
+```kotlin
 package org.kotlinlang.play
 
 fun main() {
-
+  
 }
 ```
 
@@ -21,5 +21,5 @@ fun main() {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjk1OTM0NDZdfQ==
+eyJoaXN0b3J5IjpbLTE1NDc0Nzk1OTFdfQ==
 -->
