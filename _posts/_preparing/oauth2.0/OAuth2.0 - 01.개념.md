@@ -19,6 +19,10 @@ OAuth의 인증 플로우에는 몇가지 주체들이 등장합니다.
 * Client : 리소스 오너를 대신해서 보호되어 있는 리소스에 접근하기 위한 요청을 만드는 애플리케이션입니다. 여기서 클라이언트란 애플리케이션을 실행하는 서버, 데크스탑, 장비 등 다양한 것?일 수도 있습니다.
 * Authorization server : 리소스 오너의 인증정보가 유효한지에 대하여 판단하고 엑세스토큰을 발급하는 서버입니다.
 
+### Basic Flow
+
+OAuth의 기본적인 인증 플로우는 다음과 같습니다.
+
 
 ## refer to
 [The OAuth 2.0 Authorization Framework](https://tools.ietf.org/html/rfc6749)
@@ -81,5 +85,5 @@ OAuth의 인증 플로우에는 몇가지 주체들이 등장합니다.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1Nzc4MTAxMywxMDI3MTMyMzQ4XX0=
+eyJoaXN0b3J5IjpbLTEwOTU4MjE5NTEsMTAyNzEzMjM0OF19
 -->
