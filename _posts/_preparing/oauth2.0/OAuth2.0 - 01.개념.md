@@ -8,68 +8,7 @@ categories: [OAuth2, Standard, IETF]
 
 ## Introduction
 
-과거 Server-Client 방식의 인증 모델은 Client(Third-party Application)가 엑세스가 제한되어 있는 리소스에 접근 요청을 하면 서버는 그 리소스를 획득할 권한이 있는지에 대해서 Resource Owner's Credential 이라는 것으로 인증을 하여 제공을 할지, 말지에 대하여 결정하였음. 결론적으론 Client는 원하는 리소스를 얻기 위해선 이 Resource Owner로 부터 허가를 받았다는 Credential이 필요하고 Resource Owner는 허가한 Client에게는 이 Credential을 줘야 함. 그런데 이런 주는 방식에는 여러가지 문제점이 있었음.
-
-* Client는 일반적으로 clear-text 한 패스워드를 알기를 원함. 지금 당장이 아니라 미래에도 계속 쓰기 위해서.
-* 서버는 password authentication을 제공해야 함. 하지만 이런 password 방식은 보안 취약점이 계속 발생함.
-* 보통 Client는 다양한 리소스에 접근하기 위해서 광범위한 권한을 요구하고 Resource Owner은 이것에 대해서 유효기간을 두거나 제한할 수 없음.
-* Resource Owner는 개별 client에 대한 권한을 취소할 수 없고, 취소하려면 모든 엑세스를 취소해야 함. 그리고 패스워드를 바꿔야 함.
-* Third-party application이 보안취약점이 발생하여 유출되면 전체에 영향을 줄 수 있음.
-
-OAuth는 이러한 이슈들을 autorization layer를 분리하고 client에게 Resource Owner로 부터 부여된 적절한 권한을 할당함으로써 풀 수 있다. OAuth는 Resource Owner에 의해서 관리되고, Resource Server로부터 제공되는 resource에 대한 엑세스를 요청하고 Resource Owner는 이 두 요청에 대한 Credentails를 발급한다.
-
-Resource Owner의 Credentails를 이용하는 대신에 Client는 access token이라는 것을 이용하게 되는데 이 Access Token은 scope, lifetime, other access attributes 등으로 구성되어 있는 string이다. Access Token은 Authroization Server로 부터 Client에게 발급되는데 이는 Resource Owner가 승인하여야 한다. Client는 이 Access Token을 사용 Resource Server로부터 Protected Resources에 접근하게 된다.
-
-> 개인 사진(비공개기반)보관 해주는 서비스, 인쇄해주는 서비스가 있다고 가정할 때, 사용자(end-user, Resource Owner)는 printing service(Client)에게 별도의 username/password를 공유하지 않고 photo-storing service(Resource Server)에 접근하여 자신이 업로드 해놓은 사진(Protected Resource)에 접근할 권한을 부여한다. 별도의 인증정보(username/password)를 제공하지 않는 대신에 이 photo-storing service에게 이 printing service가 인증되었다는 것을 알려줘야 하는데 photo-storing service는 Specific Credentails(Access Token)을 발급하여 '이 Credential을 가지고 요청하면 나는 믿어주겠다'라는 Credential을 발급하고 printing service는 이 Credential을 사용해서 자신이 인증받았음을 증명한다.
-
-> HTTP 프로토콜 전용은 아님.
-
-
-## Roles
-
-OAuth2는 총 4가지의 주체로 이루어짐
-
-### Resource Owner
-
-보호되어있는 리소스로의 엑세스를 줄지 말지 결정할 수 있는 주체. Resource Owner가 사람이라면 end-user라고 표현하기도 함.
-
-### Resource Server
-
-보호되어 있는 리소스를 제공하는 서버. 리소스에 대한 요청에 반응하고 access token을 사용하는 주체.
-
-### Client
-
-Resource Owner 대신에 Authorization을 사용해서 보호되어 있는 리소스를 요청하는 애플리케이션.
-
-### Authorization Server
-
-Resource Owner가 인증함과 권한에 적합함에 부합하는 Client에게 Access Token을 발급하는 Server.
-
-## Protocol Flow
-
-[oauth2.0_abstract_protocol_flow]
-
-(A) 클라이언트는 리소스 오너에게 리소스에 접근하기 위한 권한을 요청한다. 이 권한 요청은 리소스 오너에게 바로 하기도 하고 인증 서버를 통하여 간접적으로 하기도 한다.
-(B) 클라이언트는 '리소스 오너가 승인함'을 표현하는 증명서인 '권한 부여(Authorization Grant)'를 받는다. 여기서 권한은 사전정의되어 있는 4가지의 grant type 중 하나이거나 extension grant type을 사용한다. grant type은 클라이언트가 인증을 요청하는데 사용되는 메소드나 인증 서버가 지원하는 타입에 따라서 다른다.
-(C) 클라이언트는 인증 서버에게 자신이 승인받았음을 입증하여 엑세스 토큰을 요청한다.
-(D) 인증 서버는 클라이언트가 제시하는 '권한 부여'가 유효함을 확인하고 클라이언트를 인증하여 만약에 유효하다면 엑세스 토큰을 발급한다.
-(E) 클라이언트는 '(D)' 과정에서 발급받은 엑세스 토큰을 리소스 서버에 제시하고 제한된 리소스에 접근한다.
-(F) 리소스 서버는 엑세스 토큰이 유효함을 확인하고 유효하다면 요청에 대한 응답을 제공한다.
-
-### Authorization Grant
-
-'권한 부여(Authorization Grant)'는 '리소스 오너가 제한된 리소스에 접근하는 것을 허용함'을 나타내는 일종의 증명서(Credential)이며 엑세스 토큰을 얻을 때 사용된다. '권한 부여'에는 공식적으로 사전 정의된 4가지의 방식이 있다.
-
-#### Authorization Code
-
-권한 코드(Authorization Code)는 인증 서버를 사용함으로써 얻을 수 있는데 클라이언트와 리소스 오너간에 중개인으로써의 인증 서버를 사용할 때 얻을 수 있다. 리소스 오너에게 권한을 요청하는 대신에 클라이언트는 리소스 오너에게 인증 서버로 부터 권한 코드를 받아오라고 지시한다(http user-agent를 사용).
-
-리소스 오너가 권한 코드를 클라이언트에게 다시 돌려주기 전에 인증 서버는 리소스 오너를 인증하고 권한을 취득한다. 왜냐하면 리소스 오너만이 오직 인증 서버를 입증할 수 있기 때문이며 리소스 오너의 인증서(Credential)는 클라이언트에게 공유되지 않는다.
-
-The authorization code provides a few important security benefits, such as the ability to authenticate the client, as well as the transmission of the access token directly to the client without passing it through the resource owner's user-agent and potentially exposing it to others, including the resource owner.
-
-#### Implicit
-
+클라이언트는 일반적으로 데이터를 서버에게 요청하고, 서버는 클라언트로부터 받은 요청을 처리하고 서버의 자원들을 제공한다. 
 
 
 
@@ -136,5 +75,5 @@ The authorization code provides a few important security benefits, such as the a
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxOTIwMzgyOV19
+eyJoaXN0b3J5IjpbLTUzMTE5MDgxMl19
 -->
