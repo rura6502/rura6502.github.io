@@ -25,8 +25,8 @@ OAuth의 기본적인 인증 플로우는 다음과 같습니다.
 
 ![https://github.com/rura6502/rura6502.github.io/blob/master/_posts/_image/oauth2.0_abstract_protocol_flow.jpg?raw=true](https://github.com/rura6502/rura6502.github.io/blob/master/_posts/_image/oauth2.0_abstract_protocol_flow.jpg?raw=true)
 
-A. 클라이언트는 리소스 오너에게 인증을 요청합니다. 이 인증요청은 리소스 오너가 바로 인증 서버에 요청하는 경우도 있지만 
-B. 
+A. 클라이언트는 리소스 오너에게 인증을 요청합니다. 이 인증요청은 리소스 오너가 바로 인증 서버에 요청하는 경우도 있지만 인증 서버를 통해 받도록 하는 중개인의 역할을 수행합니다.
+B. 클라이언트는 인증
 
 
 
@@ -91,6 +91,6 @@ B.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5NjYxNjcwOCwtMTA5NTgyMTk1MSwxMD
-I3MTMyMzQ4XX0=
+eyJoaXN0b3J5IjpbLTIwMzI1ODI3MjksLTEwOTU4MjE5NTEsMT
+AyNzEzMjM0OF19
 -->
