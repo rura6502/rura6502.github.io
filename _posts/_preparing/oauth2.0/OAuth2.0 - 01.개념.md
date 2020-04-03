@@ -10,7 +10,7 @@ categories: [OAuth2, Standard, IETF]
 
 ## Introduction
 
-OAuth 2.0은 HTTP 프로토콜 베이스로 설계된 인증방
+OAuth 2.0은 HTTP 프로토콜 베이스로 설계된 인증 프레임워크입니다. 리
 
 
 
@@ -75,5 +75,5 @@ OAuth 2.0은 HTTP 프로토콜 베이스로 설계된 인증방
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2ODExNDc0NCwxMDI3MTMyMzQ4XX0=
+eyJoaXN0b3J5IjpbLTE0NjYxNDY0LDEwMjcxMzIzNDhdfQ==
 -->
