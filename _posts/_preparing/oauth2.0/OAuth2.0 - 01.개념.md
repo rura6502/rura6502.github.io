@@ -10,7 +10,7 @@ categories: [OAuth2, Standard, IETF]
 
 ## Introduction
 
-OAuth 2.0은 
+OAuth 2.0은 HTTP 프로토콜 베이스로 설계된 인
 
 
 
@@ -75,5 +75,5 @@ OAuth 2.0은
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4NjMyODM0NCwxMDI3MTMyMzQ4XX0=
+eyJoaXN0b3J5IjpbMjAxNzc5MTA1MiwxMDI3MTMyMzQ4XX0=
 -->
