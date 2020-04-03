@@ -10,6 +10,7 @@ categories: [OAuth2, Standard, IETF]
 
 ## Introduction
 
+OAuth 2.0은 
 
 
 
@@ -74,5 +75,5 @@ categories: [OAuth2, Standard, IETF]
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2Mjc1MDk0MywxMDI3MTMyMzQ4XX0=
+eyJoaXN0b3J5IjpbMTI4NjMyODM0NCwxMDI3MTMyMzQ4XX0=
 -->
