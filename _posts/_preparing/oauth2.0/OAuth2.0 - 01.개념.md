@@ -24,6 +24,7 @@ OAuth의 인증 플로우에는 몇가지 주체들이 등장합니다.
 OAuth의 기본적인 인증 플로우는 다음과 같습니다.
 
 
+
 ## refer to
 [The OAuth 2.0 Authorization Framework](https://tools.ietf.org/html/rfc6749)
 
@@ -85,5 +86,6 @@ OAuth의 기본적인 인증 플로우는 다음과 같습니다.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTU4MjE5NTEsMTAyNzEzMjM0OF19
+eyJoaXN0b3J5IjpbLTE5NzEzMzQ2MzcsLTEwOTU4MjE5NTEsMT
+AyNzEzMjM0OF19
 -->
