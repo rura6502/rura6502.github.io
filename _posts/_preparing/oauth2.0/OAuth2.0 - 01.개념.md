@@ -26,9 +26,10 @@ OAuth의 기본적인 인증 플로우는 다음과 같습니다.
 ![https://github.com/rura6502/rura6502.github.io/blob/master/_posts/_image/oauth2.0_abstract_protocol_flow.jpg?raw=true](https://github.com/rura6502/rura6502.github.io/blob/master/_posts/_image/oauth2.0_abstract_protocol_flow.jpg?raw=true)
 
 A. 클라이언트는 리소스 오너에게 인증을 요청합니다. 이 인증요청은 리소스 오너가 바로 인증 서버에 요청하는 경우도 있지만 인증 서버를 통해 받도록 하는 중개인의 역할을 수행합니다.
-B. 클라이언트는 '인증 허가(authorization grant)'를 받습니다. 인증 허가란 인증에 대한 허가가 아니라 인증서버에게 요청할 수 있는 일종의 '자격'입니다. 이 자격에는 인증서버에게 인증받을 때 어떤 방식(grant type)으로 받아야 하는지에 대하여 나타나 있습니다.(OAuth2.0은 4가지 방식을 제공하고 추가 extension 방식도 지원합니다.)
+B. 클라이언트는 '인증 허가(authorization grant)'를 받습니다. 인증 허가란 인증에 대한 허가가 아니라 인증서버에게 요청할 수 있는 일종의 '자격'입니다. 이 자격에는 리소스오너가 유효한 리소스 오너인지와, 인증서버에게 인증받을 때 어떤 방식(grant type)으로 받아야 하는지에 대하여 나타나 있습니다.(OAuth2.0은 4가지 방식을 제공하고 추가 extension 방식도 지원합니다.)
 C. 클라이언트는 인증 서버에 엑세스 토큰을 요청합니다.
 D. 인증 서버는 클라이언트를 검증하고 '인증 허가'가 유효한지 체크한 다음 유효하다면 엑세스 토큰을 발급합니다.
+E. 클라이언트는 인증 서버에서 발급받은 토큰을 사용해 접근이 보호된 리소스를 리소스 서버에 요청합니다. 
 
 
 
@@ -93,6 +94,6 @@ D. 인증 서버는 클라이언트를 검증하고 '인증 허가'가 유효한
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExNjc0NTg1NSwtNjYzMzM0MDg0LC0xMD
+eyJoaXN0b3J5IjpbLTcyMDkyMDMxMywtNjYzMzM0MDg0LC0xMD
 k1ODIxOTUxLDEwMjcxMzIzNDhdfQ==
 -->
