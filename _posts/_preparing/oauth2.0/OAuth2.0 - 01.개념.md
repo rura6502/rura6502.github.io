@@ -23,9 +23,10 @@ OAuth의 인증 플로우에는 몇가지 주체들이 등장합니다.
 
 OAuth의 기본적인 인증 플로우는 다음과 같습니다.
 
-![https://github.com/rura6502/rura6502.github.io/blob/master/_posts/_image/oauth2.0_abstract_protocol_flow.jpg](https://github.com/rura6502/rura6502.github.io/blob/master/_posts/_image/oauth2.0_abstract_protocol_flow.jpg)
+![https://github.com/rura6502/rura6502.github.io/blob/master/_posts/_image/oauth2.0_abstract_protocol_flow.jpg?raw=true](https://github.com/rura6502/rura6502.github.io/blob/master/_posts/_image/oauth2.0_abstract_protocol_flow.jpg?raw=true)
 
-
+A. 클라이언트는 리소스 오너에게 인증을 요청합니다.
+B. 
 
 
 
@@ -90,6 +91,6 @@ OAuth의 기본적인 인증 플로우는 다음과 같습니다.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NzIwMzI2OTUsLTEwOTU4MjE5NTEsMT
+eyJoaXN0b3J5IjpbLTIwMzY3NzUxMzEsLTEwOTU4MjE5NTEsMT
 AyNzEzMjM0OF19
 -->
