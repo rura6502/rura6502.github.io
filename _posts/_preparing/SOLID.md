@@ -29,8 +29,8 @@ class Book {
 	}
 }
 ```
-위 클래스는 `Book`이라는 객체를 추상화한 클래스인데 
+위 클래스는 책이라는 현실 도메인을 `Book`이라는 객체로 모델링한 클래스인데 `Book`과는 연관없는 이유
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzUzMjI4NTUsMTQwNTI4MzYyNiw4NT
-A3NTQzMzNdfQ==
+eyJoaXN0b3J5IjpbNjc0ODUxMDk1LDE0MDUyODM2MjYsODUwNz
+U0MzMzXX0=
 -->
