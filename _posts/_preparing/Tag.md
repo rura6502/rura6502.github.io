@@ -12,6 +12,8 @@ Queue
 Spring-Boot
 Standard
 Thread
+OOP
+SOLID
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwMDE3MjU4Ml19
+eyJoaXN0b3J5IjpbMjYzMzY4MTU5LC00MDAxNzI1ODJdfQ==
 -->
