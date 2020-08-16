@@ -69,8 +69,8 @@ class BookService {
 }
 ```
 
-위와같이 `데이터베이스에 대한 책임`을 분리할 경우 다른 클래스에서도 DB접속 로직이 필요할 때 `DBManager` 클래스는 데이터베이스에 대한 `단일책임`만을 가지고 있으므로 다른 비즈니스로직에 영향을 끼치지 않도록 안전하게 가져다 쓸 수 있다.(커넥션등의 문제는 별도). 이렇게하면 개별 클래스가 하나의 책임만을 취급하게 되므로 한 클래슥
+위와같이 `데이터베이스에 대한 책임`을 분리할 경우 다른 클래스에서도 DB접속 로직이 필요할 때 `DBManager` 클래스는 데이터베이스에 대한 `단일책임`만을 가지고 있으므로 다른 비즈니스로직에 영향을 끼치지 않도록 안전하게 가져다 쓸 수 있다.(커넥션등의 문제는 별도). 이렇게하면 개별 클래스가 하나의 책임만을 취급하게 되므로 한 클래스가 여러 책임을 가지고 사이즈가 거대해지는 `God Class`를 방지(`God Class Anti Pattern`)할 수 있다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODIwODQ3NDMsMTUyMzIwOTQwMywxNDA1Mj
-gzNjI2LDg1MDc1NDMzM119
+eyJoaXN0b3J5IjpbLTE4MzEzMzE0MjcsMTUyMzIwOTQwMywxND
+A1MjgzNjI2LDg1MDc1NDMzM119
 -->
