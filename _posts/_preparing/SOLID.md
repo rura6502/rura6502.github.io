@@ -10,6 +10,7 @@ categories: [SOLID, Java, OOP]
 * L : Liskov Substitution Principle
 * I : Interface Segregation Principle
 * D : Dependency Inversion Principle
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODUwNzU0MzMzXX0=
+eyJoaXN0b3J5IjpbLTczMDI1MzgxMyw4NTA3NTQzMzNdfQ==
 -->
