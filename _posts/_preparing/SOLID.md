@@ -53,7 +53,8 @@ class BookService {
 
 ```java
 class DBManager {
-	public DBConne
+	public DBConnection getConnection() { /*..*/ }
+	public DBConnection closeConnection() { /*..*/ }
 }
 ```
 ```java
@@ -62,11 +63,14 @@ class BookService {
 	private DBManager dbManager;
 	public Book save(Book book) {
 		DBConnection conn = dbManager.getConnection();
+		// save logic
+		dbManager.closeConnection();
 	}
 }
 ```
 
+위와같이 `데이터베이스에 대한 책임`을 분리할 경우 다른 클래스에서도 DB접속 로직이 필요할 때 다른 클래스에
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjM4OTg5NzYsMTUyMzIwOTQwMywxNDA1Mj
-gzNjI2LDg1MDc1NDMzM119
+eyJoaXN0b3J5IjpbMjA5NDQ4NzI0NiwxNTIzMjA5NDAzLDE0MD
+UyODM2MjYsODUwNzU0MzMzXX0=
 -->
