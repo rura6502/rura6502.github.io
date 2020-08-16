@@ -49,8 +49,10 @@ class BookService {
 	}
 }
 ```
-`Book
+`BookService` 클래스도 `Book 클래스에 대한 비즈니스 로직`과 `DB 컨트롤(접속, 해제)`부분으로 `책임`을 나눌 수 있다.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyOTQ2NzA4NCwxNDA1MjgzNjI2LDg1MD
+eyJoaXN0b3J5IjpbMTUyMzIwOTQwMywxNDA1MjgzNjI2LDg1MD
 c1NDMzM119
 -->
