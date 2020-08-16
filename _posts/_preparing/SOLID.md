@@ -16,7 +16,16 @@ Single Responsibility Principle, 단일 책임 원칙.
 * 한 클래스는 한 기능만 책임진다.
 * 클래스가 바뀌어야 하는 이유는 오직 하나이다.
 
+```java
+class Book {
+	private String author;
+	private String title;
+	private double price;
 
+	
+}
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwNTI4MzYyNiw4NTA3NTQzMzNdfQ==
+eyJoaXN0b3J5IjpbOTYwMDc0NDQsMTQwNTI4MzYyNiw4NTA3NT
+QzMzNdfQ==
 -->
