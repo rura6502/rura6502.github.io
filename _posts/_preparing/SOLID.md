@@ -22,10 +22,15 @@ class Book {
 	private String title;
 	private double price;
 
-	
+	public Book save(Book book) {
+		// DB Connect
+		// execute query to add Book row
+		// Close DB
+	}
 }
 ```
+위 클래스는 `Book`이라는 객체를 추상화한 클래스인데 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTYwMDc0NDQsMTQwNTI4MzYyNiw4NTA3NT
-QzMzNdfQ==
+eyJoaXN0b3J5IjpbLTE4NzUzMjI4NTUsMTQwNTI4MzYyNiw4NT
+A3NTQzMzNdfQ==
 -->
