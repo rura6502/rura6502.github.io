@@ -150,6 +150,8 @@ class 메인모드 {
 
 
 
+
+
 ## L, Liskov Substitution Principle
 
 
@@ -159,7 +161,7 @@ class 메인모드 {
 ## D, Dependency Inversion Principle
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyMzU3MzYyNSw0MTgzMTIxMTQsLTM3Nz
-cwODMyLC0xODMxMzMxNDI3LDE1MjMyMDk0MDMsMTQwNTI4MzYy
-Niw4NTA3NTQzMzNdfQ==
+eyJoaXN0b3J5IjpbMTg1OTQ0NDA1LDQxODMxMjExNCwtMzc3Nz
+A4MzIsLTE4MzEzMzE0MjcsMTUyMzIwOTQwMywxNDA1MjgzNjI2
+LDg1MDc1NDMzM119
 -->
