@@ -91,8 +91,13 @@ class 플래시메모리 {
 class 메인모드 {
   public 받은_데이터 주변기기와_통신(주변기기, 보낼_데이터) {
     if (주변기기 == 키보드) {
-      키보드_통시
+      키보드_통신(보낼_데이터)
+	} else if (주변기기 == 마우스) {
+	  마우스_통신(보낼_데이터)
+	} else if (주변기기 == 플래시메모리) {
+	  플래시메모리_통신(보낼_데이터)
 	}
+	......
   }
 }
 ```
@@ -119,7 +124,7 @@ class 메인모드 {
 ## D, Dependency Inversion Principle
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4NDYxNjMyLC0zNzc3MDgzMiwtMTgzMT
-MzMTQyNywxNTIzMjA5NDAzLDE0MDUyODM2MjYsODUwNzU0MzMz
-XX0=
+eyJoaXN0b3J5IjpbMTU1MzY3MDc4MiwtMzc3NzA4MzIsLTE4Mz
+EzMzE0MjcsMTUyMzIwOTQwMywxNDA1MjgzNjI2LDg1MDc1NDMz
+M119
 -->
