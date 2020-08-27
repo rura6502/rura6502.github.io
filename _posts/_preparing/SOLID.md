@@ -79,9 +79,18 @@ class BookService {
 예를들어 메인보드를 상상해보자. 메인보드는 키보드와 통신하는 방법, 마우스와 통신하는 방법,  플래시 메모리와 통신하는 방법등을 개별적으로 모두 가지고 있지 않다. 만약 메인보드가 모든 주변기기들과 통신하는 방법을 개별적으로 가지고 있다면 이 세상에 메인보드와 통신해야 되는 주변기기들이 생길 때 마다 메인보드는 업그레이드를 하거나 추가로 모듈을 장착해야 하는 상황이 발생할 것이다. 만약 코드로 표현한다면 아래와 같이 표현할 수 있다.
 ```java
 class 키보드 {
+  public Data 키보드_통신(Data data) { ... }
 }
-class 마우스
+class 마우스 {
+  public Data 마우스_통신(Data data) { ... }
+}
+class 플래시메모리 {
+  public Data 플래시메모리통신(Data data) { ... }
+}
 
+class 메인모드 {
+  public ㅇㅁㅅㅁ 
+}
 ```
 
 그래서 우리는 **USB**라는 표준 규격(편의상 버전은 생략)을 두고 주변기기들도 **USB**라는 규격에 맞게 기기를 통신할 수 있게 만들고, 메인보드도 **USB**규격에 맞게 통신하는 방법을 만들어 놓으면 어떠한 기기든 **USB**라는 규격만 맞춘다면 메인보드와 통신할 수 있는 것이다.
@@ -106,7 +115,7 @@ class 마우스
 ## D, Dependency Inversion Principle
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDQwNzI2NTgsLTM3NzcwODMyLC0xOD
-MxMzMxNDI3LDE1MjMyMDk0MDMsMTQwNTI4MzYyNiw4NTA3NTQz
-MzNdfQ==
+eyJoaXN0b3J5IjpbMjAzNzEyMzk0NiwtMzc3NzA4MzIsLTE4Mz
+EzMzE0MjcsMTUyMzIwOTQwMywxNDA1MjgzNjI2LDg1MDc1NDMz
+M119
 -->
