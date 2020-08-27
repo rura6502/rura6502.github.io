@@ -140,22 +140,8 @@ class 플래시메모리 implements USB {
 }
 
 class 메인모드 {
-  public 받은_데이터 주변기기와_통신(주변기기, 보낼_데이터) {
-    if (주변기기 == 키보드) {
-      키보드_통신(보낼_데이터)
-	} else if (주변기기 == 마우스) {
-	  마우스_통신(보낼_데이터)
-	} else if (주변기기 == 플래시메모리) {
-	  플래시메모리_통신(보낼_데이터)
-	}
-	......
-	
-	// 주변기기가 추가될 경우, if 구문이 계속 추가...
-	else if (주변기기 == 스피커) {
-      스피커_통신(보낼_데이터)
-	} else if (주변기기 == 스마트폰) {
-	  플래시메모리_통신(보낼_데이터)
-	}
+  public 받은_데이터 주변기기와_통신(USB usb, 보낼_데이터) {
+    usb.통신(보낼_데이터)
   }
 }
 ```
@@ -172,7 +158,7 @@ class 메인모드 {
 ## D, Dependency Inversion Principle
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDE4MzEyMTE0LC0zNzc3MDgzMiwtMTgzMT
-MzMTQyNywxNTIzMjA5NDAzLDE0MDUyODM2MjYsODUwNzU0MzMz
-XX0=
+eyJoaXN0b3J5IjpbMjEzMDQzMTk4Miw0MTgzMTIxMTQsLTM3Nz
+cwODMyLC0xODMxMzMxNDI3LDE1MjMyMDk0MDMsMTQwNTI4MzYy
+Niw4NTA3NTQzMzNdfQ==
 -->
