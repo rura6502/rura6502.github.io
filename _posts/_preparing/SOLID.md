@@ -76,7 +76,7 @@ class BookService {
 
 어떻게 기능이 추가되었음에도 그 기능을 쓰는 부분의 변화 없이 쓸 수 있을까? 답은 **추상화**에 있다. 서로 연관되어야 하는 클래스가 직접적으로 연관되지 않고 추상화된 객체가 중간 레이어 역할을 한다면, 확장을 해야하는 클래스에서는 서로 쓰기로 약속된 **추상화된 형태**를 유지하면서 확장할 수 있고 기능을 사용하는 클래스 입장에서 또한 **추상화된 형태**로 그 클래스를 사용하기로 약속하였으므로 별도의 변화 없이 기존에 쓰던 형태로 그대로 쓸 수 있는 것이다.
 
-예를들어 메인보드를 상상해보자. 메인보드는 키보드 데이터를 처리하는 방법, 마우스 데이터를 처리하는 방법,  
+예를들어 메인보드를 상상해보자. 메인보드는 키보드와 통신하는 방법, 마우스와 통신하는 방법,  플래시 메모리와 통신하는 방법등을 개별적으로 모두 가지고 있지 않다. 만약 메인보드가 
 
 
 
@@ -91,7 +91,7 @@ class BookService {
 ## D, Dependency Inversion Principle
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjc3NjIzODI5LC0zNzc3MDgzMiwtMTgzMT
-MzMTQyNywxNTIzMjA5NDAzLDE0MDUyODM2MjYsODUwNzU0MzMz
-XX0=
+eyJoaXN0b3J5IjpbMTU3MTI0Njg0NywtMzc3NzA4MzIsLTE4Mz
+EzMzE0MjcsMTUyMzIwOTQwMywxNDA1MjgzNjI2LDg1MDc1NDMz
+M119
 -->
