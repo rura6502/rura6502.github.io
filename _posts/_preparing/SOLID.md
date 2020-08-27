@@ -72,7 +72,7 @@ class BookService {
 위와같이 `데이터베이스에 대한 책임`을 분리할 경우 다른 클래스에서도 DB접속 로직이 필요할 때 `DBManager` 클래스는 데이터베이스에 대한 `단일책임`만을 가지고 있으므로 다른 비즈니스로직에 영향을 끼치지 않도록 안전하게 가져다 쓸 수 있다.(커넥션등의 문제는 별도). 이렇게하면 개별 클래스가 하나의 책임만을 취급하게 되므로 한 클래스가 여러 책임을 가지고 사이즈가 거대해지는 `God Class`를 방지(`God Class Anti Pattern`)할 수 있다. 
 
 ## Open Closed Principle
-개방, 폐쇄 원칙. 
+개방, 폐쇄 원칙. 확장에는 열려있고 수정에는 닫혀있다. **확장에 열려있다**라는 의미는 
 
 
 
@@ -85,6 +85,7 @@ class BookService {
 ## D, Dependency Inversion Principle
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3NzcwODMyLC0xODMxMzMxNDI3LDE1Mj
-MyMDk0MDMsMTQwNTI4MzYyNiw4NTA3NTQzMzNdfQ==
+eyJoaXN0b3J5IjpbLTIwMDMwNTk1NTQsLTM3NzcwODMyLC0xOD
+MxMzMxNDI3LDE1MjMyMDk0MDMsMTQwNTI4MzYyNiw4NTA3NTQz
+MzNdfQ==
 -->
