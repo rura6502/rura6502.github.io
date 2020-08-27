@@ -160,8 +160,11 @@ class 메인모드 {
 ## I, Interface Segregation Principle
 ## D, Dependency Inversion Principle
 
+
+# refer to
+[코딩 강아지 - **Benny**](https://blog.naver.com/jwyoon25/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1OTQ0NDA1LDQxODMxMjExNCwtMzc3Nz
-A4MzIsLTE4MzEzMzE0MjcsMTUyMzIwOTQwMywxNDA1MjgzNjI2
-LDg1MDc1NDMzM119
+eyJoaXN0b3J5IjpbLTUxMzI5NzYxOCwxODU5NDQ0MDUsNDE4Mz
+EyMTE0LC0zNzc3MDgzMiwtMTgzMTMzMTQyNywxNTIzMjA5NDAz
+LDE0MDUyODM2MjYsODUwNzU0MzMzXX0=
 -->
