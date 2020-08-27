@@ -98,9 +98,17 @@ class 메인모드 {
 	  플래시메모리_통신(보낼_데이터)
 	}
 	......
+	
+	// 주변기기가 추가될 경우 
+	else if (주변기기 == 스피커) {
+      스피커_통신(보낼_데이터)
+	} else if (주변기기 == 스마트폰) {
+	  플래시메모리_통신(보낼_데이터)
+	}
   }
 }
 ```
+
 
 그래서 우리는 **USB**라는 표준 규격(편의상 버전은 생략)을 두고 주변기기들도 **USB**라는 규격에 맞게 기기를 통신할 수 있게 만들고, 메인보드도 **USB**규격에 맞게 통신하는 방법을 만들어 놓으면 어떠한 기기든 **USB**라는 규격만 맞춘다면 메인보드와 통신할 수 있는 것이다.
 
@@ -124,7 +132,7 @@ class 메인모드 {
 ## D, Dependency Inversion Principle
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1MzY3MDc4MiwtMzc3NzA4MzIsLTE4Mz
-EzMzE0MjcsMTUyMzIwOTQwMywxNDA1MjgzNjI2LDg1MDc1NDMz
-M119
+eyJoaXN0b3J5IjpbLTE3ODA2MzY0MTksLTM3NzcwODMyLC0xOD
+MxMzMxNDI3LDE1MjMyMDk0MDMsMTQwNTI4MzYyNiw4NTA3NTQz
+MzNdfQ==
 -->
