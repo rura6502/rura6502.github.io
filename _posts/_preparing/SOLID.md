@@ -74,7 +74,7 @@ class BookService {
 ## Open Closed Principle
 개방, 폐쇄 원칙. 확장에는 열려있고 수정에는 닫혀있다. **확장에 열려있다**라는 의미는 어떠한 클래스가 있을 때, 그 클래스가 할 수 있는 행위들이 필요한 경우에 더 추가될 수 있고 **수정에 닫혀있다**라는 의미는 클래스가 제공하는 기능이 확장될 때, 그 클래스와 연관되어있는 다른 클래스들에게 변화를 미치지 않는다 즉, 다른 클래스 수정 없이도 연관된 클래스의 행위를 확장할 수 있다는 의미이다.
 
-
+어떻게 기능이 추가되었음에도 그 기능을 쓰는 부분의 변화 없이 쓸 수 있을까? 답은 **추상화**에 있다. 각각의 클래스가 서로 
 
 
 
@@ -89,7 +89,7 @@ class BookService {
 ## D, Dependency Inversion Principle
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4NjA3NzU2MSwtMzc3NzA4MzIsLTE4Mz
-EzMzE0MjcsMTUyMzIwOTQwMywxNDA1MjgzNjI2LDg1MDc1NDMz
-M119
+eyJoaXN0b3J5IjpbLTg0Mzk5Mjk5LC0zNzc3MDgzMiwtMTgzMT
+MzMTQyNywxNTIzMjA5NDAzLDE0MDUyODM2MjYsODUwNzU0MzMz
+XX0=
 -->
