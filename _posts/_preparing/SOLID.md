@@ -121,18 +121,22 @@ class 메인모드 {
 라고 비유할 수 있다. 자바에서는 **USB 규격**과 같이 **추상화된 형태**를 `interface` 또는 `abstract class` 형태로 제공하고 있다. `interface`를 사용하여 OCP를 준수하면 아래와 같이 변할 수 있다.
 
 ```java
+// 추상화된 형태...
 interface USB {
-	받은_데이터 
+	받은_데이터 통신(보낼_데이터)
 }
 
-class 키보드 {
-  public 받은_데이터 키보드_통신(보낼_데이터) { ... }
+class 키보드 implements USB {
+  @Override
+  public 받은_데이터 통신(보낼_데이터) { ... }
 }
-class 마우스 {
-  public 받은_데이터 마우스_통신(보낼_데이터) { ... }
+class 마우스 implements USB {
+  @Override
+  public 받은_데이터 통신(보낼_데이터) { ... }
 }
-class 플래시메모리 {
-  public 받은_데이터 플래시메모리_통신(보낼_데이터) { ... }
+class 플래시메모리 implements USB {
+  @Override
+  public 받은_데이터 통신(보낼_데이터) { ... }
 }
 
 class 메인모드 {
@@ -168,7 +172,7 @@ class 메인모드 {
 ## D, Dependency Inversion Principle
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1MzU0ODE5NCwtMzc3NzA4MzIsLTE4Mz
-EzMzE0MjcsMTUyMzIwOTQwMywxNDA1MjgzNjI2LDg1MDc1NDMz
-M119
+eyJoaXN0b3J5IjpbNDE4MzEyMTE0LC0zNzc3MDgzMiwtMTgzMT
+MzMTQyNywxNTIzMjA5NDAzLDE0MDUyODM2MjYsODUwNzU0MzMz
+XX0=
 -->
