@@ -141,6 +141,7 @@ class 플래시메모리 implements USB {
 
 class 메인모드 {
   public 받은_데이터 주변기기와_통신(USB usb, 보낼_데이터) {
+    // 주변기기가 추가되더라도 if문이 추가될 필요가 없다.
     usb.통신(보낼_데이터)
   }
 }
@@ -158,7 +159,7 @@ class 메인모드 {
 ## D, Dependency Inversion Principle
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzMDQzMTk4Miw0MTgzMTIxMTQsLTM3Nz
+eyJoaXN0b3J5IjpbMTAyMzU3MzYyNSw0MTgzMTIxMTQsLTM3Nz
 cwODMyLC0xODMxMzMxNDI3LDE1MjMyMDk0MDMsMTQwNTI4MzYy
 Niw4NTA3NTQzMzNdfQ==
 -->
