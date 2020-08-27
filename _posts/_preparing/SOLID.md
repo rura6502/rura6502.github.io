@@ -79,17 +79,21 @@ class BookService {
 예를들어 메인보드를 상상해보자. 메인보드는 키보드와 통신하는 방법, 마우스와 통신하는 방법,  플래시 메모리와 통신하는 방법등을 개별적으로 모두 가지고 있지 않다. 만약 메인보드가 모든 주변기기들과 통신하는 방법을 개별적으로 가지고 있다면 이 세상에 메인보드와 통신해야 되는 주변기기들이 생길 때 마다 메인보드는 업그레이드를 하거나 추가로 모듈을 장착해야 하는 상황이 발생할 것이다. 만약 코드로 표현한다면 아래와 같이 표현할 수 있다.
 ```java
 class 키보드 {
-  public Data 키보드_통신(Data data) { ... }
+  public 받은_데이터 키보드_통신(보낼_데이터) { ... }
 }
 class 마우스 {
-  public Data 마우스_통신(Data data) { ... }
+  public 받은_데이터 마우스_통신(보낼_데이터) { ... }
 }
 class 플래시메모리 {
-  public Data 플래시메모리통신(Data data) { ... }
+  public 받은_데이터 플래시메모리_통신(보낼_데이터) { ... }
 }
 
 class 메인모드 {
-  public ㅇㅁㅅㅁ 
+  public 받은_데이터 주변기기와_통신(주변기기, 보낼_데이터) {
+    if (주변기기 == 키보드) {
+      키보드_통시
+	}
+  }
 }
 ```
 
@@ -115,7 +119,7 @@ class 메인모드 {
 ## D, Dependency Inversion Principle
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzNzEyMzk0NiwtMzc3NzA4MzIsLTE4Mz
-EzMzE0MjcsMTUyMzIwOTQwMywxNDA1MjgzNjI2LDg1MDc1NDMz
-M119
+eyJoaXN0b3J5IjpbMTI4NDYxNjMyLC0zNzc3MDgzMiwtMTgzMT
+MzMTQyNywxNTIzMjA5NDAzLDE0MDUyODM2MjYsODUwNzU0MzMz
+XX0=
 -->
