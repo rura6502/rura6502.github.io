@@ -151,7 +151,8 @@ class 메인모드 {
 리스코프 치환 원칙. 
 
 > q(x)는 T형식의 x객체를 증명할 수 있는 공식이다. 그러면 S 형식의 객체 y가 있고 S가 T의 하위형식이라면 q(y)는 참이다.
-```
+
+
 
 
 
@@ -164,7 +165,8 @@ class 메인모드 {
 # refer to
 [코딩 강아지 - **Benny**](https://blog.naver.com/jwyoon25/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTgyMTEyMjEsLTUxMzI5NzYxOCwxODU5ND
-Q0MDUsNDE4MzEyMTE0LC0zNzc3MDgzMiwtMTgzMTMzMTQyNywx
-NTIzMjA5NDAzLDE0MDUyODM2MjYsODUwNzU0MzMzXX0=
+eyJoaXN0b3J5IjpbLTEwMjEzMDgyMzcsOTgyMTEyMjEsLTUxMz
+I5NzYxOCwxODU5NDQ0MDUsNDE4MzEyMTE0LC0zNzc3MDgzMiwt
+MTgzMTMzMTQyNywxNTIzMjA5NDAzLDE0MDUyODM2MjYsODUwNz
+U0MzMzXX0=
 -->
