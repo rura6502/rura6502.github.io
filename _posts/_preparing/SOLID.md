@@ -149,8 +149,10 @@ class 메인모드 {
 
 ## L, Liskov Substitution Principle
 리스코프 치환 원칙. 
+
+> q(x)는 T형식의 x객체를 증명할 수 있는 공식이다. 그러면 S 형식의 객체 y가 있고 S가 T의 하위형식이라면 q(y)는 참이다.
 ```
-q(x)는 T형식의 x객ㅊ
+
 
 
 
@@ -162,7 +164,7 @@ q(x)는 T형식의 x객ㅊ
 # refer to
 [코딩 강아지 - **Benny**](https://blog.naver.com/jwyoon25/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyNTQ0MzE3OCwtNTEzMjk3NjE4LDE4NT
-k0NDQwNSw0MTgzMTIxMTQsLTM3NzcwODMyLC0xODMxMzMxNDI3
-LDE1MjMyMDk0MDMsMTQwNTI4MzYyNiw4NTA3NTQzMzNdfQ==
+eyJoaXN0b3J5IjpbOTgyMTEyMjEsLTUxMzI5NzYxOCwxODU5ND
+Q0MDUsNDE4MzEyMTE0LC0zNzc3MDgzMiwtMTgzMTMzMTQyNywx
+NTIzMjA5NDAzLDE0MDUyODM2MjYsODUwNzU0MzMzXX0=
 -->
