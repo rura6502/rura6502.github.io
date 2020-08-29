@@ -147,12 +147,10 @@ class 메인모드 {
 }
 ```
 
-
-
-
-
-
 ## L, Liskov Substitution Principle
+리스코프 치환 원칙. 
+```
+q(x)는 T형식의 x객ㅊ
 
 
 
@@ -164,7 +162,7 @@ class 메인모드 {
 # refer to
 [코딩 강아지 - **Benny**](https://blog.naver.com/jwyoon25/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxMzI5NzYxOCwxODU5NDQ0MDUsNDE4Mz
-EyMTE0LC0zNzc3MDgzMiwtMTgzMTMzMTQyNywxNTIzMjA5NDAz
-LDE0MDUyODM2MjYsODUwNzU0MzMzXX0=
+eyJoaXN0b3J5IjpbMTQyNTQ0MzE3OCwtNTEzMjk3NjE4LDE4NT
+k0NDQwNSw0MTgzMTIxMTQsLTM3NzcwODMyLC0xODMxMzMxNDI3
+LDE1MjMyMDk0MDMsMTQwNTI4MzYyNiw4NTA3NTQzMzNdfQ==
 -->
