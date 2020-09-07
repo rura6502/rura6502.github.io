@@ -207,9 +207,15 @@ GEM
       jekyll-seo-tag (~> 2.1)
     minitest (5.11.3)
     multipart-post (2.0.0)
+<<<<<<< HEAD
     nokogiri (1.10.8)
       mini_portile2 (~> 2.4.0)
     nokogiri (1.10.8-x64-mingw32)
+=======
+    nokogiri (1.10.2)
+      mini_portile2 (~> 2.4.0)
+    nokogiri (1.10.2-x64-mingw32)
+>>>>>>> 84e8219ee16d77ecbb6cc04feae395c011be5460
       mini_portile2 (~> 2.4.0)
     octokit (4.14.0)
       sawyer (~> 0.8.0, >= 0.5.3)
@@ -223,7 +229,11 @@ GEM
     ruby-enum (0.7.2)
       i18n
     ruby_dep (1.5.0)
+<<<<<<< HEAD
     rubyzip (2.3.0)
+=======
+    rubyzip (2.0.0)
+>>>>>>> 84e8219ee16d77ecbb6cc04feae395c011be5460
     safe_yaml (1.0.5)
     sass (3.7.4)
       sass-listen (~> 4.0.0)
