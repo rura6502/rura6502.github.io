@@ -1,58 +1,201 @@
-title: rura6502  dev
-description: My trash can
-author: rura6502
-github: https://github.com/rura6502
-about: Software Engineern, Busan, Korea. If you can't explain it to your grandmother, you don't understand it well enough.
-disqus_shortname: rura6502
-google_analytics: UA-138729643-1
-avatar_url: /static/img/avatar.jpg
-enableTags: true
-tagarray: []
+# The Site Settings
+# v2.0
+# https://github.com/cotes2020/jekyll-theme-chirpy
+# © 2017-2019 Cotes Chung
+# MIT licensed
 
-collections:
-  project:
-    output: true
-    permalink: /project/:path/
 
-#social: 
-#    - icon: fa-facebook
-#      link: "#"
-#    - icon: fa-twitter
-#      link: "#"
-#    - icon: fa-linkedin
-#      link: "#"
-#    - icon: fa-stack-exchange
-#      link: "#"
-#    - icon: fa-github
-#      link: "https://github.com/agusmakmun"
+# jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
+#--------------------------
 
-#share:
-#  twitter_username: github.io
-#  fb_appid: 1749788565247320
+title: rura6502's Note                          # the main title
 
-urls:
-    - text: About Me
-      url: /about/
-    - text: My Projects
-      url: /projects/
-    - text: XML Feed
-      url: /feed.xml
+tagline: >-                               # it will display as the sub-title
+  If you can't explain it to your grandmother, you don't understand it well enough.  
 
-url: "https://rura6502.github.io"
-baseurl: ""
-paginate: 20
-per_page: 20
-paginate_path: "/page/:num/"
+description: >-                        # used by seo meta and the atom feed
+  rura6502's note
+
+# Replace with the website url, e.g. 'https://username.github.io'
+url: 'https://rura6502.github.io'
+
+author: jongseong Woo                  # change to your full name
+
+avatar: /assets/img/rura6502_avatar.jpg   # support internet resources
+
+github:
+  username: rura6502             # change to your github username
+
+#twitter:
+#  username: twitter_username            # change to your twitter username
+
+social:
+  name: jongseong woo                  # it will shows as the copyright owner in Footer
+  email: rura6502@hotmail.com             # change to your email address
+  links:
+    # The first element serves as the copyright owner's link
+    # - https://twitter.com/username      # change to your twitter homepage
+    - https://github.com/rura6502       # change to your github homepage
+    # Uncomment below to add more social links
+    - https://www.facebook.com/rura6502
+    - https://www.linkedin.com/in/jongseong-woo-46695577
+
+google_site_verification: gOIyb_XOf1nwThBthgbX2m-SBqGMIcCWPFWuzJ-LC1k" # change to your verification string
+
+#--------------------------
+
+
+# Only if your site type is GitHub Project sites and doesn't have a custom domain,
+# change below value to '/projectname'.
+baseurl: ''
+
+# Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
+timezone: Asia/Seoul
+
+google_analytics:
+  id: 'UA-138729643-1'          # Fill with your Google Analytics ID
+  pv:
+    # The Google Analytics pageviews switch.
+    # DO NOT enable it unless you know how to deploy the Google Analytics superProxy.
+    enabled: false
+    # the next options only valid when `google_analytics.pv` is enabled.
+    proxy_url: ''
+    proxy_endpoint: ''
+    cache: false  # pv data local cache, good for the users from GFW area.
+
+disqus:
+  comments: true  # boolean type, the global switch for posts comments.
+  shortname: 'rura6502'    # Fill with your Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+
+
+# Prefer color scheme setting, available values:
+#
+#     dual   - Follow the system prefer color by default, and a toggle will display
+#              in the left bottom of Sidebar, which used for switch the theme between dark and light.
+#
+#     light  - Use the light color scheme
+#
+#     dark   - Use the dark color scheme
+#
+theme_mode: dual
+
+# boolean type, global switch for ToC in posts.
+toc: true
+
+paginate: 10
+
 markdown: kramdown
-gems:
-  - jekyll-paginate
-  - jekyll-gist
+
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts: # Rouge Options › https://github.com/jneen/rouge#full-options
+    css_class: 'highlight'
+    # default_lang: console
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+# DO NOT change this unless you're a Pro user on Jekyll and Web development,
+# or you think you're smart enough to change other relevant URLs within this template.
+permalink: /posts/:title/
+
+defaults:
+  -
+    scope:
+      path: ""          # An empty string here means all files in the project
+      type: posts
+    values:
+      layout: post
+      comments: true    # Enable comments in posts.
+      toc: true         # Display TOC column in posts.
+      location: Post
+      breadcrumb:
+        -
+          label: Posts
+          url: /
+  -
+    scope:
+      path: _drafts
+    values:
+      comments: false
+  -
+    scope:
+      path: tags
+    values:
+      tab_active: Tags
+      location: Tag
+      breadcrumb:
+        -
+          label: Home
+          url: /
+        -
+          label: Tags
+          url: /tabs/tags/
+  -
+    scope:
+      path: categories
+    values:
+      tab_active: Categories
+      location: Category
+      breadcrumb:
+        -
+          label: Home
+          url: /
+        -
+          label: Categories
+          url: /tabs/categories/
+  -
+    scope:
+      path: tabs
+    values:
+      layout: page
+      dynamic_title: true    # Hide title in mobile screens.
+      breadcrumb:
+        -
+          label: Home
+          url: /
+
+
+sass:
+  sass_dir: /assets/css
+  style: compressed
 
 compress_html:
   clippings: all
   comments: ["<!-- ", " -->"]
-  endings: all
+  endings: [html, head, body, dt, dd, rt, rp,
+            optgroup, option, colgroup, caption,
+            thead, tbody, tfoot, tr, td, th]
+  profile: false
+  blanklines: false
   ignore:
-    envs: ['development']
+    envs: []
 
-timezone: Asia/Seoul
+exclude:
+  - vendor        # Avoid Jekyll mistakenly read the vendor directory on Travis-CI's VM .
+  - Gemfile.lock
+  - Gemfile
+  - tools
+  - docs
+  - README.md
+  - LICENSE
+
+sitemap_exclude:  # Sitemap will exclude the following items.
+  fuzzy:
+    - /assets/
+  accurate:
+    - /norobots/
+    - /tabs/
+    - /categories/
+    - /tags/
+    - /posts/
+    - 404.html
+    - feed.xml
+    - sitemap.xml
+    - robots.txt
+    - redirects.json
