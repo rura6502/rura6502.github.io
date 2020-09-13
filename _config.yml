@@ -8,39 +8,40 @@
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 #--------------------------
 
-title: rura6502's Note                          # the main title
+title: Chirpy                          # the main title
 
-tagline: >-                               # it will display as the sub-title
-  If you can't explain it to your grandmother, you don't understand it well enough.  
+tagline: A text-focused Jekyll theme.  # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  rura6502's note
+  A minimal, portfolio, sidebar,
+  bootstrap Jekyll theme with responsive web design
+  and focuses on text presentation.
 
 # Replace with the website url, e.g. 'https://username.github.io'
-url: 'https://rura6502.github.io'
+url: 'protocol://domain'
 
-author: jongseong Woo                  # change to your full name
+author: your_full_name                  # change to your full name
 
-avatar: /assets/img/rura6502_avatar.jpg   # support internet resources
+avatar: /assets/img/sample/avatar.jpg   # support internet resources
 
 github:
-  username: rura6502             # change to your github username
+  username: github_username             # change to your github username
 
-#twitter:
-#  username: twitter_username            # change to your twitter username
+twitter:
+  username: twitter_username            # change to your twitter username
 
 social:
-  name: jongseong woo                  # it will shows as the copyright owner in Footer
-  email: rura6502@hotmail.com             # change to your email address
+  name: your_full_name                  # it will shows as the copyright owner in Footer
+  email: example@doamin.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    # - https://twitter.com/username      # change to your twitter homepage
-    - https://github.com/rura6502       # change to your github homepage
+    - https://twitter.com/username      # change to your twitter homepage
+    - https://github.com/username       # change to your github homepage
     # Uncomment below to add more social links
-    - https://www.facebook.com/rura6502
-    - https://www.linkedin.com/in/jongseong-woo-46695577
+    # - https://www.facebook.com/username
+    # - https://www.linkedin.com/in/username
 
-google_site_verification: gOIyb_XOf1nwThBthgbX2m-SBqGMIcCWPFWuzJ-LC1k" # change to your verification string
+google_site_verification: google_meta_tag_verification # change to your verification string
 
 #--------------------------
 
@@ -50,10 +51,10 @@ google_site_verification: gOIyb_XOf1nwThBthgbX2m-SBqGMIcCWPFWuzJ-LC1k" # change 
 baseurl: ''
 
 # Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
-timezone: Asia/Seoul
+timezone: Asia/Shanghai
 
 google_analytics:
-  id: 'UA-138729643-1'          # Fill with your Google Analytics ID
+  id: ''          # Fill with your Google Analytics ID
   pv:
     # The Google Analytics pageviews switch.
     # DO NOT enable it unless you know how to deploy the Google Analytics superProxy.
@@ -64,8 +65,8 @@ google_analytics:
     cache: false  # pv data local cache, good for the users from GFW area.
 
 disqus:
-  comments: true  # boolean type, the global switch for posts comments.
-  shortname: 'rura6502'    # Fill with your Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+  comments: false  # boolean type, the global switch for posts comments.
+  shortname: ''    # Fill with your Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
 
 # Prefer color scheme setting, available values:
