@@ -53,9 +53,9 @@ jobs:
         run: |
           bash tools/build.sh -b ""
 
-      - name: Test Site
-        run: |
-          bash tools/test.sh
+      # - name: Test Site
+      #   run: |
+      #     bash tools/test.sh
 
   deploy:
     needs: build-n-test
