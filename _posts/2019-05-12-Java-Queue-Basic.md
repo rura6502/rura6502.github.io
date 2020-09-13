@@ -1,9 +1,11 @@
 ---
 layout: post
+autor: rura6502
 title:  Java Queue Basic
 date:   2019-05-12 00:00:00 +0000
-categories: [Language, Java]
-tags: [data-structure,  java, queue]
+categories: [Language,Java]
+tags: [Data-Structure,Java,Queue]
+math: true
 ---
 
 ## Queue

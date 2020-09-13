@@ -1,9 +1,11 @@
 ---
 layout: post
+autor: rura6502
 title:  Java Thread Basic
 date:  2019-05-11 00:00:00 +0000
-categories: [Language, Java]
-tags: [java, thread]
+categories: [Language,Java]
+tags: [Java,Thread]
+math: true
 ---
 
 ## 쓰레드(Thread)란

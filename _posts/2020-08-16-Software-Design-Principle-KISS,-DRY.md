@@ -3,8 +3,8 @@ layout: post
 author: rura6502
 title:  프로그램 설계 원칙 - KISS, DRY
 date:  2020-08-16 00:00:00 +0000  
-categories: [Language, Java]
-tags: [oop, java]
+categories: [Language,Java]
+tags: [OOP,Java]
 math: true
 ---
 # 프로그램 설계 원칙 - KISS, DRY, Decoupling

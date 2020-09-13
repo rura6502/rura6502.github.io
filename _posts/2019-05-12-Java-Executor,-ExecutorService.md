@@ -1,9 +1,11 @@
 ---
 layout: post
+autor: rura6502
 title:  Java Executor, ExecutorService
 date:   2019-05-12 00:00:00 +0000
-categories: [Language, Java]
-tags: [executor, executor-service, java, thread]
+categories: [Language,Java]
+tags: [Executor,Java,Thread]
+math: true
 ---
 
 ## Java Executor, ExecutorService
