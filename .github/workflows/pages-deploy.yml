@@ -80,6 +80,10 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gems-
 
+      - name: Install Bundle
+        run: |
+          gem install bundler:2.1.4
+
       - name: Bundle config
         run: |
           bundle config path vendor/bundle
