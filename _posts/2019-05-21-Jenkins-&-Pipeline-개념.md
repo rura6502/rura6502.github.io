@@ -3,7 +3,7 @@ layout: post
 title:  Jenkins & Pipeline 개념
 date:  2019-05-21 00:00:00 +0900
 categories: [CI/CD, Jenkins]
-tags: [jenkins, pipeline, ci/cd]
+tags: [jenkins, pipeline, cicd]
 ---
 
 공식문서에서는 Suite of plugins that supports implementing and integrating continouous delivery pipelines 라고 되어있음. 쉽게말해서 자동으로 빌드, 배포등을 할 수 있도록 관련된 플러그인들을 모아서 관? 처럼 만들어줌.
