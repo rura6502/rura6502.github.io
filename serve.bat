@@ -1,1 +1,1 @@
-bundle exec jekyll serve --port 9999
+bundle exec jekyll s --port 9999
