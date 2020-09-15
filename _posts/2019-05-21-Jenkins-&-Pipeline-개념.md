@@ -3,9 +3,8 @@ layout: post
 autor: rura6502
 title:  Jenkins & Pipeline 개념
 date:  2019-05-21 00:00:00 +0000
-categories: [CICD,Jenkins]
-tags: [Jenkins,Pipeline,CICD]
-math: true
+categories: [CICD, Jenkins]
+tags: [Jjenkins ipeline,Cmath: true cicd]
 ---
 
 공식문서에서는 Suite of plugins that supports implementing and integrating continouous delivery pipelines 라고 되어있음. 쉽게말해서 자동으로 빌드, 배포등을 할 수 있도록 관련된 플러그인들을 모아서 관? 처럼 만들어줌.
@@ -146,6 +145,6 @@ node {
 ## refer to
 [Pipeline](https://jenkins.io/doc/book/pipeline/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwNDMxNjQ1NCwxNTgwMDI4NDAwLDE4Nz
-QxOTc0ODldfQ==
+eyJoaXN0b3J5IjpbLTE1NDIxMTUxMDksMTUwNDMxNjQ1NCwxNT
+gwMDI4NDAwLDE4NzQxOTc0ODldfQ==
 -->
