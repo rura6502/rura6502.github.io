@@ -2,9 +2,9 @@
 layout: post
 autor: rura6502
 title:  Gradle multi-module project with Spring Boot and inject dependencies using IF
-date:  2019-05-25 00:00:00 +0000
-categories: [SpringBoot]
-tags: [SpringBoot,Gradle,Multi-Module]
+date:  2019-05-25 00:00:00 +000
+categories: [Framework, Spring-Boot]
+tags: [SspringBboot,radle,Multi-Module]
 math: true
 ---
 
@@ -478,6 +478,6 @@ project(":A_b_root:A_b_b") {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3MDUzMTQwOSwtNDU3NzE1MDE5LDg5OD
-czOTIyMl19
+eyJoaXN0b3J5IjpbLTcwMzIxMjg1NiwxNjcwNTMxNDA5LC00NT
+c3MTUwMTksODk4NzM5MjIyXX0=
 -->
