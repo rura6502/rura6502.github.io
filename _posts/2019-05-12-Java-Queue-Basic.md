@@ -2,9 +2,9 @@
 layout: post
 autor: rura6502
 title:  Java Queue Basic
-date:   2019-05-12 00:00:00 +0000
-categories: [Language,Java]
-tags: [Data-Structure,Java,Queue]
+date:   2019-05-12 00:00:00 +000
+categories: [Language, Java]
+tags: [ata-Structure,Java,queue]
 math: true
 ---
 
@@ -66,6 +66,6 @@ BlokingQueue를 상속하고 있음. 생산자(큐에 데이터를 넣는 측, P
 [BlokingDeQueue (Java Platform SE 8)](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/BlockingDeque.html)
 [Why do we need Deque data structures in the real world? [closed]](https://stackoverflow.com/questions/3880254/why-do-we-need-deque-data-structures-in-the-real-world)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3MTk0NjI5OSwxOTQ4MjcwMTIzLDE3MD
-U2NTAxNDAsMTAxMDM2MzQyMV19
+eyJoaXN0b3J5IjpbLTE5Njc4NTYzMzksLTk3MTk0NjI5OSwxOT
+Q4MjcwMTIzLDE3MDU2NTAxNDAsMTAxMDM2MzQyMV19
 -->
