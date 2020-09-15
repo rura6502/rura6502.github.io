@@ -1,9 +1,11 @@
 ---
 layout: post
+autor: rura6502
 title:  Gradle multi-module project with Spring Boot and inject dependencies using IF
 date:  2019-05-25 00:00:00 +0000
-categories: [Framework, Spring-Boot]
-tags: [spring-boot, gradle, multi-module]
+categories: [SpringBoot]
+tags: [SpringBoot,Gradle,Multi-Module]
+math: true
 ---
 
 > 본 포스팅에서 고안한 '유연하다'는 방식은 그루비 언어를 활용하여 구성하는 방식으로 정답은 아니고 더 좋은 방식이 있다면 조언바랍니다.
