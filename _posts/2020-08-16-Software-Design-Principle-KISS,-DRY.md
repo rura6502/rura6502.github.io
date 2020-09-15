@@ -3,8 +3,8 @@ layout: post
 author: rura6502
 title:  프로그램 설계 원칙 - KISS, DRY
 date:  2020-08-16 00:00:00 +0000  
-categories: [Language,Java]
-tags: [OOP,Java]
+categories: [Language, Java]
+tags: [OOP,Joop, java]
 math: true
 ---
 # 프로그램 설계 원칙 - KISS, DRY, Decoupling
@@ -135,7 +135,8 @@ public class TodoAPI {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTU1NjIzODksLTEwNDY3NDg0NjgsLT
-E1NDc1MjE4ODQsMjAwNDQyODQ3Nyw4MDIzNDI0MDIsLTE5MDgz
-ODM1ODIsOTAzMzcyODg0LC04MDk5MDYzNjZdfQ==
+eyJoaXN0b3J5IjpbLTE2NTM5Mjc4MzUsLTE4OTU1NjIzODksLT
+EwNDY3NDg0NjgsLTE1NDc1MjE4ODQsMjAwNDQyODQ3Nyw4MDIz
+NDI0MDIsLTE5MDgzODM1ODIsOTAzMzcyODg0LC04MDk5MDYzNj
+ZdfQ==
 -->
