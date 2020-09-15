@@ -10,9 +10,9 @@ tags: [obom, study, book, retrospection]
 
 ![pepe-mask](https://github.com/rura6502/rura6502.github.io/blob/master/_posts/_image/meme/pepe-mask.jpg)
 
-잠잠해지면 다시 무료공간이 오픈되서 쓸수있지 않을까? 했지만 줄어들 기미가 없는 COVID-19 덕분에 #1 스터디는 취소되어버렸고 이번 기회에 전과정 온라인으로 
+잠잠해지면 다시 무료공간이 오픈되서 쓸수있지 않을까? 했지만 줄어들 기미가 없는 COVID-19 덕분에 #1 스터디는 취소되어버렸고 이번 기회에 전과정 온라인으로 #2를 준비해서 시작해보았습니다!
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxMTk1ODQ0Nl19
+eyJoaXN0b3J5IjpbLTE5Mjc5MTA5NDhdfQ==
 -->
