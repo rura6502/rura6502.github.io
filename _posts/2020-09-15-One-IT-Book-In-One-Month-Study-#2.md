@@ -45,13 +45,15 @@ tags: [obom, study, book, retrospection]
 
 저는 총 한달의 기간 중 마지막 일주일을 하얗게 불태워서 읽었습니다.. 저만 그런건가요.. 쪽수가 적은 책을 선택한 것이 다행이였습니다... 다들 한달동안 중간에 간간히 살아계심을 단체카톡방에 인증해주셨고 글읽기 노하우를 공유해주신 고마운 분들도 계셨습니다!(이 자리를 빌려 감사드립니다!🙇‍♀️🙇‍♂️)
 
-![](https://github.com/rura6502/rura6502.github.io/blob/master/_posts/_image/meme/%EB%AF%BC%EA%B2%BD%ED%9B%88_%EA%B0%80%EC%A6%88%EC%95%84.jpg?raw=true)
+![](https://github.com/rura6502/rura6502.github.io/blob/master/_posts/_image/study%20capture/%ED%95%9C%EB%8B%AC%EC%97%90%20%ED%95%9C%20%EA%B6%8C%20%EC%B1%85%20%EC%9D%BD%EA%B8%B0%20202008/%ED%95%9C%EC%B1%85%ED%95%9C1_%EC%B9%B4%ED%86%A11.png?raw=true)
 
 어찌저찌 한 달이 지나 하게된 두번째 모임! 첫 모임때는 간단한 자기소개, 책소개 등으로 어떻게 잘 넘어갔지만, 오프라인에서도 잘 안되는 과제 발표를 잘 진행할 수 있을까? 라는 걱정에 모임이 시작되고, 걱정과는 다르게 모두 빠짐없이 참가해주셨습니다! 그리고 이어서 순서데로 각자 읽은 책의 내용을 간단하게 정리해서 발표해주시고, 무엇보다도 **본인이 이 책을 읽어서 어떤 점이 도움이됬다** 라는 부분을 알차게 말씀해주셔서 정말 뿌듯흐뭇했답니다!
 
 ![](https://github.com/rura6502/rura6502.github.io/blob/master/_posts/_image/meme/%EC%9D%B4%EB%A7%90%EB%A0%A8-%ED%9D%90%EB%AD%87.png?raw=true)
 
 정말 열심히 참가해 주신 분들 모두 감사드리며 다음에도 좋은 기회로 다시뵈었으면 좋겠습니다!! 곧 다음 차수도 진행 예정에 있으니 많이 참가해주세요!
+
+![](https://github.com/rura6502/rura6502.github.io/blob/master/_posts/_image/study%20capture/%ED%95%9C%EB%8B%AC%EC%97%90%20%ED%95%9C%20%EA%B6%8C%20%EC%B1%85%20%EC%9D%BD%EA%B8%B0%20202008/%ED%95%9C%EC%B1%85%ED%95%9C1-%EB%AA%A8%EC%9E%84.jpg?raw=true)
 
 
 
