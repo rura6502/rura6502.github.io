@@ -1,0 +1,58 @@
+{"0": {
+    "doc": "Concepts",
+    "title": "Concept",
+    "content": "이스티오 시스템의 다양한 부분과 사용하고있는 추상화에 대해서 배운다. ",
+    "url": "/docs/istio/01.concepts/#concept",
+    
+    "relUrl": "/docs/istio/01.concepts/#concept"
+  },"1": {
+    "doc": "Concepts",
+    "title": "Traffic Management",
+    "content": "이스티오의 트래픽 라우팅 룰은 사용자가 서비스간 API 콜과 트래픽 흐름을 쉽게 컨트롤할 수 있게 해준다. 이스티오는 써킷 브레이커, 타임아웃, 리트라이같은 서비스 레벨의 설정을 단순화하며 퍼센트 기반의 트래픽 조절을 상요한 스테이지 롤아웃, 카나리 롤아웃, A/B 테스팅 같은 중요한 작업을 쉽게 설정할 수 있게 해준다. 또한 네트워크, 서비스로 인해 발생하는 장애로부터의 탄력적이게 운용할 수 있게 해주는 즉시 적용 가능한 신뢰성 기능들을 제공한다. 이스티오의 트래픽 매니지먼트 모델은 서비스와 같이 배포되는 엔보이 프록시로부터 제공된다. 메시 서비스에서 주고 받는 모든 트래픽은 엔보이로부터 프록시되고 사용자 서비스의 별도 수정 없이도 쉽게 컨트롤할 수 있게 해준다. 만약 이 가이드에서 설명한 기능이 어떻게 동작하는지 관심있다면, 이스티오 트래픽 매니저 구현과 관련된 더 자세한 내용을 아키텍쳐 오버뷰에서 볼 수 있다. 이 가이드 나머지 부분에선 이스티오의 트래픽 매니지먼트 기능에 대해 설명한다. Introducing Istio traffic management . 사용자의 메시안에서 트래픽을 컨트롤하기위해 이스티오는 모든 사용자의 서비스들과 그 서비스들이 가지는 엔트포인트에 대해서 알아야 한다. 서비스 레지스트리에 정보를 넣기 위해 이스티오는 서비스 디스커버리 시스템에 접속한다. 예를들어 만약 사용자가 이스티오를 쿠버네티스 클러스터에 설치했다면 이스티오는 클러스터내의 엔드포인트와 서비스들을 자동으로 감지한다. 서비스 레지시트리를 사용해서 엔보이는 관련 서비스로 트래픽을 전달한다. 대부분의 마이크로서비스 기반 애플리케이션은 서비스 트래픽을 핸들링하거나 또는 로드벨런싱등을 위해 개별 워크로드의 멀티 인스턴스를 가진다. 엔보이 프록시는 기본적으로 최소 요청 모델을 사용해서 서비스의 로드밸런싱 풀에 트래픽을 분산한다. 각 요청은 풀의 두 호스트를 랜덤하게 선택하여 . ",
+    "url": "/docs/istio/01.concepts/#traffic-management",
+    
+    "relUrl": "/docs/istio/01.concepts/#traffic-management"
+  },"2": {
+    "doc": "Concepts",
+    "title": "Concepts",
+    "content": " ",
+    "url": "/docs/istio/01.concepts/",
+    
+    "relUrl": "/docs/istio/01.concepts/"
+  },"3": {
+    "doc": "etc...",
+    "title": "etc...",
+    "content": " ",
+    "url": "/docs/etc",
+    
+    "relUrl": "/docs/etc"
+  },"4": {
+    "doc": "Home",
+    "title": "rura Dev",
+    "content": " ",
+    "url": "/#rura-dev",
+    
+    "relUrl": "/#rura-dev"
+  },"5": {
+    "doc": "Home",
+    "title": "Home",
+    "content": " ",
+    "url": "/",
+    
+    "relUrl": "/"
+  },"6": {
+    "doc": "Istio",
+    "title": "Istio",
+    "content": " ",
+    "url": "/docs/istio",
+    
+    "relUrl": "/docs/istio"
+  },"7": {
+    "doc": "tmp1",
+    "title": "tmp1",
+    "content": " ",
+    "url": "/docs/etc/tmp1",
+    
+    "relUrl": "/docs/etc/tmp1"
+  }
+}
