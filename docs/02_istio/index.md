@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 02.Istio
-nav_order: 1
+nav_order: 3
 has_children: true
 permalink: docs/02_istio
 ---

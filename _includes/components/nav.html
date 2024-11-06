@@ -26,6 +26,10 @@
     | where_exp: "item", "item.grand_parent == nil" -%}
 {%- assign third_level_pages = sorted_pages
     | where_exp: "item", "item.grand_parent != nil" -%}
+{%- assign fourth_level_pages = sorted_pages
+  | where_exp: "item", "item.great_grand_parent != nil" -%}
+
+  TODO!!!!!!!!!!
 
 <ul class="nav-list">
 {%- for node in first_level_pages -%}
@@ -60,7 +64,10 @@
           <a href="{{ child.url | relative_url }}" class="nav-list-link">{{ child.title }}</a>
           {%- endif -%}
           {%- if child.has_children -%}
-            {%- assign grand_children_list = third_level_pages
+
+
+
+            <!-- {%- assign grand_children_list = third_level_pages
                   | where: "parent", child.title
                   | where: "grand_parent", node.title -%}
             {%- if child.child_nav_order == 'desc' or child.child_nav_order == 'reversed' -%}
@@ -72,7 +79,7 @@
                 <a href="{{ grand_child.url | relative_url }}" class="nav-list-link">{{ grand_child.title }}</a>
               </li>
             {%- endfor -%}
-            </ul>
+            </ul> -->
           {%- endif -%}
         </li>
       {%- endfor -%}
