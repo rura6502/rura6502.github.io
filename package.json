@@ -16,7 +16,9 @@
     "lint:css": "stylelint '**/*.scss'",
     "lint:formatting": "prettier --check '**/*.{scss,js,json}'",
     "format": "prettier --write '**/*.{scss,js,json}'",
-    "test": "npm run lint"
+    "test": "npm run lint",
+    "start": "bundle exec jekyll serve"
+
   },
   "stylelint": {
     "ignoreFiles": [
