@@ -29,8 +29,6 @@
 {%- assign fourth_level_pages = sorted_pages
   | where_exp: "item", "item.great_grand_parent != nil" -%}
 
-  TODO!!!!!!!!!!
-
 <ul class="nav-list">
 {%- for node in first_level_pages -%}
   <li class="nav-list-item">
@@ -64,22 +62,44 @@
           <a href="{{ child.url | relative_url }}" class="nav-list-link">{{ child.title }}</a>
           {%- endif -%}
           {%- if child.has_children -%}
-
-
-
-            <!-- {%- assign grand_children_list = third_level_pages
-                  | where: "parent", child.title
-                  | where: "grand_parent", node.title -%}
+            {%- assign grand_children_list = third_level_pages
+                    | where: "parent", child.title
+                    | where: "grand_parent", node.title -%}
             {%- if child.child_nav_order == 'desc' or child.child_nav_order == 'reversed' -%}
               {%- assign grand_children_list = grand_children_list | reverse -%}
             {%- endif -%}
             <ul class="nav-list">
             {%- for grand_child in grand_children_list -%}
               <li class="nav-list-item">
+                {%- if grand_child.has_children -%}
+                <button class="nav-list-expander btn-reset" aria-label="toggle items in {{ grand_child.title }} category" aria-pressed="false">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+                </button>
+                {%- endif -%}
+                {%- if grand_child.linkable == '' or grand_child.linkable == false -%}
+                <a class="nav-list-link">{{ grand_child.title }}</a>
+                {%- else -%}
                 <a href="{{ grand_child.url | relative_url }}" class="nav-list-link">{{ grand_child.title }}</a>
+                {%- endif -%}
+                {%- if grand_child.has_children -%}
+                  {%- assign great_grand_children_list = fourth_level_pages
+                          | where: "parent", grand_child.title
+                          | where: "grand_parent", child.title
+                          | where: "great_grand_parent", node.title -%}
+                  {%- if grand_child.child_nav_order == 'desc' or grand_child.child_nav_order == 'reversed' -%}
+                    {%- assign great_grand_children_list = great_grand_children_list | reverse -%}
+                  {%- endif -%}
+                  <ul class="nav-list">
+                    {%- for great_grand_child in great_grand_children_list -%}
+                    <li class="nav-list-item">
+                      <a href="{{ great_grand_child.url | relative_url }}" class="nav-list-link">{{ great_grand_child.title }}</a>
+                    </li>
+                    {%- endfor -%}
+                  </ul>
+                {%- endif -%}
               </li>
             {%- endfor -%}
-            </ul> -->
+            </ul>
           {%- endif -%}
         </li>
       {%- endfor -%}
